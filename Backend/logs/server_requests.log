@@ -1,0 +1,6 @@
+2025-05-22 09:09:46,671 INFO: Starting Flask server...
+2025-05-22 09:09:46,717 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:80
+ * Running on http://10.90.123.32:80
+2025-05-22 09:09:46,718 INFO: [33mPress CTRL+C to quit[0m

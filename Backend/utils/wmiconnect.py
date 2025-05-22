@@ -20,8 +20,7 @@ def connect_and_execute(project_name, ip, username, password, domain, server_ip)
             $url = 'http://{server_ip}/download';
             $dest = 'C:\\Windows\\Temp\\script.ps1';
             Invoke-WebRequest -Uri $url -OutFile $dest;
-            powershell -ExecutionPolicy Bypass -File $dest -ServerUrl 'http://{server_ip}/upload' -ProjectName {project_name} -scan_ip {ip};
-            rm $dest
+            powershell -ExecutionPolicy Bypass -File $dest -ServerUrl 'http://{server_ip}/upload' -ProjectName {project_name} -scan_ip {ip}
             """
         encoded = encode_powershell_command(raw_ps)
 

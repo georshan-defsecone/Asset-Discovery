@@ -4,10 +4,21 @@ import json
 import logging
 from datetime import datetime
 from utils.scan_runner import run_scan
+#from utils.scan_runner import run_scan
 from utils.store_data import create_db_and_store_results
 from flask_cors import CORS
 import sqlite3
 from flask import jsonify
+from collections import OrderedDict
+from io import BytesIO
+from reportlab.lib.pagesizes import letter
+from reportlab.pdfgen import canvas
+from io import BytesIO
+import json
+from fpdf import FPDF
+import tempfile
+import textwrap
+
 
 app = Flask(__name__)
 CORS(app)
@@ -139,7 +150,6 @@ def get_project_devices(project_name):
 @app.route('/api/project/<project_name>/asset/<asset_name>', methods=['GET'])
 def get_asset_json(project_name, asset_name):
     db_path = os.path.join(DB_DIR, f"{project_name}.db")
-    
 
     if not os.path.exists(db_path):
         return jsonify({'error': f'Database for project "{project_name}" not found'}), 404
@@ -148,7 +158,6 @@ def get_asset_json(project_name, asset_name):
         conn = sqlite3.connect(db_path)
         cursor = conn.cursor()
 
-        # Make sure the table and column names match your schema
         cursor.execute("SELECT json_data FROM scan_results WHERE system_name = ?", (asset_name,))
         row = cursor.fetchone()
         conn.close()
@@ -156,8 +165,17 @@ def get_asset_json(project_name, asset_name):
         if not row:
             return jsonify({'error': f'Asset "{asset_name}" not found in project "{project_name}"'}), 404
 
-        asset_json = json.loads(row[0])  # Convert the JSON string to a Python dict
-        return jsonify(asset_json)
+        # Use OrderedDict to preserve key order
+        asset_json = json.loads(row[0], object_pairs_hook=OrderedDict)
+
+        # Use Flask's Response with custom JSON encoder that respects OrderedDict order
+        from flask import Response
+        import json as pyjson
+
+        return Response(
+            pyjson.dumps(asset_json, indent=2),
+            mimetype='application/json'
+        )
 
     except Exception as e:
         return jsonify({'error': str(e)}), 500
@@ -192,13 +210,134 @@ def download_asset_pdf(project_name, asset_name):
 
         print("[DEBUG] Asset found. Proceeding to generate PDF.")
 
-        # (PDF generation logic stays the same)
-        ...
-        
+        # Load JSON data
+        json_data = json.loads(row[0])
+        buffer = BytesIO()
+        p = canvas.Canvas(buffer, pagesize=letter)
+        width, height = letter
+
+        y = height - 40
+        p.setFont("Helvetica-Bold", 14)
+        p.drawString(40, y, f"Asset Report: {asset_name}")
+        y -= 30
+
+        p.setFont("Helvetica", 10)
+
+        def draw_section(title, data, y):
+            p.setFont("Helvetica-Bold", 12)
+            p.drawString(40, y, title)
+            y -= 20
+            p.setFont("Helvetica", 10)
+            if isinstance(data, dict):
+                for key, value in data.items():
+                    line = f"{key}: {value}"
+                    p.drawString(50, y, line[:100])  # limit line length
+                    y -= 15
+                    if y < 40:
+                        p.showPage()
+                        y = height - 40
+            elif isinstance(data, list):
+                for item in data:
+                    if isinstance(item, dict):
+                        for key, value in item.items():
+                            line = f"{key}: {value}"
+                            p.drawString(50, y, line[:100])
+                            y -= 15
+                            if y < 40:
+                                p.showPage()
+                                y = height - 40
+                    else:
+                        p.drawString(50, y, str(item)[:100])
+                        y -= 15
+                        if y < 40:
+                            p.showPage()
+                            y = height - 40
+            else:
+                p.drawString(50, y, str(data)[:100])
+                y -= 15
+            return y
+
+        for section_name in ['AssetDetails', 'Hardware', 'Software', 'Users', 'Security']:
+            if section_name in json_data:
+                y = draw_section(section_name, json_data[section_name], y)
+                y -= 15
+                if y < 40:
+                    p.showPage()
+                    y = height - 40
+
+        p.save()
+        buffer.seek(0)
+
+        return send_file(buffer, as_attachment=True, download_name=f"{asset_name}_details.pdf", mimetype='application/pdf')
+
     except Exception as e:
         print("[ERROR] Exception during PDF generation:", str(e))
         return jsonify({'error': str(e)}), 500
 
+
+@app.route("/projects/<project_name>/download", methods=["GET"])
+def download_project_data(project_name):
+    try:
+        db_path = os.path.join(DB_DIR, f"{project_name}.db")
+        if not os.path.exists(db_path):
+            logging.error(f"[ERROR] Database not found: {db_path}")
+            return jsonify({"error": "Database not found"}), 404
+
+        logging.info(f"[INFO] Generating PDF for project: {project_name}")
+
+        pdf = FPDF()
+        pdf.set_auto_page_break(auto=True, margin=15)
+
+        conn = sqlite3.connect(db_path)
+        cursor = conn.cursor()
+
+        try:
+            cursor.execute("SELECT system_name, json_data FROM scan_results")
+            rows = cursor.fetchall()
+            logging.info(f"[INFO] Fetched {len(rows)} assets from DB.")
+        except sqlite3.Error as e:
+            logging.error(f"[ERROR] SQLite error: {e}")
+            return jsonify({"error": f"SQLite error: {str(e)}"}), 500
+        finally:
+            conn.close()
+
+        if not rows:
+            return jsonify({"error": "No assets found in project"}), 404
+
+        for system_name, json_blob in rows:
+            try:
+                data = json.loads(json_blob)
+            except Exception as e:
+                logging.warning(f"[WARNING] Failed to parse JSON for {system_name}: {str(e)}")
+                continue
+
+            pdf.add_page()
+            pdf.set_font("Arial", "B", 16)
+            pdf.cell(0, 10, f"Asset: {system_name}", ln=True)
+
+            pdf.set_font("Arial", "", 12)
+            pretty_json = json.dumps(data, indent=2)
+
+            max_width = 100
+            for line in pretty_json.split("\n"):
+                wrapped_lines = textwrap.wrap(line, width=max_width, break_long_words=True, break_on_hyphens=False)
+                for wline in wrapped_lines:
+                    try:
+                        pdf.multi_cell(180, 5, wline)
+                    except Exception as e:
+                        logging.warning(f"[WARNING] Failed to render line in PDF: {str(e)} | Line content: {wline[:100]}...")
+                        pdf.multi_cell(180, 5, "[Line could not be rendered due to length or formatting]")
+
+        tmp_file = tempfile.NamedTemporaryFile(delete=False, suffix=".pdf")
+        pdf.output(tmp_file.name)
+
+        logging.info(f"[INFO] PDF created: {tmp_file.name}")
+        return send_file(tmp_file.name, as_attachment=True, download_name=f"{project_name}_assets.pdf")
+
+    except Exception as e:
+        logging.exception(f"[ERROR] Unexpected error while generating PDF: {str(e)}")
+        return jsonify({"error": str(e)}), 500
+    
 
 if __name__ == '__main__':
     # Run on port 80 as you mentioned
