@@ -17,6 +17,12 @@ import json
 from fpdf import FPDF
 import tempfile
 import textwrap
+from flask import Flask, send_file, jsonify
+import sqlite3
+import csv
+import io
+import os
+from utils.store_data import extract_json_to_csv
 
 
 app = Flask(__name__)
@@ -274,67 +280,32 @@ def download_asset_pdf(project_name, asset_name):
         return jsonify({'error': str(e)}), 500
 
 
+
+    
+
+
 @app.route("/projects/<project_name>/download", methods=["GET"])
-def download_project_data(project_name):
+def download_csv(project_name):
     try:
-        db_path = os.path.join(DB_DIR, f"{project_name}.db")
+        db_path = f"db/{project_name}.db"
         if not os.path.exists(db_path):
-            logging.error(f"[ERROR] Database not found: {db_path}")
-            return jsonify({"error": "Database not found"}), 404
+            return jsonify({"error": "Project not found"}), 404
 
-        logging.info(f"[INFO] Generating PDF for project: {project_name}")
+        # Create temp CSV file
+        temp_csv = tempfile.NamedTemporaryFile(delete=False, suffix=".csv")
+        temp_csv_path = temp_csv.name
+        temp_csv.close()
 
-        pdf = FPDF()
-        pdf.set_auto_page_break(auto=True, margin=15)
+        # Call your function to fill in the CSV
+        extract_json_to_csv(db_path, temp_csv_path)
 
-        conn = sqlite3.connect(db_path)
-        cursor = conn.cursor()
-
-        try:
-            cursor.execute("SELECT system_name, json_data FROM scan_results")
-            rows = cursor.fetchall()
-            logging.info(f"[INFO] Fetched {len(rows)} assets from DB.")
-        except sqlite3.Error as e:
-            logging.error(f"[ERROR] SQLite error: {e}")
-            return jsonify({"error": f"SQLite error: {str(e)}"}), 500
-        finally:
-            conn.close()
-
-        if not rows:
-            return jsonify({"error": "No assets found in project"}), 404
-
-        for system_name, json_blob in rows:
-            try:
-                data = json.loads(json_blob)
-            except Exception as e:
-                logging.warning(f"[WARNING] Failed to parse JSON for {system_name}: {str(e)}")
-                continue
-
-            pdf.add_page()
-            pdf.set_font("Arial", "B", 16)
-            pdf.cell(0, 10, f"Asset: {system_name}", ln=True)
-
-            pdf.set_font("Arial", "", 12)
-            pretty_json = json.dumps(data, indent=2)
-
-            max_width = 100
-            for line in pretty_json.split("\n"):
-                wrapped_lines = textwrap.wrap(line, width=max_width, break_long_words=True, break_on_hyphens=False)
-                for wline in wrapped_lines:
-                    try:
-                        pdf.multi_cell(180, 5, wline)
-                    except Exception as e:
-                        logging.warning(f"[WARNING] Failed to render line in PDF: {str(e)} | Line content: {wline[:100]}...")
-                        pdf.multi_cell(180, 5, "[Line could not be rendered due to length or formatting]")
-
-        tmp_file = tempfile.NamedTemporaryFile(delete=False, suffix=".pdf")
-        pdf.output(tmp_file.name)
-
-        logging.info(f"[INFO] PDF created: {tmp_file.name}")
-        return send_file(tmp_file.name, as_attachment=True, download_name=f"{project_name}_assets.pdf")
+        # Send CSV to frontend
+        return send_file(temp_csv_path,
+                         as_attachment=True,
+                         download_name=f"{project_name}_report.csv",
+                         mimetype="text/csv")
 
     except Exception as e:
-        logging.exception(f"[ERROR] Unexpected error while generating PDF: {str(e)}")
         return jsonify({"error": str(e)}), 500
     
 
