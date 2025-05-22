@@ -2,7 +2,7 @@
 
 import sqlite3
 import logging
-import os, json, logging, csv
+import os, json, logging, csv, json
 import threading
 
 db_lock = threading.Lock()
@@ -54,7 +54,7 @@ def create_db_and_store_results(project_name, client_ip, system_name, status, da
 # import json
 # import csv
 
-def extract_json_to_csv(db_path: str, csv_output_path: str):
+def extract_json_to_csv(db_path, csv_output_path):
     """
     Extracts selected fields from JSON data in an SQLite table and writes them to a CSV file.
 
@@ -70,32 +70,60 @@ def extract_json_to_csv(db_path: str, csv_output_path: str):
     cursor.execute("SELECT json_data FROM scan_results")
     rows = cursor.fetchall()
 
-    # Define the desired headers and initialize output
-    headers = ["IP", "Hostname", "OS Name", "License Status", "Disk Space", "Ram", "AV Status", "Firewall Status"]
+    # Define the desired headers
+    headers = ["IP", "Hostname", "OS Name", "License Status", "Disk Space (GB)", "RAM (GB)", "AV Status", "Firewall Status"]
     output_data = []
 
     for row in rows:
         try:
-            data = json.loads(row[0])  # Load JSON
+            data = json.loads(row[0])  # Load JSON string into a Python dict
 
-            ip = data.get("System", {}).get("IPAddress", "")
-            hostname = data.get("System", {}).get("Hostname", "")
-            os_activated = data.get("OS", {}).get("Activated", "")
-            av_status = data.get("Security", [{}])[0].get("Antivirus", {}).get("SignatureStatus", "")
-            firewall_status = data.get("Security", [{}])[0].get("Firewall", {}).get("Status", "")
+            asset = data.get("AssetDetails", {})
+            ip = asset.get("IPAddress", "")
+            hostname = asset.get("SystemName", "")
+            disk_space = asset.get("DiskSpaceGB", "")
+            ram = asset.get("Ram Size", "")
+
+            os_name = ""
+            license_status = ""
+            for hw in data.get("Hardware", []):
+                if "OperatingSystem" in hw:
+                    os_name = hw["OperatingSystem"].get("Operating System", "")
+                if "License" in hw:
+                    license_status = hw["License"].get("LicenseStatus", "")
+
+            av_status = ""
+            firewall_status = ""
+            for sec in data.get("Security", []):
+                if "Antivirus" in sec:
+                    av_status = sec["Antivirus"].get("SignatureStatus", "")
+                if "Firewall" in sec:
+                    profiles = sec["Firewall"]
+                    if isinstance(profiles, list):
+                        firewall_status = ", ".join([f"{p['Profile']}={p['Enabled']}" for p in profiles])
+                    elif isinstance(profiles, dict):
+                        firewall_status = profiles.get("Enabled", "")
 
             output_data.append([
-                ip, hostname, os_activated, av_status, firewall_status
+                ip, hostname, os_name, license_status, disk_space, ram, av_status, firewall_status
             ])
+
         except json.JSONDecodeError as e:
             print(f"Skipping invalid JSON row: {e}")
+        except Exception as e:
+            print(f"Unexpected error: {e}")
 
     conn.close()
 
     # Write to CSV
-    with open(csv_output_path, "w", newline="") as csvfile:
+    with open(csv_output_path, "w", newline="", encoding='utf-8') as csvfile:
         writer = csv.writer(csvfile)
         writer.writerow(headers)
         writer.writerows(output_data)
 
     print(f"✅ Data written to {csv_output_path}")
+
+if __name__ == "__main__":
+    db_path = "db/Test2.db"           # Update as needed
+    csv_path = "reports/test.csv"     # Update as needed
+    extract_json_to_csv(db_path, csv_path)
