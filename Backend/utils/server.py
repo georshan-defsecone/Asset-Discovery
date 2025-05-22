@@ -4,7 +4,6 @@ import json
 import logging
 from datetime import datetime
 from utils.scan_runner import run_scan
-#from utils.scan_runner import run_scan
 from utils.store_data import create_db_and_store_results
 from flask_cors import CORS
 import sqlite3

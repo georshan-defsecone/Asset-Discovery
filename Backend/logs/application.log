@@ -1372,3 +1372,24 @@ TypeError: The view function for 'download_asset_pdf' did not return a valid res
 2025-05-22 14:36:26,577 INFO: Headers: {'User-Agent': 'Mozilla/5.0 (Windows NT; Windows NT 10.0; en-US) WindowsPowerShell/5.1.19041.2673', 'Content-Type': 'application/json', 'Host': '10.1.1.5', 'Content-Length': '22068', 'Expect': '100-continue', 'Connection': 'Keep-Alive'}
 2025-05-22 14:36:26,578 INFO: Data received from 10.1.1.3, saved as 10.1.1.3_PC1WIN10_20250522_143626.json
 2025-05-22 14:36:26,593 INFO: 10.1.1.3 - - [22/May/2025 14:36:26] "POST /upload HTTP/1.1" 200 -
+2025-05-22 15:25:43,535 INFO: Starting Flask server...
+2025-05-22 15:25:43,574 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:80
+ * Running on http://10.90.123.32:80
+2025-05-22 15:25:43,575 INFO: [33mPress CTRL+C to quit[0m
+2025-05-22 15:37:52,760 INFO: Starting Flask server...
+2025-05-22 15:37:52,799 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:80
+ * Running on http://10.90.123.32:80
+2025-05-22 15:37:52,800 INFO: [33mPress CTRL+C to quit[0m
+2025-05-22 15:37:55,725 INFO: Request from 127.0.0.1 GET /projects
+2025-05-22 15:37:55,726 INFO: Headers: {'Host': '127.0.0.1', 'Connection': 'keep-alive', 'Sec-Ch-Ua-Platform': '"Windows"', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36 Edg/136.0.0.0', 'Accept': 'application/json, text/plain, */*', 'Sec-Ch-Ua': '"Chromium";v="136", "Microsoft Edge";v="136", "Not.A/Brand";v="99"', 'Sec-Ch-Ua-Mobile': '?0', 'Origin': 'http://localhost:5173', 'Sec-Fetch-Site': 'cross-site', 'Sec-Fetch-Mode': 'cors', 'Sec-Fetch-Dest': 'empty', 'Referer': 'http://localhost:5173/', 'Accept-Encoding': 'gzip, deflate, br, zstd', 'Accept-Language': 'en-US,en;q=0.9,en-IN;q=0.8'}
+2025-05-22 15:37:55,728 INFO: 127.0.0.1 - - [22/May/2025 15:37:55] "GET /projects HTTP/1.1" 200 -
+2025-05-22 15:38:03,312 INFO: Request from 127.0.0.1 GET /project/Test2
+2025-05-22 15:38:03,313 INFO: Headers: {'Host': '127.0.0.1', 'Connection': 'keep-alive', 'Sec-Ch-Ua-Platform': '"Windows"', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36 Edg/136.0.0.0', 'Accept': 'application/json, text/plain, */*', 'Sec-Ch-Ua': '"Chromium";v="136", "Microsoft Edge";v="136", "Not.A/Brand";v="99"', 'Sec-Ch-Ua-Mobile': '?0', 'Origin': 'http://localhost:5173', 'Sec-Fetch-Site': 'cross-site', 'Sec-Fetch-Mode': 'cors', 'Sec-Fetch-Dest': 'empty', 'Referer': 'http://localhost:5173/', 'Accept-Encoding': 'gzip, deflate, br, zstd', 'Accept-Language': 'en-US,en;q=0.9,en-IN;q=0.8'}
+2025-05-22 15:38:03,318 INFO: 127.0.0.1 - - [22/May/2025 15:38:03] "GET /project/Test2 HTTP/1.1" 200 -
+2025-05-22 15:38:06,005 INFO: Request from 127.0.0.1 GET /projects
+2025-05-22 15:38:06,005 INFO: Headers: {'Host': '127.0.0.1', 'Connection': 'keep-alive', 'Sec-Ch-Ua-Platform': '"Windows"', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36 Edg/136.0.0.0', 'Accept': 'application/json, text/plain, */*', 'Sec-Ch-Ua': '"Chromium";v="136", "Microsoft Edge";v="136", "Not.A/Brand";v="99"', 'Sec-Ch-Ua-Mobile': '?0', 'Origin': 'http://localhost:5173', 'Sec-Fetch-Site': 'cross-site', 'Sec-Fetch-Mode': 'cors', 'Sec-Fetch-Dest': 'empty', 'Referer': 'http://localhost:5173/', 'Accept-Encoding': 'gzip, deflate, br, zstd', 'Accept-Language': 'en-US,en;q=0.9,en-IN;q=0.8'}
+2025-05-22 15:38:06,007 INFO: 127.0.0.1 - - [22/May/2025 15:38:06] "GET /projects HTTP/1.1" 200 -
