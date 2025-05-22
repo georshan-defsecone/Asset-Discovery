@@ -50,70 +50,74 @@ def create_db_and_store_results(project_name, client_ip, system_name, status, da
 
 
 
-# import sqlite3
-# import json
-# import csv
-
 def extract_json_to_csv(db_path, csv_output_path):
     """
-    Extracts selected fields from JSON data in an SQLite table and writes them to a CSV file.
-
-    Parameters:
-        db_path (str): Path to the SQLite database.
-        csv_output_path (str): Path to save the CSV file.
+    Extracts fields from an SQLite database table and writes them to a CSV file.
+    Handles both 'pass' (with JSON) and 'fail' (with status message) rows.
     """
-    # Connect to the database
+
+    # Connect to the SQLite database
     conn = sqlite3.connect(db_path)
     cursor = conn.cursor()
 
-    # Execute query to fetch all json_data rows
-    cursor.execute("SELECT json_data FROM scan_results")
+    # Fetch all rows from the scan_results table
+    cursor.execute("SELECT id, client_ip, system_name, status, json_data FROM scan_results")
     rows = cursor.fetchall()
 
-    # Define the desired headers
-    headers = ["IP", "Hostname", "OS Name", "License Status", "Disk Space (GB)", "RAM (GB)", "AV Status", "Firewall Status"]
+    # CSV Headers
+    headers = [
+        "ID", "Client IP", "System Name", "Status", "Hostname", "OS Name",
+        "License Status", "Disk Space (GB)", "RAM (GB)", "AV Status", "Firewall Status", "Raw JSON/Error"
+    ]
     output_data = []
 
     for row in rows:
-        try:
-            data = json.loads(row[0])  # Load JSON string into a Python dict
+        id_, client_ip, system_name, status, json_data = row
 
-            asset = data.get("AssetDetails", {})
-            ip = asset.get("IPAddress", "")
-            hostname = asset.get("SystemName", "")
-            disk_space = asset.get("DiskSpaceGB", "")
-            ram = asset.get("Ram Size", "")
+        # Default fields for CSV row
+        hostname = os_name = license_status = disk_space = ram = av_status = firewall_status = ""
 
-            os_name = ""
-            license_status = ""
-            for hw in data.get("Hardware", []):
-                if "OperatingSystem" in hw:
-                    os_name = hw["OperatingSystem"].get("Operating System", "")
-                if "License" in hw:
-                    license_status = hw["License"].get("LicenseStatus", "")
+        if status.lower() == "success":
+            try:
+                data = json.loads(json_data)
 
-            av_status = ""
-            firewall_status = ""
-            for sec in data.get("Security", []):
-                if "Antivirus" in sec:
-                    av_status = sec["Antivirus"].get("SignatureStatus", "")
-                if "Firewall" in sec:
-                    profiles = sec["Firewall"]
-                    if isinstance(profiles, list):
-                        firewall_status = ", ".join([f"{p['Profile']}={p['Enabled']}" for p in profiles])
-                    elif isinstance(profiles, dict):
-                        firewall_status = profiles.get("Enabled", "")
+                asset = data.get("AssetDetails", {})
+                hostname = asset.get("SystemName", "")
+                disk_space = asset.get("DiskSpaceGB", "")
+                ram = asset.get("Ram Size", "")
 
-            output_data.append([
-                ip, hostname, os_name, license_status, disk_space, ram, av_status, firewall_status
-            ])
+                # Extract from Hardware list
+                for hw in data.get("Hardware", []):
+                    if "OperatingSystem" in hw:
+                        os_name = hw["OperatingSystem"].get("Operating System", "")
+                    if "License" in hw:
+                        license_status = hw["License"].get("LicenseStatus", "")
 
-        except json.JSONDecodeError as e:
-            print(f"Skipping invalid JSON row: {e}")
-        except Exception as e:
-            print(f"Unexpected error: {e}")
+                # Extract from Security list
+                for sec in data.get("Security", []):
+                    if "Antivirus" in sec:
+                        av_status = sec["Antivirus"].get("SignatureStatus", "")
+                    if "Firewall" in sec:
+                        profiles = sec["Firewall"]
+                        if isinstance(profiles, list):
+                            firewall_status = ", ".join([f"{p['Profile']}={p['Enabled']}" for p in profiles])
+                        elif isinstance(profiles, dict):
+                            firewall_status = profiles.get("Enabled", "")
 
-    conn.close()
+                raw_json_or_error = ""  # clean JSON means no error here
+
+            except (json.JSONDecodeError, TypeError) as e:
+                raw_json_or_error = f"JSON Decode Error: {str(e)}"
+
+        else:
+            # If failed, JSON data will be a string like 'portclosed', etc.
+            raw_json_or_error = json_data
+
+        output_data.append([
+            id_, client_ip, system_name, status,
+            hostname, os_name, license_status,
+            disk_space, ram, av_status, firewall_status, raw_json_or_error
+        ])
 
     # Write to CSV
     with open(csv_output_path, "w", newline="", encoding='utf-8') as csvfile:
@@ -121,9 +125,9 @@ def extract_json_to_csv(db_path, csv_output_path):
         writer.writerow(headers)
         writer.writerows(output_data)
 
-    print(f"✅ Data written to {csv_output_path}")
+    #print(f"✅ Data exported to {csv_output_path}")
 
-if __name__ == "__main__":
-    db_path = "db/Test2.db"           # Update as needed
-    csv_path = "reports/test.csv"     # Update as needed
-    extract_json_to_csv(db_path, csv_path)
+# if __name__ == "__main__":
+#     db_path = "db/Test2.db"         
+#     csv_path = "reports/final_report.csv"
+#     extract_json_to_csv(db_path, csv_path)
