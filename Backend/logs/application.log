@@ -1,0 +1,773 @@
+2025-05-21 11:04:23,106 INFO: Starting Flask server...
+2025-05-21 11:04:23,198 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:80
+ * Running on http://10.90.123.32:80
+2025-05-21 11:04:23,199 INFO: [33mPress CTRL+C to quit[0m
+2025-05-21 11:04:28,682 INFO: Request from 127.0.0.1 GET /
+2025-05-21 11:04:28,686 INFO: Headers: {'Host': '127.0.0.1', 'Connection': 'keep-alive', 'Sec-Ch-Ua': '"Chromium";v="136", "Microsoft Edge";v="136", "Not.A/Brand";v="99"', 'Sec-Ch-Ua-Mobile': '?0', 'Sec-Ch-Ua-Platform': '"Windows"', 'Upgrade-Insecure-Requests': '1', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36 Edg/136.0.0.0', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7', 'Sec-Fetch-Site': 'none', 'Sec-Fetch-Mode': 'navigate', 'Sec-Fetch-User': '?1', 'Sec-Fetch-Dest': 'document', 'Accept-Encoding': 'gzip, deflate, br, zstd', 'Accept-Language': 'en-US,en;q=0.9,en-IN;q=0.8', 'Cookie': 'csrftoken=3mLlNRLeaLR72rKtOr1NzzcZDzMeN6gr; sessionid=sp9c6wpwdsjddko8j506pzpalaaultnv'}
+2025-05-21 11:04:28,720 INFO: 127.0.0.1 - - [21/May/2025 11:04:28] "GET / HTTP/1.1" 200 -
+2025-05-21 11:04:28,855 INFO: Request from 127.0.0.1 GET /favicon.ico
+2025-05-21 11:04:28,856 INFO: Headers: {'Host': '127.0.0.1', 'Connection': 'keep-alive', 'Sec-Ch-Ua-Platform': '"Windows"', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36 Edg/136.0.0.0', 'Sec-Ch-Ua': '"Chromium";v="136", "Microsoft Edge";v="136", "Not.A/Brand";v="99"', 'Sec-Ch-Ua-Mobile': '?0', 'Accept': 'image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8', 'Sec-Fetch-Site': 'same-origin', 'Sec-Fetch-Mode': 'no-cors', 'Sec-Fetch-Dest': 'image', 'Referer': 'http://127.0.0.1/', 'Accept-Encoding': 'gzip, deflate, br, zstd', 'Accept-Language': 'en-US,en;q=0.9,en-IN;q=0.8', 'Cookie': 'csrftoken=3mLlNRLeaLR72rKtOr1NzzcZDzMeN6gr; sessionid=sp9c6wpwdsjddko8j506pzpalaaultnv'}
+2025-05-21 11:04:28,858 INFO: 127.0.0.1 - - [21/May/2025 11:04:28] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-05-21 11:09:29,874 INFO: Request from 127.0.0.1 GET /
+2025-05-21 11:09:29,875 INFO: Headers: {'Host': '127.0.0.1', 'Connection': 'keep-alive', 'Sec-Ch-Ua': '"Chromium";v="136", "Microsoft Edge";v="136", "Not.A/Brand";v="99"', 'Sec-Ch-Ua-Mobile': '?0', 'Sec-Ch-Ua-Platform': '"Windows"', 'Upgrade-Insecure-Requests': '1', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36 Edg/136.0.0.0', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7', 'Sec-Fetch-Site': 'none', 'Sec-Fetch-Mode': 'navigate', 'Sec-Fetch-User': '?1', 'Sec-Fetch-Dest': 'document', 'Accept-Encoding': 'gzip, deflate, br, zstd', 'Accept-Language': 'en-US,en;q=0.9,en-IN;q=0.8', 'Cookie': 'csrftoken=3mLlNRLeaLR72rKtOr1NzzcZDzMeN6gr; sessionid=sp9c6wpwdsjddko8j506pzpalaaultnv'}
+2025-05-21 11:09:29,876 INFO: 127.0.0.1 - - [21/May/2025 11:09:29] "GET / HTTP/1.1" 200 -
+2025-05-21 11:30:34,719 INFO: Starting Flask server...
+2025-05-21 11:30:34,752 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:80
+ * Running on http://10.90.123.32:80
+2025-05-21 11:30:34,753 INFO: [33mPress CTRL+C to quit[0m
+2025-05-21 11:31:13,101 INFO: Request from 127.0.0.1 POST /start_scan
+2025-05-21 11:31:13,102 INFO: Headers: {'Host': '127.0.0.1', 'Connection': 'keep-alive', 'Content-Length': '104', 'Sec-Ch-Ua-Platform': '"Windows"', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36 Edg/136.0.0.0', 'Accept': 'application/json, text/plain, */*', 'Sec-Ch-Ua': '"Chromium";v="136", "Microsoft Edge";v="136", "Not.A/Brand";v="99"', 'Content-Type': 'application/x-www-form-urlencoded', 'Sec-Ch-Ua-Mobile': '?0', 'Origin': 'http://localhost:5173', 'Sec-Fetch-Site': 'cross-site', 'Sec-Fetch-Mode': 'cors', 'Sec-Fetch-Dest': 'empty', 'Referer': 'http://localhost:5173/', 'Accept-Encoding': 'gzip, deflate, br, zstd', 'Accept-Language': 'en-US,en;q=0.9,en-IN;q=0.8'}
+2025-05-21 11:31:13,105 INFO: Starting asset discovery
+2025-05-21 11:31:13,106 INFO: Checking services on 192.168.1.0...
+2025-05-21 11:31:14,115 WARNING: No known management ports open on 192.168.1.0. Skipping.
+2025-05-21 11:31:14,172 INFO: 127.0.0.1 - - [21/May/2025 11:31:14] "POST /start_scan HTTP/1.1" 200 -
+2025-05-21 11:40:28,462 INFO: Request from 127.0.0.1 POST /start_scan
+2025-05-21 11:40:28,463 INFO: Headers: {'Host': '127.0.0.1', 'Connection': 'keep-alive', 'Content-Length': '77', 'Sec-Ch-Ua-Platform': '"Windows"', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36 Edg/136.0.0.0', 'Accept': 'application/json, text/plain, */*', 'Sec-Ch-Ua': '"Chromium";v="136", "Microsoft Edge";v="136", "Not.A/Brand";v="99"', 'Content-Type': 'application/x-www-form-urlencoded', 'Sec-Ch-Ua-Mobile': '?0', 'Origin': 'http://localhost:5173', 'Sec-Fetch-Site': 'cross-site', 'Sec-Fetch-Mode': 'cors', 'Sec-Fetch-Dest': 'empty', 'Referer': 'http://localhost:5173/', 'Accept-Encoding': 'gzip, deflate, br, zstd', 'Accept-Language': 'en-US,en;q=0.9,en-IN;q=0.8'}
+2025-05-21 11:40:28,463 INFO: Starting asset discovery
+2025-05-21 11:40:28,464 ERROR: Input error: Invalid IP address: sdjb
+2025-05-21 11:40:28,465 INFO: 127.0.0.1 - - [21/May/2025 11:40:28] "POST /start_scan HTTP/1.1" 200 -
+2025-05-21 11:40:41,774 INFO: Request from 127.0.0.1 POST /start_scan
+2025-05-21 11:40:41,775 INFO: Headers: {'Host': '127.0.0.1', 'Connection': 'keep-alive', 'Content-Length': '93', 'Sec-Ch-Ua-Platform': '"Windows"', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36 Edg/136.0.0.0', 'Accept': 'application/json, text/plain, */*', 'Sec-Ch-Ua': '"Chromium";v="136", "Microsoft Edge";v="136", "Not.A/Brand";v="99"', 'Content-Type': 'application/x-www-form-urlencoded', 'Sec-Ch-Ua-Mobile': '?0', 'Origin': 'http://localhost:5173', 'Sec-Fetch-Site': 'cross-site', 'Sec-Fetch-Mode': 'cors', 'Sec-Fetch-Dest': 'empty', 'Referer': 'http://localhost:5173/', 'Accept-Encoding': 'gzip, deflate, br, zstd', 'Accept-Language': 'en-US,en;q=0.9,en-IN;q=0.8'}
+2025-05-21 11:40:41,776 INFO: Starting asset discovery
+2025-05-21 11:40:41,777 INFO: Checking services on 192.168.1.0...
+2025-05-21 11:40:42,792 WARNING: No known management ports open on 192.168.1.0. Skipping.
+2025-05-21 11:40:42,847 INFO: 127.0.0.1 - - [21/May/2025 11:40:42] "POST /start_scan HTTP/1.1" 200 -
+2025-05-21 12:00:42,325 INFO: Starting Flask server...
+2025-05-21 12:00:42,346 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:80
+ * Running on http://10.90.123.32:80
+2025-05-21 12:00:42,346 INFO: [33mPress CTRL+C to quit[0m
+2025-05-21 12:01:38,740 INFO: Request from 127.0.0.1 GET /projects
+2025-05-21 12:01:38,740 INFO: Headers: {'Host': '127.0.0.1', 'Connection': 'keep-alive', 'Sec-Ch-Ua-Platform': '"Windows"', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36 Edg/136.0.0.0', 'Accept': 'application/json, text/plain, */*', 'Sec-Ch-Ua': '"Chromium";v="136", "Microsoft Edge";v="136", "Not.A/Brand";v="99"', 'Sec-Ch-Ua-Mobile': '?0', 'Origin': 'http://localhost:5173', 'Sec-Fetch-Site': 'cross-site', 'Sec-Fetch-Mode': 'cors', 'Sec-Fetch-Dest': 'empty', 'Referer': 'http://localhost:5173/', 'Accept-Encoding': 'gzip, deflate, br, zstd', 'Accept-Language': 'en-US,en;q=0.9,en-IN;q=0.8'}
+2025-05-21 12:01:38,742 INFO: 127.0.0.1 - - [21/May/2025 12:01:38] "GET /projects HTTP/1.1" 200 -
+2025-05-21 12:06:20,426 INFO: Request from 127.0.0.1 GET /projects
+2025-05-21 12:06:20,426 INFO: Headers: {'Host': '127.0.0.1', 'Connection': 'keep-alive', 'Sec-Ch-Ua-Platform': '"Windows"', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36 Edg/136.0.0.0', 'Accept': 'application/json, text/plain, */*', 'Sec-Ch-Ua': '"Chromium";v="136", "Microsoft Edge";v="136", "Not.A/Brand";v="99"', 'Sec-Ch-Ua-Mobile': '?0', 'Origin': 'http://localhost:5173', 'Sec-Fetch-Site': 'cross-site', 'Sec-Fetch-Mode': 'cors', 'Sec-Fetch-Dest': 'empty', 'Referer': 'http://localhost:5173/', 'Accept-Encoding': 'gzip, deflate, br, zstd', 'Accept-Language': 'en-US,en;q=0.9,en-IN;q=0.8'}
+2025-05-21 12:06:20,427 INFO: 127.0.0.1 - - [21/May/2025 12:06:20] "GET /projects HTTP/1.1" 200 -
+2025-05-21 12:08:26,713 INFO: Request from 127.0.0.1 GET /projects
+2025-05-21 12:08:26,714 INFO: Headers: {'Host': '127.0.0.1', 'Connection': 'keep-alive', 'Sec-Ch-Ua-Platform': '"Windows"', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36 Edg/136.0.0.0', 'Accept': 'application/json, text/plain, */*', 'Sec-Ch-Ua': '"Chromium";v="136", "Microsoft Edge";v="136", "Not.A/Brand";v="99"', 'Sec-Ch-Ua-Mobile': '?0', 'Origin': 'http://localhost:5173', 'Sec-Fetch-Site': 'cross-site', 'Sec-Fetch-Mode': 'cors', 'Sec-Fetch-Dest': 'empty', 'Referer': 'http://localhost:5173/', 'Accept-Encoding': 'gzip, deflate, br, zstd', 'Accept-Language': 'en-US,en;q=0.9,en-IN;q=0.8'}
+2025-05-21 12:08:26,714 INFO: 127.0.0.1 - - [21/May/2025 12:08:26] "GET /projects HTTP/1.1" 200 -
+2025-05-21 12:08:30,829 INFO: Request from 127.0.0.1 GET /projects
+2025-05-21 12:08:30,829 INFO: Headers: {'Host': '127.0.0.1', 'Connection': 'keep-alive', 'Sec-Ch-Ua-Platform': '"Windows"', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36 Edg/136.0.0.0', 'Accept': 'application/json, text/plain, */*', 'Sec-Ch-Ua': '"Chromium";v="136", "Microsoft Edge";v="136", "Not.A/Brand";v="99"', 'Sec-Ch-Ua-Mobile': '?0', 'Origin': 'http://localhost:5173', 'Sec-Fetch-Site': 'cross-site', 'Sec-Fetch-Mode': 'cors', 'Sec-Fetch-Dest': 'empty', 'Referer': 'http://localhost:5173/', 'Accept-Encoding': 'gzip, deflate, br, zstd', 'Accept-Language': 'en-US,en;q=0.9,en-IN;q=0.8'}
+2025-05-21 12:08:30,830 INFO: 127.0.0.1 - - [21/May/2025 12:08:30] "GET /projects HTTP/1.1" 200 -
+2025-05-21 12:10:48,151 INFO: Request from 127.0.0.1 GET /projects
+2025-05-21 12:10:48,151 INFO: Headers: {'Host': '127.0.0.1', 'Connection': 'keep-alive', 'Sec-Ch-Ua-Platform': '"Windows"', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36 Edg/136.0.0.0', 'Accept': 'application/json, text/plain, */*', 'Sec-Ch-Ua': '"Chromium";v="136", "Microsoft Edge";v="136", "Not.A/Brand";v="99"', 'Sec-Ch-Ua-Mobile': '?0', 'Origin': 'http://localhost:5173', 'Sec-Fetch-Site': 'cross-site', 'Sec-Fetch-Mode': 'cors', 'Sec-Fetch-Dest': 'empty', 'Referer': 'http://localhost:5173/', 'Accept-Encoding': 'gzip, deflate, br, zstd', 'Accept-Language': 'en-US,en;q=0.9,en-IN;q=0.8'}
+2025-05-21 12:10:48,152 INFO: 127.0.0.1 - - [21/May/2025 12:10:48] "GET /projects HTTP/1.1" 200 -
+2025-05-21 12:11:47,990 INFO: Request from 127.0.0.1 GET /projects
+2025-05-21 12:11:47,991 INFO: Headers: {'Host': '127.0.0.1', 'Connection': 'keep-alive', 'Sec-Ch-Ua-Platform': '"Windows"', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36 Edg/136.0.0.0', 'Accept': 'application/json, text/plain, */*', 'Sec-Ch-Ua': '"Chromium";v="136", "Microsoft Edge";v="136", "Not.A/Brand";v="99"', 'Sec-Ch-Ua-Mobile': '?0', 'Origin': 'http://localhost:5173', 'Sec-Fetch-Site': 'cross-site', 'Sec-Fetch-Mode': 'cors', 'Sec-Fetch-Dest': 'empty', 'Referer': 'http://localhost:5173/', 'Accept-Encoding': 'gzip, deflate, br, zstd', 'Accept-Language': 'en-US,en;q=0.9,en-IN;q=0.8'}
+2025-05-21 12:11:47,991 INFO: 127.0.0.1 - - [21/May/2025 12:11:47] "GET /projects HTTP/1.1" 200 -
+2025-05-21 12:16:12,628 INFO: Request from 127.0.0.1 GET /projects
+2025-05-21 12:16:12,630 INFO: Headers: {'Host': '127.0.0.1', 'Connection': 'keep-alive', 'Sec-Ch-Ua-Platform': '"Windows"', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36 Edg/136.0.0.0', 'Accept': 'application/json, text/plain, */*', 'Sec-Ch-Ua': '"Chromium";v="136", "Microsoft Edge";v="136", "Not.A/Brand";v="99"', 'Sec-Ch-Ua-Mobile': '?0', 'Origin': 'http://localhost:5173', 'Sec-Fetch-Site': 'cross-site', 'Sec-Fetch-Mode': 'cors', 'Sec-Fetch-Dest': 'empty', 'Referer': 'http://localhost:5173/', 'Accept-Encoding': 'gzip, deflate, br, zstd', 'Accept-Language': 'en-US,en;q=0.9,en-IN;q=0.8'}
+2025-05-21 12:16:12,635 INFO: 127.0.0.1 - - [21/May/2025 12:16:12] "GET /projects HTTP/1.1" 200 -
+2025-05-21 12:16:20,973 INFO: Request from 127.0.0.1 GET /projects
+2025-05-21 12:16:20,973 INFO: Headers: {'Host': '127.0.0.1', 'Connection': 'keep-alive', 'Sec-Ch-Ua-Platform': '"Windows"', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36 Edg/136.0.0.0', 'Accept': 'application/json, text/plain, */*', 'Sec-Ch-Ua': '"Chromium";v="136", "Microsoft Edge";v="136", "Not.A/Brand";v="99"', 'Sec-Ch-Ua-Mobile': '?0', 'Origin': 'http://localhost:5173', 'Sec-Fetch-Site': 'cross-site', 'Sec-Fetch-Mode': 'cors', 'Sec-Fetch-Dest': 'empty', 'Referer': 'http://localhost:5173/', 'Accept-Encoding': 'gzip, deflate, br, zstd', 'Accept-Language': 'en-US,en;q=0.9,en-IN;q=0.8'}
+2025-05-21 12:16:20,974 INFO: 127.0.0.1 - - [21/May/2025 12:16:20] "GET /projects HTTP/1.1" 200 -
+2025-05-21 13:48:07,628 INFO: Request from 127.0.0.1 GET /projects
+2025-05-21 13:48:07,629 INFO: Headers: {'Host': '127.0.0.1', 'Connection': 'keep-alive', 'Sec-Ch-Ua-Platform': '"Windows"', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36 Edg/136.0.0.0', 'Accept': 'application/json, text/plain, */*', 'Sec-Ch-Ua': '"Chromium";v="136", "Microsoft Edge";v="136", "Not.A/Brand";v="99"', 'Sec-Ch-Ua-Mobile': '?0', 'Origin': 'http://localhost:5173', 'Sec-Fetch-Site': 'cross-site', 'Sec-Fetch-Mode': 'cors', 'Sec-Fetch-Dest': 'empty', 'Referer': 'http://localhost:5173/', 'Accept-Encoding': 'gzip, deflate, br, zstd', 'Accept-Language': 'en-US,en;q=0.9,en-IN;q=0.8'}
+2025-05-21 13:48:07,630 INFO: 127.0.0.1 - - [21/May/2025 13:48:07] "GET /projects HTTP/1.1" 200 -
+2025-05-21 13:48:09,301 INFO: Request from 127.0.0.1 GET /projects
+2025-05-21 13:48:09,301 INFO: Headers: {'Host': '127.0.0.1', 'Connection': 'keep-alive', 'Sec-Ch-Ua-Platform': '"Windows"', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36 Edg/136.0.0.0', 'Accept': 'application/json, text/plain, */*', 'Sec-Ch-Ua': '"Chromium";v="136", "Microsoft Edge";v="136", "Not.A/Brand";v="99"', 'Sec-Ch-Ua-Mobile': '?0', 'Origin': 'http://localhost:5173', 'Sec-Fetch-Site': 'cross-site', 'Sec-Fetch-Mode': 'cors', 'Sec-Fetch-Dest': 'empty', 'Referer': 'http://localhost:5173/', 'Accept-Encoding': 'gzip, deflate, br, zstd', 'Accept-Language': 'en-US,en;q=0.9,en-IN;q=0.8'}
+2025-05-21 13:48:09,302 INFO: 127.0.0.1 - - [21/May/2025 13:48:09] "GET /projects HTTP/1.1" 200 -
+2025-05-21 13:48:12,936 INFO: Request from 127.0.0.1 GET /projects
+2025-05-21 13:48:12,937 INFO: Headers: {'Host': '127.0.0.1', 'Connection': 'keep-alive', 'Sec-Ch-Ua-Platform': '"Windows"', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36 Edg/136.0.0.0', 'Accept': 'application/json, text/plain, */*', 'Sec-Ch-Ua': '"Chromium";v="136", "Microsoft Edge";v="136", "Not.A/Brand";v="99"', 'Sec-Ch-Ua-Mobile': '?0', 'Origin': 'http://localhost:5173', 'Sec-Fetch-Site': 'cross-site', 'Sec-Fetch-Mode': 'cors', 'Sec-Fetch-Dest': 'empty', 'Referer': 'http://localhost:5173/', 'Accept-Encoding': 'gzip, deflate, br, zstd', 'Accept-Language': 'en-US,en;q=0.9,en-IN;q=0.8'}
+2025-05-21 13:48:12,937 INFO: 127.0.0.1 - - [21/May/2025 13:48:12] "GET /projects HTTP/1.1" 200 -
+2025-05-21 13:49:25,525 INFO: Request from 127.0.0.1 GET /projects
+2025-05-21 13:49:25,526 INFO: Headers: {'Host': '127.0.0.1', 'Connection': 'keep-alive', 'Sec-Ch-Ua-Platform': '"Windows"', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36 Edg/136.0.0.0', 'Accept': 'application/json, text/plain, */*', 'Sec-Ch-Ua': '"Chromium";v="136", "Microsoft Edge";v="136", "Not.A/Brand";v="99"', 'Sec-Ch-Ua-Mobile': '?0', 'Origin': 'http://localhost:5173', 'Sec-Fetch-Site': 'cross-site', 'Sec-Fetch-Mode': 'cors', 'Sec-Fetch-Dest': 'empty', 'Referer': 'http://localhost:5173/', 'Accept-Encoding': 'gzip, deflate, br, zstd', 'Accept-Language': 'en-US,en;q=0.9,en-IN;q=0.8'}
+2025-05-21 13:49:25,526 INFO: 127.0.0.1 - - [21/May/2025 13:49:25] "GET /projects HTTP/1.1" 200 -
+2025-05-21 13:58:19,720 INFO: Request from 127.0.0.1 GET /projects
+2025-05-21 13:58:19,721 INFO: Headers: {'Host': '127.0.0.1', 'Connection': 'keep-alive', 'Sec-Ch-Ua-Platform': '"Windows"', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36 Edg/136.0.0.0', 'Accept': 'application/json, text/plain, */*', 'Sec-Ch-Ua': '"Chromium";v="136", "Microsoft Edge";v="136", "Not.A/Brand";v="99"', 'Sec-Ch-Ua-Mobile': '?0', 'Origin': 'http://localhost:5173', 'Sec-Fetch-Site': 'cross-site', 'Sec-Fetch-Mode': 'cors', 'Sec-Fetch-Dest': 'empty', 'Referer': 'http://localhost:5173/', 'Accept-Encoding': 'gzip, deflate, br, zstd', 'Accept-Language': 'en-US,en;q=0.9,en-IN;q=0.8'}
+2025-05-21 13:58:19,722 INFO: 127.0.0.1 - - [21/May/2025 13:58:19] "GET /projects HTTP/1.1" 200 -
+2025-05-21 13:59:50,822 INFO: Request from 127.0.0.1 GET /project/abc.db
+2025-05-21 13:59:50,822 INFO: Headers: {'Host': '127.0.0.1', 'Connection': 'keep-alive', 'Sec-Ch-Ua-Platform': '"Windows"', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36 Edg/136.0.0.0', 'Accept': 'application/json, text/plain, */*', 'Sec-Ch-Ua': '"Chromium";v="136", "Microsoft Edge";v="136", "Not.A/Brand";v="99"', 'Sec-Ch-Ua-Mobile': '?0', 'Origin': 'http://localhost:5173', 'Sec-Fetch-Site': 'cross-site', 'Sec-Fetch-Mode': 'cors', 'Sec-Fetch-Dest': 'empty', 'Referer': 'http://localhost:5173/', 'Accept-Encoding': 'gzip, deflate, br, zstd', 'Accept-Language': 'en-US,en;q=0.9,en-IN;q=0.8'}
+2025-05-21 13:59:50,825 INFO: 127.0.0.1 - - [21/May/2025 13:59:50] "[33mGET /project/abc.db HTTP/1.1[0m" 404 -
+2025-05-21 13:59:53,940 INFO: Request from 127.0.0.1 GET /project/abc.db
+2025-05-21 13:59:53,940 INFO: Headers: {'Host': '127.0.0.1', 'Connection': 'keep-alive', 'Sec-Ch-Ua-Platform': '"Windows"', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36 Edg/136.0.0.0', 'Accept': 'application/json, text/plain, */*', 'Sec-Ch-Ua': '"Chromium";v="136", "Microsoft Edge";v="136", "Not.A/Brand";v="99"', 'Sec-Ch-Ua-Mobile': '?0', 'Origin': 'http://localhost:5173', 'Sec-Fetch-Site': 'cross-site', 'Sec-Fetch-Mode': 'cors', 'Sec-Fetch-Dest': 'empty', 'Referer': 'http://localhost:5173/', 'Accept-Encoding': 'gzip, deflate, br, zstd', 'Accept-Language': 'en-US,en;q=0.9,en-IN;q=0.8'}
+2025-05-21 13:59:53,941 INFO: 127.0.0.1 - - [21/May/2025 13:59:53] "[33mGET /project/abc.db HTTP/1.1[0m" 404 -
+2025-05-21 13:59:55,247 INFO: Request from 127.0.0.1 GET /projects
+2025-05-21 13:59:55,247 INFO: Headers: {'Host': '127.0.0.1', 'Connection': 'keep-alive', 'Sec-Ch-Ua-Platform': '"Windows"', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36 Edg/136.0.0.0', 'Accept': 'application/json, text/plain, */*', 'Sec-Ch-Ua': '"Chromium";v="136", "Microsoft Edge";v="136", "Not.A/Brand";v="99"', 'Sec-Ch-Ua-Mobile': '?0', 'Origin': 'http://localhost:5173', 'Sec-Fetch-Site': 'cross-site', 'Sec-Fetch-Mode': 'cors', 'Sec-Fetch-Dest': 'empty', 'Referer': 'http://localhost:5173/', 'Accept-Encoding': 'gzip, deflate, br, zstd', 'Accept-Language': 'en-US,en;q=0.9,en-IN;q=0.8'}
+2025-05-21 13:59:55,248 INFO: 127.0.0.1 - - [21/May/2025 13:59:55] "GET /projects HTTP/1.1" 200 -
+2025-05-21 13:59:57,089 INFO: Request from 127.0.0.1 GET /project/abc.db
+2025-05-21 13:59:57,089 INFO: Headers: {'Host': '127.0.0.1', 'Connection': 'keep-alive', 'Sec-Ch-Ua-Platform': '"Windows"', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36 Edg/136.0.0.0', 'Accept': 'application/json, text/plain, */*', 'Sec-Ch-Ua': '"Chromium";v="136", "Microsoft Edge";v="136", "Not.A/Brand";v="99"', 'Sec-Ch-Ua-Mobile': '?0', 'Origin': 'http://localhost:5173', 'Sec-Fetch-Site': 'cross-site', 'Sec-Fetch-Mode': 'cors', 'Sec-Fetch-Dest': 'empty', 'Referer': 'http://localhost:5173/', 'Accept-Encoding': 'gzip, deflate, br, zstd', 'Accept-Language': 'en-US,en;q=0.9,en-IN;q=0.8'}
+2025-05-21 13:59:57,090 INFO: 127.0.0.1 - - [21/May/2025 13:59:57] "[33mGET /project/abc.db HTTP/1.1[0m" 404 -
+2025-05-21 14:05:01,710 INFO: Request from 127.0.0.1 GET /project/abc.db
+2025-05-21 14:05:01,710 INFO: Headers: {'Host': '127.0.0.1', 'Connection': 'keep-alive', 'Sec-Ch-Ua-Platform': '"Windows"', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36 Edg/136.0.0.0', 'Accept': 'application/json, text/plain, */*', 'Sec-Ch-Ua': '"Chromium";v="136", "Microsoft Edge";v="136", "Not.A/Brand";v="99"', 'Sec-Ch-Ua-Mobile': '?0', 'Origin': 'http://localhost:5173', 'Sec-Fetch-Site': 'cross-site', 'Sec-Fetch-Mode': 'cors', 'Sec-Fetch-Dest': 'empty', 'Referer': 'http://localhost:5173/', 'Accept-Encoding': 'gzip, deflate, br, zstd', 'Accept-Language': 'en-US,en;q=0.9,en-IN;q=0.8'}
+2025-05-21 14:05:01,711 INFO: 127.0.0.1 - - [21/May/2025 14:05:01] "[33mGET /project/abc.db HTTP/1.1[0m" 404 -
+2025-05-21 14:05:02,971 INFO: Request from 127.0.0.1 GET /project/abc.db
+2025-05-21 14:05:02,976 INFO: Headers: {'Host': '127.0.0.1', 'Connection': 'keep-alive', 'Sec-Ch-Ua-Platform': '"Windows"', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36 Edg/136.0.0.0', 'Accept': 'application/json, text/plain, */*', 'Sec-Ch-Ua': '"Chromium";v="136", "Microsoft Edge";v="136", "Not.A/Brand";v="99"', 'Sec-Ch-Ua-Mobile': '?0', 'Origin': 'http://localhost:5173', 'Sec-Fetch-Site': 'cross-site', 'Sec-Fetch-Mode': 'cors', 'Sec-Fetch-Dest': 'empty', 'Referer': 'http://localhost:5173/', 'Accept-Encoding': 'gzip, deflate, br, zstd', 'Accept-Language': 'en-US,en;q=0.9,en-IN;q=0.8'}
+2025-05-21 14:05:02,979 INFO: 127.0.0.1 - - [21/May/2025 14:05:02] "[33mGET /project/abc.db HTTP/1.1[0m" 404 -
+2025-05-21 14:05:03,533 INFO: Request from 127.0.0.1 GET /projects
+2025-05-21 14:05:03,534 INFO: Headers: {'Host': '127.0.0.1', 'Connection': 'keep-alive', 'Sec-Ch-Ua-Platform': '"Windows"', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36 Edg/136.0.0.0', 'Accept': 'application/json, text/plain, */*', 'Sec-Ch-Ua': '"Chromium";v="136", "Microsoft Edge";v="136", "Not.A/Brand";v="99"', 'Sec-Ch-Ua-Mobile': '?0', 'Origin': 'http://localhost:5173', 'Sec-Fetch-Site': 'cross-site', 'Sec-Fetch-Mode': 'cors', 'Sec-Fetch-Dest': 'empty', 'Referer': 'http://localhost:5173/', 'Accept-Encoding': 'gzip, deflate, br, zstd', 'Accept-Language': 'en-US,en;q=0.9,en-IN;q=0.8'}
+2025-05-21 14:05:03,535 INFO: 127.0.0.1 - - [21/May/2025 14:05:03] "GET /projects HTTP/1.1" 200 -
+2025-05-21 14:05:05,562 INFO: Request from 127.0.0.1 GET /project/abc.db
+2025-05-21 14:05:05,562 INFO: Headers: {'Host': '127.0.0.1', 'Connection': 'keep-alive', 'Sec-Ch-Ua-Platform': '"Windows"', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36 Edg/136.0.0.0', 'Accept': 'application/json, text/plain, */*', 'Sec-Ch-Ua': '"Chromium";v="136", "Microsoft Edge";v="136", "Not.A/Brand";v="99"', 'Sec-Ch-Ua-Mobile': '?0', 'Origin': 'http://localhost:5173', 'Sec-Fetch-Site': 'cross-site', 'Sec-Fetch-Mode': 'cors', 'Sec-Fetch-Dest': 'empty', 'Referer': 'http://localhost:5173/', 'Accept-Encoding': 'gzip, deflate, br, zstd', 'Accept-Language': 'en-US,en;q=0.9,en-IN;q=0.8'}
+2025-05-21 14:05:05,563 INFO: 127.0.0.1 - - [21/May/2025 14:05:05] "[33mGET /project/abc.db HTTP/1.1[0m" 404 -
+2025-05-21 14:05:17,133 INFO: Starting Flask server...
+2025-05-21 14:05:17,169 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:80
+ * Running on http://10.90.123.32:80
+2025-05-21 14:05:17,170 INFO: [33mPress CTRL+C to quit[0m
+2025-05-21 14:05:19,449 INFO: Request from 127.0.0.1 GET /project/abc.db
+2025-05-21 14:05:19,450 INFO: Headers: {'Host': '127.0.0.1', 'Connection': 'keep-alive', 'Sec-Ch-Ua-Platform': '"Windows"', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36 Edg/136.0.0.0', 'Accept': 'application/json, text/plain, */*', 'Sec-Ch-Ua': '"Chromium";v="136", "Microsoft Edge";v="136", "Not.A/Brand";v="99"', 'Sec-Ch-Ua-Mobile': '?0', 'Origin': 'http://localhost:5173', 'Sec-Fetch-Site': 'cross-site', 'Sec-Fetch-Mode': 'cors', 'Sec-Fetch-Dest': 'empty', 'Referer': 'http://localhost:5173/', 'Accept-Encoding': 'gzip, deflate, br, zstd', 'Accept-Language': 'en-US,en;q=0.9,en-IN;q=0.8'}
+2025-05-21 14:05:19,452 INFO: 127.0.0.1 - - [21/May/2025 14:05:19] "[33mGET /project/abc.db HTTP/1.1[0m" 404 -
+2025-05-21 14:11:04,129 INFO: Request from 127.0.0.1 GET /project/abc.db
+2025-05-21 14:11:04,131 INFO: Headers: {'Host': '127.0.0.1', 'Connection': 'keep-alive', 'Sec-Ch-Ua-Platform': '"Windows"', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36 Edg/136.0.0.0', 'Accept': 'application/json, text/plain, */*', 'Sec-Ch-Ua': '"Chromium";v="136", "Microsoft Edge";v="136", "Not.A/Brand";v="99"', 'Sec-Ch-Ua-Mobile': '?0', 'Origin': 'http://localhost:5173', 'Sec-Fetch-Site': 'cross-site', 'Sec-Fetch-Mode': 'cors', 'Sec-Fetch-Dest': 'empty', 'Referer': 'http://localhost:5173/', 'Accept-Encoding': 'gzip, deflate, br, zstd', 'Accept-Language': 'en-US,en;q=0.9,en-IN;q=0.8'}
+2025-05-21 14:11:04,133 INFO: 127.0.0.1 - - [21/May/2025 14:11:04] "[33mGET /project/abc.db HTTP/1.1[0m" 404 -
+2025-05-21 14:11:27,257 INFO: Starting Flask server...
+2025-05-21 14:11:27,278 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:80
+ * Running on http://10.90.123.32:80
+2025-05-21 14:11:27,279 INFO: [33mPress CTRL+C to quit[0m
+2025-05-21 14:11:30,644 INFO: Request from 127.0.0.1 GET /project/abc.db
+2025-05-21 14:11:30,647 INFO: Headers: {'Host': '127.0.0.1', 'Connection': 'keep-alive', 'Sec-Ch-Ua-Platform': '"Windows"', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36 Edg/136.0.0.0', 'Accept': 'application/json, text/plain, */*', 'Sec-Ch-Ua': '"Chromium";v="136", "Microsoft Edge";v="136", "Not.A/Brand";v="99"', 'Sec-Ch-Ua-Mobile': '?0', 'Origin': 'http://localhost:5173', 'Sec-Fetch-Site': 'cross-site', 'Sec-Fetch-Mode': 'cors', 'Sec-Fetch-Dest': 'empty', 'Referer': 'http://localhost:5173/', 'Accept-Encoding': 'gzip, deflate, br, zstd', 'Accept-Language': 'en-US,en;q=0.9,en-IN;q=0.8'}
+2025-05-21 14:11:30,649 INFO: 127.0.0.1 - - [21/May/2025 14:11:30] "[33mGET /project/abc.db HTTP/1.1[0m" 404 -
+2025-05-21 14:16:24,638 INFO: Request from 127.0.0.1 GET /project/abc.db
+2025-05-21 14:16:24,639 INFO: Headers: {'Host': '127.0.0.1', 'Connection': 'keep-alive', 'Sec-Ch-Ua-Platform': '"Windows"', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36 Edg/136.0.0.0', 'Accept': 'application/json, text/plain, */*', 'Sec-Ch-Ua': '"Chromium";v="136", "Microsoft Edge";v="136", "Not.A/Brand";v="99"', 'Sec-Ch-Ua-Mobile': '?0', 'Origin': 'http://localhost:5173', 'Sec-Fetch-Site': 'cross-site', 'Sec-Fetch-Mode': 'cors', 'Sec-Fetch-Dest': 'empty', 'Referer': 'http://localhost:5173/', 'Accept-Encoding': 'gzip, deflate, br, zstd', 'Accept-Language': 'en-US,en;q=0.9,en-IN;q=0.8'}
+2025-05-21 14:16:24,640 INFO: 127.0.0.1 - - [21/May/2025 14:16:24] "[33mGET /project/abc.db HTTP/1.1[0m" 404 -
+2025-05-21 14:16:25,883 INFO: Request from 127.0.0.1 GET /projects
+2025-05-21 14:16:25,884 INFO: Headers: {'Host': '127.0.0.1', 'Connection': 'keep-alive', 'Sec-Ch-Ua-Platform': '"Windows"', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36 Edg/136.0.0.0', 'Accept': 'application/json, text/plain, */*', 'Sec-Ch-Ua': '"Chromium";v="136", "Microsoft Edge";v="136", "Not.A/Brand";v="99"', 'Sec-Ch-Ua-Mobile': '?0', 'Origin': 'http://localhost:5173', 'Sec-Fetch-Site': 'cross-site', 'Sec-Fetch-Mode': 'cors', 'Sec-Fetch-Dest': 'empty', 'Referer': 'http://localhost:5173/', 'Accept-Encoding': 'gzip, deflate, br, zstd', 'Accept-Language': 'en-US,en;q=0.9,en-IN;q=0.8'}
+2025-05-21 14:16:25,885 INFO: 127.0.0.1 - - [21/May/2025 14:16:25] "GET /projects HTTP/1.1" 200 -
+2025-05-21 14:16:28,041 INFO: Request from 127.0.0.1 GET /project/abc
+2025-05-21 14:16:28,042 INFO: Headers: {'Host': '127.0.0.1', 'Connection': 'keep-alive', 'Sec-Ch-Ua-Platform': '"Windows"', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36 Edg/136.0.0.0', 'Accept': 'application/json, text/plain, */*', 'Sec-Ch-Ua': '"Chromium";v="136", "Microsoft Edge";v="136", "Not.A/Brand";v="99"', 'Sec-Ch-Ua-Mobile': '?0', 'Origin': 'http://localhost:5173', 'Sec-Fetch-Site': 'cross-site', 'Sec-Fetch-Mode': 'cors', 'Sec-Fetch-Dest': 'empty', 'Referer': 'http://localhost:5173/', 'Accept-Encoding': 'gzip, deflate, br, zstd', 'Accept-Language': 'en-US,en;q=0.9,en-IN;q=0.8'}
+2025-05-21 14:16:28,046 INFO: 127.0.0.1 - - [21/May/2025 14:16:28] "[35m[1mGET /project/abc HTTP/1.1[0m" 500 -
+2025-05-21 14:16:30,358 INFO: Request from 127.0.0.1 GET /project/abc
+2025-05-21 14:16:30,358 INFO: Headers: {'Host': '127.0.0.1', 'Connection': 'keep-alive', 'Sec-Ch-Ua-Platform': '"Windows"', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36 Edg/136.0.0.0', 'Accept': 'application/json, text/plain, */*', 'Sec-Ch-Ua': '"Chromium";v="136", "Microsoft Edge";v="136", "Not.A/Brand";v="99"', 'Sec-Ch-Ua-Mobile': '?0', 'Origin': 'http://localhost:5173', 'Sec-Fetch-Site': 'cross-site', 'Sec-Fetch-Mode': 'cors', 'Sec-Fetch-Dest': 'empty', 'Referer': 'http://localhost:5173/', 'Accept-Encoding': 'gzip, deflate, br, zstd', 'Accept-Language': 'en-US,en;q=0.9,en-IN;q=0.8'}
+2025-05-21 14:16:30,362 INFO: 127.0.0.1 - - [21/May/2025 14:16:30] "[35m[1mGET /project/abc HTTP/1.1[0m" 500 -
+2025-05-21 14:16:53,231 INFO: Starting Flask server...
+2025-05-21 14:16:53,248 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:80
+ * Running on http://10.90.123.32:80
+2025-05-21 14:16:53,248 INFO: [33mPress CTRL+C to quit[0m
+2025-05-21 14:16:55,224 INFO: Request from 127.0.0.1 GET /project/abc
+2025-05-21 14:16:55,224 INFO: Headers: {'Host': '127.0.0.1', 'Connection': 'keep-alive', 'Sec-Ch-Ua-Platform': '"Windows"', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36 Edg/136.0.0.0', 'Accept': 'application/json, text/plain, */*', 'Sec-Ch-Ua': '"Chromium";v="136", "Microsoft Edge";v="136", "Not.A/Brand";v="99"', 'Sec-Ch-Ua-Mobile': '?0', 'Origin': 'http://localhost:5173', 'Sec-Fetch-Site': 'cross-site', 'Sec-Fetch-Mode': 'cors', 'Sec-Fetch-Dest': 'empty', 'Referer': 'http://localhost:5173/', 'Accept-Encoding': 'gzip, deflate, br, zstd', 'Accept-Language': 'en-US,en;q=0.9,en-IN;q=0.8'}
+2025-05-21 14:16:55,227 INFO: 127.0.0.1 - - [21/May/2025 14:16:55] "[35m[1mGET /project/abc HTTP/1.1[0m" 500 -
+2025-05-21 14:35:10,372 INFO: Request from 127.0.0.1 GET /project/abc
+2025-05-21 14:35:10,373 INFO: Headers: {'Host': '127.0.0.1', 'Connection': 'keep-alive', 'Sec-Ch-Ua-Platform': '"Windows"', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36 Edg/136.0.0.0', 'Accept': 'application/json, text/plain, */*', 'Sec-Ch-Ua': '"Chromium";v="136", "Microsoft Edge";v="136", "Not.A/Brand";v="99"', 'Sec-Ch-Ua-Mobile': '?0', 'Origin': 'http://localhost:5173', 'Sec-Fetch-Site': 'cross-site', 'Sec-Fetch-Mode': 'cors', 'Sec-Fetch-Dest': 'empty', 'Referer': 'http://localhost:5173/', 'Accept-Encoding': 'gzip, deflate, br, zstd', 'Accept-Language': 'en-US,en;q=0.9,en-IN;q=0.8'}
+2025-05-21 14:35:10,376 INFO: 127.0.0.1 - - [21/May/2025 14:35:10] "[35m[1mGET /project/abc HTTP/1.1[0m" 500 -
+2025-05-21 14:43:06,456 INFO: Starting Flask server...
+2025-05-21 14:43:06,473 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:80
+ * Running on http://10.90.123.32:80
+2025-05-21 14:43:06,473 INFO: [33mPress CTRL+C to quit[0m
+2025-05-21 14:43:09,434 INFO: Request from 127.0.0.1 GET /project/abc
+2025-05-21 14:43:09,435 INFO: Headers: {'Host': '127.0.0.1', 'Connection': 'keep-alive', 'Sec-Ch-Ua-Platform': '"Windows"', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36 Edg/136.0.0.0', 'Accept': 'application/json, text/plain, */*', 'Sec-Ch-Ua': '"Chromium";v="136", "Microsoft Edge";v="136", "Not.A/Brand";v="99"', 'Sec-Ch-Ua-Mobile': '?0', 'Origin': 'http://localhost:5173', 'Sec-Fetch-Site': 'cross-site', 'Sec-Fetch-Mode': 'cors', 'Sec-Fetch-Dest': 'empty', 'Referer': 'http://localhost:5173/', 'Accept-Encoding': 'gzip, deflate, br, zstd', 'Accept-Language': 'en-US,en;q=0.9,en-IN;q=0.8'}
+2025-05-21 14:43:09,439 INFO: 127.0.0.1 - - [21/May/2025 14:43:09] "GET /project/abc HTTP/1.1" 200 -
+2025-05-21 14:51:09,530 INFO: Request from 127.0.0.1 GET /project/abc
+2025-05-21 14:51:09,530 INFO: Headers: {'Host': '127.0.0.1', 'Connection': 'keep-alive', 'Sec-Ch-Ua-Platform': '"Windows"', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36 Edg/136.0.0.0', 'Accept': 'application/json, text/plain, */*', 'Sec-Ch-Ua': '"Chromium";v="136", "Microsoft Edge";v="136", "Not.A/Brand";v="99"', 'Sec-Ch-Ua-Mobile': '?0', 'Origin': 'http://localhost:5173', 'Sec-Fetch-Site': 'cross-site', 'Sec-Fetch-Mode': 'cors', 'Sec-Fetch-Dest': 'empty', 'Referer': 'http://localhost:5173/', 'Accept-Encoding': 'gzip, deflate, br, zstd', 'Accept-Language': 'en-US,en;q=0.9,en-IN;q=0.8'}
+2025-05-21 14:51:09,531 INFO: 127.0.0.1 - - [21/May/2025 14:51:09] "GET /project/abc HTTP/1.1" 200 -
+2025-05-21 14:51:12,998 INFO: Request from 127.0.0.1 GET /project/abc
+2025-05-21 14:51:12,998 INFO: Headers: {'Host': '127.0.0.1', 'Connection': 'keep-alive', 'Sec-Ch-Ua-Platform': '"Windows"', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36 Edg/136.0.0.0', 'Accept': 'application/json, text/plain, */*', 'Sec-Ch-Ua': '"Chromium";v="136", "Microsoft Edge";v="136", "Not.A/Brand";v="99"', 'Sec-Ch-Ua-Mobile': '?0', 'Origin': 'http://localhost:5173', 'Sec-Fetch-Site': 'cross-site', 'Sec-Fetch-Mode': 'cors', 'Sec-Fetch-Dest': 'empty', 'Referer': 'http://localhost:5173/', 'Accept-Encoding': 'gzip, deflate, br, zstd', 'Accept-Language': 'en-US,en;q=0.9,en-IN;q=0.8'}
+2025-05-21 14:51:13,000 INFO: 127.0.0.1 - - [21/May/2025 14:51:13] "GET /project/abc HTTP/1.1" 200 -
+2025-05-21 14:55:05,707 INFO: Request from 127.0.0.1 GET /project/abc
+2025-05-21 14:55:05,707 INFO: Headers: {'Host': '127.0.0.1', 'Connection': 'keep-alive', 'Sec-Ch-Ua-Platform': '"Windows"', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36 Edg/136.0.0.0', 'Accept': 'application/json, text/plain, */*', 'Sec-Ch-Ua': '"Chromium";v="136", "Microsoft Edge";v="136", "Not.A/Brand";v="99"', 'Sec-Ch-Ua-Mobile': '?0', 'Origin': 'http://localhost:5173', 'Sec-Fetch-Site': 'cross-site', 'Sec-Fetch-Mode': 'cors', 'Sec-Fetch-Dest': 'empty', 'Referer': 'http://localhost:5173/', 'Accept-Encoding': 'gzip, deflate, br, zstd', 'Accept-Language': 'en-US,en;q=0.9,en-IN;q=0.8'}
+2025-05-21 14:55:05,708 INFO: 127.0.0.1 - - [21/May/2025 14:55:05] "GET /project/abc HTTP/1.1" 200 -
+2025-05-21 14:55:17,707 INFO: Request from 127.0.0.1 GET /project/abc
+2025-05-21 14:55:17,707 INFO: Headers: {'Host': '127.0.0.1', 'Connection': 'keep-alive', 'Sec-Ch-Ua-Platform': '"Windows"', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36 Edg/136.0.0.0', 'Accept': 'application/json, text/plain, */*', 'Sec-Ch-Ua': '"Chromium";v="136", "Microsoft Edge";v="136", "Not.A/Brand";v="99"', 'Sec-Ch-Ua-Mobile': '?0', 'Origin': 'http://localhost:5173', 'Sec-Fetch-Site': 'cross-site', 'Sec-Fetch-Mode': 'cors', 'Sec-Fetch-Dest': 'empty', 'Referer': 'http://localhost:5173/', 'Accept-Encoding': 'gzip, deflate, br, zstd', 'Accept-Language': 'en-US,en;q=0.9,en-IN;q=0.8'}
+2025-05-21 14:55:17,708 INFO: 127.0.0.1 - - [21/May/2025 14:55:17] "GET /project/abc HTTP/1.1" 200 -
+2025-05-21 14:55:28,621 INFO: Request from 127.0.0.1 GET /project/abc
+2025-05-21 14:55:28,622 INFO: Headers: {'Host': '127.0.0.1', 'Connection': 'keep-alive', 'Sec-Ch-Ua-Platform': '"Windows"', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36 Edg/136.0.0.0', 'Accept': 'application/json, text/plain, */*', 'Sec-Ch-Ua': '"Chromium";v="136", "Microsoft Edge";v="136", "Not.A/Brand";v="99"', 'Sec-Ch-Ua-Mobile': '?0', 'Origin': 'http://localhost:5173', 'Sec-Fetch-Site': 'cross-site', 'Sec-Fetch-Mode': 'cors', 'Sec-Fetch-Dest': 'empty', 'Referer': 'http://localhost:5173/', 'Accept-Encoding': 'gzip, deflate, br, zstd', 'Accept-Language': 'en-US,en;q=0.9,en-IN;q=0.8'}
+2025-05-21 14:55:28,623 INFO: 127.0.0.1 - - [21/May/2025 14:55:28] "GET /project/abc HTTP/1.1" 200 -
+2025-05-21 15:07:49,645 INFO: Starting Flask server...
+2025-05-21 15:07:49,693 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:80
+ * Running on http://10.90.123.32:80
+2025-05-21 15:07:49,694 INFO: [33mPress CTRL+C to quit[0m
+2025-05-21 15:09:50,105 INFO: Request from 127.0.0.1 GET /project/abc
+2025-05-21 15:09:50,106 INFO: Headers: {'Host': '127.0.0.1', 'Connection': 'keep-alive', 'Sec-Ch-Ua-Platform': '"Windows"', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36 Edg/136.0.0.0', 'Accept': 'application/json, text/plain, */*', 'Sec-Ch-Ua': '"Chromium";v="136", "Microsoft Edge";v="136", "Not.A/Brand";v="99"', 'Sec-Ch-Ua-Mobile': '?0', 'Origin': 'http://localhost:5173', 'Sec-Fetch-Site': 'cross-site', 'Sec-Fetch-Mode': 'cors', 'Sec-Fetch-Dest': 'empty', 'Referer': 'http://localhost:5173/', 'Accept-Encoding': 'gzip, deflate, br, zstd', 'Accept-Language': 'en-US,en;q=0.9,en-IN;q=0.8'}
+2025-05-21 15:09:50,108 INFO: 127.0.0.1 - - [21/May/2025 15:09:50] "GET /project/abc HTTP/1.1" 200 -
+2025-05-21 15:09:51,018 INFO: Request from 127.0.0.1 GET /projects
+2025-05-21 15:09:51,018 INFO: Headers: {'Host': '127.0.0.1', 'Connection': 'keep-alive', 'Sec-Ch-Ua-Platform': '"Windows"', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36 Edg/136.0.0.0', 'Accept': 'application/json, text/plain, */*', 'Sec-Ch-Ua': '"Chromium";v="136", "Microsoft Edge";v="136", "Not.A/Brand";v="99"', 'Sec-Ch-Ua-Mobile': '?0', 'Origin': 'http://localhost:5173', 'Sec-Fetch-Site': 'cross-site', 'Sec-Fetch-Mode': 'cors', 'Sec-Fetch-Dest': 'empty', 'Referer': 'http://localhost:5173/', 'Accept-Encoding': 'gzip, deflate, br, zstd', 'Accept-Language': 'en-US,en;q=0.9,en-IN;q=0.8'}
+2025-05-21 15:09:51,019 INFO: 127.0.0.1 - - [21/May/2025 15:09:51] "GET /projects HTTP/1.1" 200 -
+2025-05-21 15:10:04,044 INFO: Request from 127.0.0.1 GET /project/abc
+2025-05-21 15:10:04,044 INFO: Headers: {'Host': '127.0.0.1', 'Connection': 'keep-alive', 'Sec-Ch-Ua-Platform': '"Windows"', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36 Edg/136.0.0.0', 'Accept': 'application/json, text/plain, */*', 'Sec-Ch-Ua': '"Chromium";v="136", "Microsoft Edge";v="136", "Not.A/Brand";v="99"', 'Sec-Ch-Ua-Mobile': '?0', 'Origin': 'http://localhost:5173', 'Sec-Fetch-Site': 'cross-site', 'Sec-Fetch-Mode': 'cors', 'Sec-Fetch-Dest': 'empty', 'Referer': 'http://localhost:5173/', 'Accept-Encoding': 'gzip, deflate, br, zstd', 'Accept-Language': 'en-US,en;q=0.9,en-IN;q=0.8'}
+2025-05-21 15:10:04,046 INFO: 127.0.0.1 - - [21/May/2025 15:10:04] "GET /project/abc HTTP/1.1" 200 -
+2025-05-21 15:11:45,082 INFO: Request from 127.0.0.1 GET /project/abc
+2025-05-21 15:11:45,082 INFO: Headers: {'Host': '127.0.0.1', 'Connection': 'keep-alive', 'Sec-Ch-Ua-Platform': '"Windows"', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36 Edg/136.0.0.0', 'Accept': 'application/json, text/plain, */*', 'Sec-Ch-Ua': '"Chromium";v="136", "Microsoft Edge";v="136", "Not.A/Brand";v="99"', 'Sec-Ch-Ua-Mobile': '?0', 'Origin': 'http://localhost:5173', 'Sec-Fetch-Site': 'cross-site', 'Sec-Fetch-Mode': 'cors', 'Sec-Fetch-Dest': 'empty', 'Referer': 'http://localhost:5173/', 'Accept-Encoding': 'gzip, deflate, br, zstd', 'Accept-Language': 'en-US,en;q=0.9,en-IN;q=0.8'}
+2025-05-21 15:11:45,084 INFO: 127.0.0.1 - - [21/May/2025 15:11:45] "GET /project/abc HTTP/1.1" 200 -
+2025-05-21 15:12:20,267 INFO: Request from 127.0.0.1 GET /project/abc
+2025-05-21 15:12:20,268 INFO: Headers: {'Host': '127.0.0.1', 'Connection': 'keep-alive', 'Sec-Ch-Ua-Platform': '"Windows"', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36 Edg/136.0.0.0', 'Accept': 'application/json, text/plain, */*', 'Sec-Ch-Ua': '"Chromium";v="136", "Microsoft Edge";v="136", "Not.A/Brand";v="99"', 'Sec-Ch-Ua-Mobile': '?0', 'Origin': 'http://localhost:5173', 'Sec-Fetch-Site': 'cross-site', 'Sec-Fetch-Mode': 'cors', 'Sec-Fetch-Dest': 'empty', 'Referer': 'http://localhost:5173/', 'Accept-Encoding': 'gzip, deflate, br, zstd', 'Accept-Language': 'en-US,en;q=0.9,en-IN;q=0.8'}
+2025-05-21 15:12:20,269 INFO: 127.0.0.1 - - [21/May/2025 15:12:20] "GET /project/abc HTTP/1.1" 200 -
+2025-05-21 15:12:35,603 INFO: Request from 127.0.0.1 GET /project/abc
+2025-05-21 15:12:35,603 INFO: Headers: {'Host': '127.0.0.1', 'Connection': 'keep-alive', 'Sec-Ch-Ua-Platform': '"Windows"', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36 Edg/136.0.0.0', 'Accept': 'application/json, text/plain, */*', 'Sec-Ch-Ua': '"Chromium";v="136", "Microsoft Edge";v="136", "Not.A/Brand";v="99"', 'Sec-Ch-Ua-Mobile': '?0', 'Origin': 'http://localhost:5173', 'Sec-Fetch-Site': 'cross-site', 'Sec-Fetch-Mode': 'cors', 'Sec-Fetch-Dest': 'empty', 'Referer': 'http://localhost:5173/', 'Accept-Encoding': 'gzip, deflate, br, zstd', 'Accept-Language': 'en-US,en;q=0.9,en-IN;q=0.8'}
+2025-05-21 15:12:35,606 INFO: 127.0.0.1 - - [21/May/2025 15:12:35] "GET /project/abc HTTP/1.1" 200 -
+2025-05-21 15:12:56,422 INFO: Request from 127.0.0.1 GET /project/abc
+2025-05-21 15:12:56,423 INFO: Headers: {'Host': '127.0.0.1', 'Connection': 'keep-alive', 'Sec-Ch-Ua-Platform': '"Windows"', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36 Edg/136.0.0.0', 'Accept': 'application/json, text/plain, */*', 'Sec-Ch-Ua': '"Chromium";v="136", "Microsoft Edge";v="136", "Not.A/Brand";v="99"', 'Sec-Ch-Ua-Mobile': '?0', 'Origin': 'http://localhost:5173', 'Sec-Fetch-Site': 'cross-site', 'Sec-Fetch-Mode': 'cors', 'Sec-Fetch-Dest': 'empty', 'Referer': 'http://localhost:5173/', 'Accept-Encoding': 'gzip, deflate, br, zstd', 'Accept-Language': 'en-US,en;q=0.9,en-IN;q=0.8'}
+2025-05-21 15:12:56,424 INFO: 127.0.0.1 - - [21/May/2025 15:12:56] "GET /project/abc HTTP/1.1" 200 -
+2025-05-21 15:14:05,631 INFO: Request from 127.0.0.1 GET /project/abc
+2025-05-21 15:14:05,631 INFO: Headers: {'Host': '127.0.0.1', 'Connection': 'keep-alive', 'Sec-Ch-Ua-Platform': '"Windows"', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36 Edg/136.0.0.0', 'Accept': 'application/json, text/plain, */*', 'Sec-Ch-Ua': '"Chromium";v="136", "Microsoft Edge";v="136", "Not.A/Brand";v="99"', 'Sec-Ch-Ua-Mobile': '?0', 'Origin': 'http://localhost:5173', 'Sec-Fetch-Site': 'cross-site', 'Sec-Fetch-Mode': 'cors', 'Sec-Fetch-Dest': 'empty', 'Referer': 'http://localhost:5173/', 'Accept-Encoding': 'gzip, deflate, br, zstd', 'Accept-Language': 'en-US,en;q=0.9,en-IN;q=0.8'}
+2025-05-21 15:14:05,633 INFO: 127.0.0.1 - - [21/May/2025 15:14:05] "GET /project/abc HTTP/1.1" 200 -
+2025-05-21 15:14:35,801 INFO: Request from 127.0.0.1 GET /project/abc
+2025-05-21 15:14:35,802 INFO: Headers: {'Host': '127.0.0.1', 'Connection': 'keep-alive', 'Sec-Ch-Ua-Platform': '"Windows"', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36 Edg/136.0.0.0', 'Accept': 'application/json, text/plain, */*', 'Sec-Ch-Ua': '"Chromium";v="136", "Microsoft Edge";v="136", "Not.A/Brand";v="99"', 'Sec-Ch-Ua-Mobile': '?0', 'Origin': 'http://localhost:5173', 'Sec-Fetch-Site': 'cross-site', 'Sec-Fetch-Mode': 'cors', 'Sec-Fetch-Dest': 'empty', 'Referer': 'http://localhost:5173/', 'Accept-Encoding': 'gzip, deflate, br, zstd', 'Accept-Language': 'en-US,en;q=0.9,en-IN;q=0.8'}
+2025-05-21 15:14:35,803 INFO: 127.0.0.1 - - [21/May/2025 15:14:35] "GET /project/abc HTTP/1.1" 200 -
+2025-05-21 15:16:18,070 INFO: Request from 127.0.0.1 GET /project/abc
+2025-05-21 15:16:18,070 INFO: Headers: {'Host': '127.0.0.1', 'Connection': 'keep-alive', 'Sec-Ch-Ua-Platform': '"Windows"', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36 Edg/136.0.0.0', 'Accept': 'application/json, text/plain, */*', 'Sec-Ch-Ua': '"Chromium";v="136", "Microsoft Edge";v="136", "Not.A/Brand";v="99"', 'Sec-Ch-Ua-Mobile': '?0', 'Origin': 'http://localhost:5173', 'Sec-Fetch-Site': 'cross-site', 'Sec-Fetch-Mode': 'cors', 'Sec-Fetch-Dest': 'empty', 'Referer': 'http://localhost:5173/', 'Accept-Encoding': 'gzip, deflate, br, zstd', 'Accept-Language': 'en-US,en;q=0.9,en-IN;q=0.8'}
+2025-05-21 15:16:18,072 INFO: 127.0.0.1 - - [21/May/2025 15:16:18] "GET /project/abc HTTP/1.1" 200 -
+2025-05-21 15:17:01,506 INFO: Request from 127.0.0.1 GET /project/abc
+2025-05-21 15:17:01,506 INFO: Headers: {'Host': '127.0.0.1', 'Connection': 'keep-alive', 'Sec-Ch-Ua-Platform': '"Windows"', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36 Edg/136.0.0.0', 'Accept': 'application/json, text/plain, */*', 'Sec-Ch-Ua': '"Chromium";v="136", "Microsoft Edge";v="136", "Not.A/Brand";v="99"', 'Sec-Ch-Ua-Mobile': '?0', 'Origin': 'http://localhost:5173', 'Sec-Fetch-Site': 'cross-site', 'Sec-Fetch-Mode': 'cors', 'Sec-Fetch-Dest': 'empty', 'Referer': 'http://localhost:5173/', 'Accept-Encoding': 'gzip, deflate, br, zstd', 'Accept-Language': 'en-US,en;q=0.9,en-IN;q=0.8'}
+2025-05-21 15:17:01,509 INFO: 127.0.0.1 - - [21/May/2025 15:17:01] "GET /project/abc HTTP/1.1" 200 -
+2025-05-21 15:17:03,382 INFO: Request from 127.0.0.1 GET /projects
+2025-05-21 15:17:03,382 INFO: Headers: {'Host': '127.0.0.1', 'Connection': 'keep-alive', 'Sec-Ch-Ua-Platform': '"Windows"', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36 Edg/136.0.0.0', 'Accept': 'application/json, text/plain, */*', 'Sec-Ch-Ua': '"Chromium";v="136", "Microsoft Edge";v="136", "Not.A/Brand";v="99"', 'Sec-Ch-Ua-Mobile': '?0', 'Origin': 'http://localhost:5173', 'Sec-Fetch-Site': 'cross-site', 'Sec-Fetch-Mode': 'cors', 'Sec-Fetch-Dest': 'empty', 'Referer': 'http://localhost:5173/', 'Accept-Encoding': 'gzip, deflate, br, zstd', 'Accept-Language': 'en-US,en;q=0.9,en-IN;q=0.8'}
+2025-05-21 15:17:03,383 INFO: 127.0.0.1 - - [21/May/2025 15:17:03] "GET /projects HTTP/1.1" 200 -
+2025-05-21 15:17:07,107 INFO: Request from 127.0.0.1 GET /project/abc
+2025-05-21 15:17:07,108 INFO: Headers: {'Host': '127.0.0.1', 'Connection': 'keep-alive', 'Sec-Ch-Ua-Platform': '"Windows"', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36 Edg/136.0.0.0', 'Accept': 'application/json, text/plain, */*', 'Sec-Ch-Ua': '"Chromium";v="136", "Microsoft Edge";v="136", "Not.A/Brand";v="99"', 'Sec-Ch-Ua-Mobile': '?0', 'Origin': 'http://localhost:5173', 'Sec-Fetch-Site': 'cross-site', 'Sec-Fetch-Mode': 'cors', 'Sec-Fetch-Dest': 'empty', 'Referer': 'http://localhost:5173/', 'Accept-Encoding': 'gzip, deflate, br, zstd', 'Accept-Language': 'en-US,en;q=0.9,en-IN;q=0.8'}
+2025-05-21 15:17:07,109 INFO: 127.0.0.1 - - [21/May/2025 15:17:07] "GET /project/abc HTTP/1.1" 200 -
+2025-05-21 15:17:40,560 INFO: Request from 127.0.0.1 GET /projects
+2025-05-21 15:17:40,563 INFO: Headers: {'Host': '127.0.0.1', 'Connection': 'keep-alive', 'Sec-Ch-Ua-Platform': '"Windows"', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36 Edg/136.0.0.0', 'Accept': 'application/json, text/plain, */*', 'Sec-Ch-Ua': '"Chromium";v="136", "Microsoft Edge";v="136", "Not.A/Brand";v="99"', 'Sec-Ch-Ua-Mobile': '?0', 'Origin': 'http://localhost:5173', 'Sec-Fetch-Site': 'cross-site', 'Sec-Fetch-Mode': 'cors', 'Sec-Fetch-Dest': 'empty', 'Referer': 'http://localhost:5173/', 'Accept-Encoding': 'gzip, deflate, br, zstd', 'Accept-Language': 'en-US,en;q=0.9,en-IN;q=0.8'}
+2025-05-21 15:17:40,564 INFO: 127.0.0.1 - - [21/May/2025 15:17:40] "GET /projects HTTP/1.1" 200 -
+2025-05-21 15:17:58,656 INFO: Request from 127.0.0.1 GET /project/undefined
+2025-05-21 15:17:58,656 INFO: Headers: {'Host': '127.0.0.1', 'Connection': 'keep-alive', 'Sec-Ch-Ua-Platform': '"Windows"', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36 Edg/136.0.0.0', 'Accept': 'application/json, text/plain, */*', 'Sec-Ch-Ua': '"Chromium";v="136", "Microsoft Edge";v="136", "Not.A/Brand";v="99"', 'Sec-Ch-Ua-Mobile': '?0', 'Origin': 'http://localhost:5173', 'Sec-Fetch-Site': 'cross-site', 'Sec-Fetch-Mode': 'cors', 'Sec-Fetch-Dest': 'empty', 'Referer': 'http://localhost:5173/', 'Accept-Encoding': 'gzip, deflate, br, zstd', 'Accept-Language': 'en-US,en;q=0.9,en-IN;q=0.8'}
+2025-05-21 15:17:58,657 ERROR: Database not found at: D:\defsecone project\assetdiscovery\Asset_Discovery_Full_Pack\Asset_Discovery\db\undefined.db
+2025-05-21 15:17:58,657 INFO: 127.0.0.1 - - [21/May/2025 15:17:58] "[33mGET /project/undefined HTTP/1.1[0m" 404 -
+2025-05-21 15:18:02,850 INFO: Request from 127.0.0.1 GET /project/undefined
+2025-05-21 15:18:02,851 INFO: Headers: {'Host': '127.0.0.1', 'Connection': 'keep-alive', 'Sec-Ch-Ua-Platform': '"Windows"', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36 Edg/136.0.0.0', 'Accept': 'application/json, text/plain, */*', 'Sec-Ch-Ua': '"Chromium";v="136", "Microsoft Edge";v="136", "Not.A/Brand";v="99"', 'Sec-Ch-Ua-Mobile': '?0', 'Origin': 'http://localhost:5173', 'Sec-Fetch-Site': 'cross-site', 'Sec-Fetch-Mode': 'cors', 'Sec-Fetch-Dest': 'empty', 'Referer': 'http://localhost:5173/', 'Accept-Encoding': 'gzip, deflate, br, zstd', 'Accept-Language': 'en-US,en;q=0.9,en-IN;q=0.8'}
+2025-05-21 15:18:02,852 ERROR: Database not found at: D:\defsecone project\assetdiscovery\Asset_Discovery_Full_Pack\Asset_Discovery\db\undefined.db
+2025-05-21 15:18:02,853 INFO: 127.0.0.1 - - [21/May/2025 15:18:02] "[33mGET /project/undefined HTTP/1.1[0m" 404 -
+2025-05-21 15:18:19,866 INFO: Request from 127.0.0.1 GET /projects
+2025-05-21 15:18:19,867 INFO: Headers: {'Host': '127.0.0.1', 'Connection': 'keep-alive', 'Sec-Ch-Ua-Platform': '"Windows"', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36 Edg/136.0.0.0', 'Accept': 'application/json, text/plain, */*', 'Sec-Ch-Ua': '"Chromium";v="136", "Microsoft Edge";v="136", "Not.A/Brand";v="99"', 'Sec-Ch-Ua-Mobile': '?0', 'Origin': 'http://localhost:5173', 'Sec-Fetch-Site': 'cross-site', 'Sec-Fetch-Mode': 'cors', 'Sec-Fetch-Dest': 'empty', 'Referer': 'http://localhost:5173/', 'Accept-Encoding': 'gzip, deflate, br, zstd', 'Accept-Language': 'en-US,en;q=0.9,en-IN;q=0.8'}
+2025-05-21 15:18:19,869 INFO: 127.0.0.1 - - [21/May/2025 15:18:19] "GET /projects HTTP/1.1" 200 -
+2025-05-21 15:18:26,545 INFO: Request from 127.0.0.1 GET /project/abc
+2025-05-21 15:18:26,545 INFO: Headers: {'Host': '127.0.0.1', 'Connection': 'keep-alive', 'Sec-Ch-Ua-Platform': '"Windows"', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36 Edg/136.0.0.0', 'Accept': 'application/json, text/plain, */*', 'Sec-Ch-Ua': '"Chromium";v="136", "Microsoft Edge";v="136", "Not.A/Brand";v="99"', 'Sec-Ch-Ua-Mobile': '?0', 'Origin': 'http://localhost:5173', 'Sec-Fetch-Site': 'cross-site', 'Sec-Fetch-Mode': 'cors', 'Sec-Fetch-Dest': 'empty', 'Referer': 'http://localhost:5173/', 'Accept-Encoding': 'gzip, deflate, br, zstd', 'Accept-Language': 'en-US,en;q=0.9,en-IN;q=0.8'}
+2025-05-21 15:18:26,547 INFO: 127.0.0.1 - - [21/May/2025 15:18:26] "GET /project/abc HTTP/1.1" 200 -
+2025-05-21 15:18:39,693 INFO: Request from 127.0.0.1 GET /project/abc
+2025-05-21 15:18:39,693 INFO: Headers: {'Host': '127.0.0.1', 'Connection': 'keep-alive', 'Sec-Ch-Ua-Platform': '"Windows"', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36 Edg/136.0.0.0', 'Accept': 'application/json, text/plain, */*', 'Sec-Ch-Ua': '"Chromium";v="136", "Microsoft Edge";v="136", "Not.A/Brand";v="99"', 'Sec-Ch-Ua-Mobile': '?0', 'Origin': 'http://localhost:5173', 'Sec-Fetch-Site': 'cross-site', 'Sec-Fetch-Mode': 'cors', 'Sec-Fetch-Dest': 'empty', 'Referer': 'http://localhost:5173/', 'Accept-Encoding': 'gzip, deflate, br, zstd', 'Accept-Language': 'en-US,en;q=0.9,en-IN;q=0.8'}
+2025-05-21 15:18:39,695 INFO: 127.0.0.1 - - [21/May/2025 15:18:39] "GET /project/abc HTTP/1.1" 200 -
+2025-05-21 15:20:52,282 INFO: Request from 127.0.0.1 GET /project/abc
+2025-05-21 15:20:52,283 INFO: Headers: {'Host': '127.0.0.1', 'Connection': 'keep-alive', 'Sec-Ch-Ua-Platform': '"Windows"', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36 Edg/136.0.0.0', 'Accept': 'application/json, text/plain, */*', 'Sec-Ch-Ua': '"Chromium";v="136", "Microsoft Edge";v="136", "Not.A/Brand";v="99"', 'Sec-Ch-Ua-Mobile': '?0', 'Origin': 'http://localhost:5173', 'Sec-Fetch-Site': 'cross-site', 'Sec-Fetch-Mode': 'cors', 'Sec-Fetch-Dest': 'empty', 'Referer': 'http://localhost:5173/', 'Accept-Encoding': 'gzip, deflate, br, zstd', 'Accept-Language': 'en-US,en;q=0.9,en-IN;q=0.8'}
+2025-05-21 15:20:52,284 INFO: 127.0.0.1 - - [21/May/2025 15:20:52] "GET /project/abc HTTP/1.1" 200 -
+2025-05-21 15:20:54,714 INFO: Request from 127.0.0.1 GET /project/abc
+2025-05-21 15:20:54,715 INFO: Headers: {'Host': '127.0.0.1', 'Connection': 'keep-alive', 'Sec-Ch-Ua-Platform': '"Windows"', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36 Edg/136.0.0.0', 'Accept': 'application/json, text/plain, */*', 'Sec-Ch-Ua': '"Chromium";v="136", "Microsoft Edge";v="136", "Not.A/Brand";v="99"', 'Sec-Ch-Ua-Mobile': '?0', 'Origin': 'http://localhost:5173', 'Sec-Fetch-Site': 'cross-site', 'Sec-Fetch-Mode': 'cors', 'Sec-Fetch-Dest': 'empty', 'Referer': 'http://localhost:5173/', 'Accept-Encoding': 'gzip, deflate, br, zstd', 'Accept-Language': 'en-US,en;q=0.9,en-IN;q=0.8'}
+2025-05-21 15:20:54,716 INFO: 127.0.0.1 - - [21/May/2025 15:20:54] "GET /project/abc HTTP/1.1" 200 -
+2025-05-21 15:21:00,026 INFO: Request from 127.0.0.1 GET /project/abc
+2025-05-21 15:21:00,035 INFO: Headers: {'Host': '127.0.0.1', 'Connection': 'keep-alive', 'Sec-Ch-Ua-Platform': '"Windows"', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36 Edg/136.0.0.0', 'Accept': 'application/json, text/plain, */*', 'Sec-Ch-Ua': '"Chromium";v="136", "Microsoft Edge";v="136", "Not.A/Brand";v="99"', 'Sec-Ch-Ua-Mobile': '?0', 'Origin': 'http://localhost:5173', 'Sec-Fetch-Site': 'cross-site', 'Sec-Fetch-Mode': 'cors', 'Sec-Fetch-Dest': 'empty', 'Referer': 'http://localhost:5173/', 'Accept-Encoding': 'gzip, deflate, br, zstd', 'Accept-Language': 'en-US,en;q=0.9,en-IN;q=0.8'}
+2025-05-21 15:21:00,039 INFO: 127.0.0.1 - - [21/May/2025 15:21:00] "GET /project/abc HTTP/1.1" 200 -
+2025-05-21 15:21:08,946 INFO: Request from 127.0.0.1 GET /project/abc
+2025-05-21 15:21:08,946 INFO: Headers: {'Host': '127.0.0.1', 'Connection': 'keep-alive', 'Sec-Ch-Ua-Platform': '"Windows"', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36 Edg/136.0.0.0', 'Accept': 'application/json, text/plain, */*', 'Sec-Ch-Ua': '"Chromium";v="136", "Microsoft Edge";v="136", "Not.A/Brand";v="99"', 'Sec-Ch-Ua-Mobile': '?0', 'Origin': 'http://localhost:5173', 'Sec-Fetch-Site': 'cross-site', 'Sec-Fetch-Mode': 'cors', 'Sec-Fetch-Dest': 'empty', 'Referer': 'http://localhost:5173/', 'Accept-Encoding': 'gzip, deflate, br, zstd', 'Accept-Language': 'en-US,en;q=0.9,en-IN;q=0.8'}
+2025-05-21 15:21:08,948 INFO: 127.0.0.1 - - [21/May/2025 15:21:08] "GET /project/abc HTTP/1.1" 200 -
+2025-05-21 15:21:36,759 INFO: Request from 127.0.0.1 GET /project/abc
+2025-05-21 15:21:36,759 INFO: Headers: {'Host': '127.0.0.1', 'Connection': 'keep-alive', 'Sec-Ch-Ua-Platform': '"Windows"', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36 Edg/136.0.0.0', 'Accept': 'application/json, text/plain, */*', 'Sec-Ch-Ua': '"Chromium";v="136", "Microsoft Edge";v="136", "Not.A/Brand";v="99"', 'Sec-Ch-Ua-Mobile': '?0', 'Origin': 'http://localhost:5173', 'Sec-Fetch-Site': 'cross-site', 'Sec-Fetch-Mode': 'cors', 'Sec-Fetch-Dest': 'empty', 'Referer': 'http://localhost:5173/', 'Accept-Encoding': 'gzip, deflate, br, zstd', 'Accept-Language': 'en-US,en;q=0.9,en-IN;q=0.8'}
+2025-05-21 15:21:36,761 INFO: 127.0.0.1 - - [21/May/2025 15:21:36] "GET /project/abc HTTP/1.1" 200 -
+2025-05-21 15:21:45,717 INFO: Request from 127.0.0.1 GET /project/abc
+2025-05-21 15:21:45,717 INFO: Headers: {'Host': '127.0.0.1', 'Connection': 'keep-alive', 'Sec-Ch-Ua-Platform': '"Windows"', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36 Edg/136.0.0.0', 'Accept': 'application/json, text/plain, */*', 'Sec-Ch-Ua': '"Chromium";v="136", "Microsoft Edge";v="136", "Not.A/Brand";v="99"', 'Sec-Ch-Ua-Mobile': '?0', 'Origin': 'http://localhost:5173', 'Sec-Fetch-Site': 'cross-site', 'Sec-Fetch-Mode': 'cors', 'Sec-Fetch-Dest': 'empty', 'Referer': 'http://localhost:5173/', 'Accept-Encoding': 'gzip, deflate, br, zstd', 'Accept-Language': 'en-US,en;q=0.9,en-IN;q=0.8'}
+2025-05-21 15:21:45,718 INFO: 127.0.0.1 - - [21/May/2025 15:21:45] "GET /project/abc HTTP/1.1" 200 -
+2025-05-21 15:21:48,819 INFO: Request from 127.0.0.1 GET /project/abc
+2025-05-21 15:21:48,819 INFO: Headers: {'Host': '127.0.0.1', 'Connection': 'keep-alive', 'Sec-Ch-Ua-Platform': '"Windows"', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36 Edg/136.0.0.0', 'Accept': 'application/json, text/plain, */*', 'Sec-Ch-Ua': '"Chromium";v="136", "Microsoft Edge";v="136", "Not.A/Brand";v="99"', 'Sec-Ch-Ua-Mobile': '?0', 'Origin': 'http://localhost:5173', 'Sec-Fetch-Site': 'cross-site', 'Sec-Fetch-Mode': 'cors', 'Sec-Fetch-Dest': 'empty', 'Referer': 'http://localhost:5173/', 'Accept-Encoding': 'gzip, deflate, br, zstd', 'Accept-Language': 'en-US,en;q=0.9,en-IN;q=0.8'}
+2025-05-21 15:21:48,820 INFO: 127.0.0.1 - - [21/May/2025 15:21:48] "GET /project/abc HTTP/1.1" 200 -
+2025-05-21 15:22:09,722 INFO: Request from 127.0.0.1 GET /project/abc
+2025-05-21 15:22:09,722 INFO: Headers: {'Host': '127.0.0.1', 'Connection': 'keep-alive', 'Sec-Ch-Ua-Platform': '"Windows"', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36 Edg/136.0.0.0', 'Accept': 'application/json, text/plain, */*', 'Sec-Ch-Ua': '"Chromium";v="136", "Microsoft Edge";v="136", "Not.A/Brand";v="99"', 'Sec-Ch-Ua-Mobile': '?0', 'Origin': 'http://localhost:5173', 'Sec-Fetch-Site': 'cross-site', 'Sec-Fetch-Mode': 'cors', 'Sec-Fetch-Dest': 'empty', 'Referer': 'http://localhost:5173/', 'Accept-Encoding': 'gzip, deflate, br, zstd', 'Accept-Language': 'en-US,en;q=0.9,en-IN;q=0.8'}
+2025-05-21 15:22:09,724 INFO: 127.0.0.1 - - [21/May/2025 15:22:09] "GET /project/abc HTTP/1.1" 200 -
+2025-05-21 15:22:13,420 INFO: Request from 127.0.0.1 GET /project/abc
+2025-05-21 15:22:13,421 INFO: Headers: {'Host': '127.0.0.1', 'Connection': 'keep-alive', 'Sec-Ch-Ua-Platform': '"Windows"', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36 Edg/136.0.0.0', 'Accept': 'application/json, text/plain, */*', 'Sec-Ch-Ua': '"Chromium";v="136", "Microsoft Edge";v="136", "Not.A/Brand";v="99"', 'Sec-Ch-Ua-Mobile': '?0', 'Origin': 'http://localhost:5173', 'Sec-Fetch-Site': 'cross-site', 'Sec-Fetch-Mode': 'cors', 'Sec-Fetch-Dest': 'empty', 'Referer': 'http://localhost:5173/', 'Accept-Encoding': 'gzip, deflate, br, zstd', 'Accept-Language': 'en-US,en;q=0.9,en-IN;q=0.8'}
+2025-05-21 15:22:13,422 INFO: 127.0.0.1 - - [21/May/2025 15:22:13] "GET /project/abc HTTP/1.1" 200 -
+2025-05-21 15:32:10,818 INFO: Request from 127.0.0.1 GET /project/abc
+2025-05-21 15:32:10,819 INFO: Headers: {'Host': '127.0.0.1', 'Connection': 'keep-alive', 'Sec-Ch-Ua-Platform': '"Windows"', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36 Edg/136.0.0.0', 'Accept': 'application/json, text/plain, */*', 'Sec-Ch-Ua': '"Chromium";v="136", "Microsoft Edge";v="136", "Not.A/Brand";v="99"', 'Sec-Ch-Ua-Mobile': '?0', 'Origin': 'http://localhost:5173', 'Sec-Fetch-Site': 'cross-site', 'Sec-Fetch-Mode': 'cors', 'Sec-Fetch-Dest': 'empty', 'Referer': 'http://localhost:5173/', 'Accept-Encoding': 'gzip, deflate, br, zstd', 'Accept-Language': 'en-US,en;q=0.9,en-IN;q=0.8'}
+2025-05-21 15:32:10,820 INFO: 127.0.0.1 - - [21/May/2025 15:32:10] "GET /project/abc HTTP/1.1" 200 -
+2025-05-21 15:32:20,583 INFO: Request from 127.0.0.1 GET /project/abc
+2025-05-21 15:32:20,583 INFO: Headers: {'Host': '127.0.0.1', 'Connection': 'keep-alive', 'Sec-Ch-Ua-Platform': '"Windows"', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36 Edg/136.0.0.0', 'Accept': 'application/json, text/plain, */*', 'Sec-Ch-Ua': '"Chromium";v="136", "Microsoft Edge";v="136", "Not.A/Brand";v="99"', 'Sec-Ch-Ua-Mobile': '?0', 'Origin': 'http://localhost:5173', 'Sec-Fetch-Site': 'cross-site', 'Sec-Fetch-Mode': 'cors', 'Sec-Fetch-Dest': 'empty', 'Referer': 'http://localhost:5173/', 'Accept-Encoding': 'gzip, deflate, br, zstd', 'Accept-Language': 'en-US,en;q=0.9,en-IN;q=0.8'}
+2025-05-21 15:32:20,584 INFO: 127.0.0.1 - - [21/May/2025 15:32:20] "GET /project/abc HTTP/1.1" 200 -
+2025-05-21 15:32:22,721 INFO: Request from 127.0.0.1 GET /project/undefined
+2025-05-21 15:32:22,721 INFO: Headers: {'Host': '127.0.0.1', 'Connection': 'keep-alive', 'Sec-Ch-Ua-Platform': '"Windows"', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36 Edg/136.0.0.0', 'Accept': 'application/json, text/plain, */*', 'Sec-Ch-Ua': '"Chromium";v="136", "Microsoft Edge";v="136", "Not.A/Brand";v="99"', 'Sec-Ch-Ua-Mobile': '?0', 'Origin': 'http://localhost:5173', 'Sec-Fetch-Site': 'cross-site', 'Sec-Fetch-Mode': 'cors', 'Sec-Fetch-Dest': 'empty', 'Referer': 'http://localhost:5173/', 'Accept-Encoding': 'gzip, deflate, br, zstd', 'Accept-Language': 'en-US,en;q=0.9,en-IN;q=0.8'}
+2025-05-21 15:32:22,722 ERROR: Database not found at: D:\defsecone project\assetdiscovery\Asset_Discovery_Full_Pack\Asset_Discovery\db\undefined.db
+2025-05-21 15:32:22,723 INFO: 127.0.0.1 - - [21/May/2025 15:32:22] "[33mGET /project/undefined HTTP/1.1[0m" 404 -
+2025-05-21 15:32:57,916 INFO: Request from 127.0.0.1 GET /project/undefined
+2025-05-21 15:32:57,917 INFO: Headers: {'Host': '127.0.0.1', 'Connection': 'keep-alive', 'Sec-Ch-Ua-Platform': '"Windows"', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36 Edg/136.0.0.0', 'Accept': 'application/json, text/plain, */*', 'Sec-Ch-Ua': '"Chromium";v="136", "Microsoft Edge";v="136", "Not.A/Brand";v="99"', 'Sec-Ch-Ua-Mobile': '?0', 'Origin': 'http://localhost:5173', 'Sec-Fetch-Site': 'cross-site', 'Sec-Fetch-Mode': 'cors', 'Sec-Fetch-Dest': 'empty', 'Referer': 'http://localhost:5173/', 'Accept-Encoding': 'gzip, deflate, br, zstd', 'Accept-Language': 'en-US,en;q=0.9,en-IN;q=0.8'}
+2025-05-21 15:32:57,917 ERROR: Database not found at: D:\defsecone project\assetdiscovery\Asset_Discovery_Full_Pack\Asset_Discovery\db\undefined.db
+2025-05-21 15:32:57,918 INFO: 127.0.0.1 - - [21/May/2025 15:32:57] "[33mGET /project/undefined HTTP/1.1[0m" 404 -
+2025-05-21 15:33:03,297 INFO: Request from 127.0.0.1 GET /project/undefined
+2025-05-21 15:33:03,297 INFO: Headers: {'Host': '127.0.0.1', 'Connection': 'keep-alive', 'Sec-Ch-Ua-Platform': '"Windows"', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36 Edg/136.0.0.0', 'Accept': 'application/json, text/plain, */*', 'Sec-Ch-Ua': '"Chromium";v="136", "Microsoft Edge";v="136", "Not.A/Brand";v="99"', 'Sec-Ch-Ua-Mobile': '?0', 'Origin': 'http://localhost:5173', 'Sec-Fetch-Site': 'cross-site', 'Sec-Fetch-Mode': 'cors', 'Sec-Fetch-Dest': 'empty', 'Referer': 'http://localhost:5173/', 'Accept-Encoding': 'gzip, deflate, br, zstd', 'Accept-Language': 'en-US,en;q=0.9,en-IN;q=0.8'}
+2025-05-21 15:33:03,297 ERROR: Database not found at: D:\defsecone project\assetdiscovery\Asset_Discovery_Full_Pack\Asset_Discovery\db\undefined.db
+2025-05-21 15:33:03,298 INFO: 127.0.0.1 - - [21/May/2025 15:33:03] "[33mGET /project/undefined HTTP/1.1[0m" 404 -
+2025-05-21 15:33:07,716 INFO: Request from 127.0.0.1 GET /project/abc
+2025-05-21 15:33:07,717 INFO: Headers: {'Host': '127.0.0.1', 'Connection': 'keep-alive', 'Sec-Ch-Ua-Platform': '"Windows"', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36 Edg/136.0.0.0', 'Accept': 'application/json, text/plain, */*', 'Sec-Ch-Ua': '"Chromium";v="136", "Microsoft Edge";v="136", "Not.A/Brand";v="99"', 'Sec-Ch-Ua-Mobile': '?0', 'Origin': 'http://localhost:5173', 'Sec-Fetch-Site': 'cross-site', 'Sec-Fetch-Mode': 'cors', 'Sec-Fetch-Dest': 'empty', 'Referer': 'http://localhost:5173/', 'Accept-Encoding': 'gzip, deflate, br, zstd', 'Accept-Language': 'en-US,en;q=0.9,en-IN;q=0.8'}
+2025-05-21 15:33:07,718 INFO: 127.0.0.1 - - [21/May/2025 15:33:07] "GET /project/abc HTTP/1.1" 200 -
+2025-05-21 15:33:10,054 INFO: Request from 127.0.0.1 GET /project/abc
+2025-05-21 15:33:10,055 INFO: Headers: {'Host': '127.0.0.1', 'Connection': 'keep-alive', 'Sec-Ch-Ua-Platform': '"Windows"', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36 Edg/136.0.0.0', 'Accept': 'application/json, text/plain, */*', 'Sec-Ch-Ua': '"Chromium";v="136", "Microsoft Edge";v="136", "Not.A/Brand";v="99"', 'Sec-Ch-Ua-Mobile': '?0', 'Origin': 'http://localhost:5173', 'Sec-Fetch-Site': 'cross-site', 'Sec-Fetch-Mode': 'cors', 'Sec-Fetch-Dest': 'empty', 'Referer': 'http://localhost:5173/', 'Accept-Encoding': 'gzip, deflate, br, zstd', 'Accept-Language': 'en-US,en;q=0.9,en-IN;q=0.8'}
+2025-05-21 15:33:10,057 INFO: 127.0.0.1 - - [21/May/2025 15:33:10] "GET /project/abc HTTP/1.1" 200 -
+2025-05-21 15:33:11,871 INFO: Request from 127.0.0.1 GET /project/undefined
+2025-05-21 15:33:11,871 INFO: Headers: {'Host': '127.0.0.1', 'Connection': 'keep-alive', 'Sec-Ch-Ua-Platform': '"Windows"', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36 Edg/136.0.0.0', 'Accept': 'application/json, text/plain, */*', 'Sec-Ch-Ua': '"Chromium";v="136", "Microsoft Edge";v="136", "Not.A/Brand";v="99"', 'Sec-Ch-Ua-Mobile': '?0', 'Origin': 'http://localhost:5173', 'Sec-Fetch-Site': 'cross-site', 'Sec-Fetch-Mode': 'cors', 'Sec-Fetch-Dest': 'empty', 'Referer': 'http://localhost:5173/', 'Accept-Encoding': 'gzip, deflate, br, zstd', 'Accept-Language': 'en-US,en;q=0.9,en-IN;q=0.8'}
+2025-05-21 15:33:11,872 ERROR: Database not found at: D:\defsecone project\assetdiscovery\Asset_Discovery_Full_Pack\Asset_Discovery\db\undefined.db
+2025-05-21 15:33:11,872 INFO: 127.0.0.1 - - [21/May/2025 15:33:11] "[33mGET /project/undefined HTTP/1.1[0m" 404 -
+2025-05-21 15:33:20,144 INFO: Request from 127.0.0.1 GET /project/undefined
+2025-05-21 15:33:20,145 INFO: Headers: {'Host': '127.0.0.1', 'Connection': 'keep-alive', 'Sec-Ch-Ua-Platform': '"Windows"', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36 Edg/136.0.0.0', 'Accept': 'application/json, text/plain, */*', 'Sec-Ch-Ua': '"Chromium";v="136", "Microsoft Edge";v="136", "Not.A/Brand";v="99"', 'Sec-Ch-Ua-Mobile': '?0', 'Origin': 'http://localhost:5173', 'Sec-Fetch-Site': 'cross-site', 'Sec-Fetch-Mode': 'cors', 'Sec-Fetch-Dest': 'empty', 'Referer': 'http://localhost:5173/', 'Accept-Encoding': 'gzip, deflate, br, zstd', 'Accept-Language': 'en-US,en;q=0.9,en-IN;q=0.8'}
+2025-05-21 15:33:20,145 ERROR: Database not found at: D:\defsecone project\assetdiscovery\Asset_Discovery_Full_Pack\Asset_Discovery\db\undefined.db
+2025-05-21 15:33:20,146 INFO: 127.0.0.1 - - [21/May/2025 15:33:20] "[33mGET /project/undefined HTTP/1.1[0m" 404 -
+2025-05-21 15:33:21,408 INFO: Request from 127.0.0.1 GET /project/undefined
+2025-05-21 15:33:21,409 INFO: Headers: {'Host': '127.0.0.1', 'Connection': 'keep-alive', 'Sec-Ch-Ua-Platform': '"Windows"', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36 Edg/136.0.0.0', 'Accept': 'application/json, text/plain, */*', 'Sec-Ch-Ua': '"Chromium";v="136", "Microsoft Edge";v="136", "Not.A/Brand";v="99"', 'Sec-Ch-Ua-Mobile': '?0', 'Origin': 'http://localhost:5173', 'Sec-Fetch-Site': 'cross-site', 'Sec-Fetch-Mode': 'cors', 'Sec-Fetch-Dest': 'empty', 'Referer': 'http://localhost:5173/', 'Accept-Encoding': 'gzip, deflate, br, zstd', 'Accept-Language': 'en-US,en;q=0.9,en-IN;q=0.8'}
+2025-05-21 15:33:21,409 ERROR: Database not found at: D:\defsecone project\assetdiscovery\Asset_Discovery_Full_Pack\Asset_Discovery\db\undefined.db
+2025-05-21 15:33:21,410 INFO: 127.0.0.1 - - [21/May/2025 15:33:21] "[33mGET /project/undefined HTTP/1.1[0m" 404 -
+2025-05-21 15:33:23,840 INFO: Request from 127.0.0.1 GET /project/undefined
+2025-05-21 15:33:23,841 INFO: Headers: {'Host': '127.0.0.1', 'Connection': 'keep-alive', 'Sec-Ch-Ua-Platform': '"Windows"', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36 Edg/136.0.0.0', 'Accept': 'application/json, text/plain, */*', 'Sec-Ch-Ua': '"Chromium";v="136", "Microsoft Edge";v="136", "Not.A/Brand";v="99"', 'Sec-Ch-Ua-Mobile': '?0', 'Origin': 'http://localhost:5173', 'Sec-Fetch-Site': 'cross-site', 'Sec-Fetch-Mode': 'cors', 'Sec-Fetch-Dest': 'empty', 'Referer': 'http://localhost:5173/', 'Accept-Encoding': 'gzip, deflate, br, zstd', 'Accept-Language': 'en-US,en;q=0.9,en-IN;q=0.8'}
+2025-05-21 15:33:23,841 ERROR: Database not found at: D:\defsecone project\assetdiscovery\Asset_Discovery_Full_Pack\Asset_Discovery\db\undefined.db
+2025-05-21 15:33:23,842 INFO: 127.0.0.1 - - [21/May/2025 15:33:23] "[33mGET /project/undefined HTTP/1.1[0m" 404 -
+2025-05-21 15:33:30,423 INFO: Request from 127.0.0.1 GET /project/undefined
+2025-05-21 15:33:30,423 INFO: Headers: {'Host': '127.0.0.1', 'Connection': 'keep-alive', 'Sec-Ch-Ua-Platform': '"Windows"', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36 Edg/136.0.0.0', 'Accept': 'application/json, text/plain, */*', 'Sec-Ch-Ua': '"Chromium";v="136", "Microsoft Edge";v="136", "Not.A/Brand";v="99"', 'Sec-Ch-Ua-Mobile': '?0', 'Origin': 'http://localhost:5173', 'Sec-Fetch-Site': 'cross-site', 'Sec-Fetch-Mode': 'cors', 'Sec-Fetch-Dest': 'empty', 'Referer': 'http://localhost:5173/', 'Accept-Encoding': 'gzip, deflate, br, zstd', 'Accept-Language': 'en-US,en;q=0.9,en-IN;q=0.8'}
+2025-05-21 15:33:30,424 ERROR: Database not found at: D:\defsecone project\assetdiscovery\Asset_Discovery_Full_Pack\Asset_Discovery\db\undefined.db
+2025-05-21 15:33:30,424 INFO: 127.0.0.1 - - [21/May/2025 15:33:30] "[33mGET /project/undefined HTTP/1.1[0m" 404 -
+2025-05-21 15:33:34,055 INFO: Request from 127.0.0.1 GET /project/abc
+2025-05-21 15:33:34,056 INFO: Headers: {'Host': '127.0.0.1', 'Connection': 'keep-alive', 'Sec-Ch-Ua-Platform': '"Windows"', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36 Edg/136.0.0.0', 'Accept': 'application/json, text/plain, */*', 'Sec-Ch-Ua': '"Chromium";v="136", "Microsoft Edge";v="136", "Not.A/Brand";v="99"', 'Sec-Ch-Ua-Mobile': '?0', 'Origin': 'http://localhost:5173', 'Sec-Fetch-Site': 'cross-site', 'Sec-Fetch-Mode': 'cors', 'Sec-Fetch-Dest': 'empty', 'Referer': 'http://localhost:5173/', 'Accept-Encoding': 'gzip, deflate, br, zstd', 'Accept-Language': 'en-US,en;q=0.9,en-IN;q=0.8'}
+2025-05-21 15:33:34,057 INFO: 127.0.0.1 - - [21/May/2025 15:33:34] "GET /project/abc HTTP/1.1" 200 -
+2025-05-21 15:33:36,087 INFO: Request from 127.0.0.1 GET /project/abc
+2025-05-21 15:33:36,088 INFO: Headers: {'Host': '127.0.0.1', 'Connection': 'keep-alive', 'Sec-Ch-Ua-Platform': '"Windows"', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36 Edg/136.0.0.0', 'Accept': 'application/json, text/plain, */*', 'Sec-Ch-Ua': '"Chromium";v="136", "Microsoft Edge";v="136", "Not.A/Brand";v="99"', 'Sec-Ch-Ua-Mobile': '?0', 'Origin': 'http://localhost:5173', 'Sec-Fetch-Site': 'cross-site', 'Sec-Fetch-Mode': 'cors', 'Sec-Fetch-Dest': 'empty', 'Referer': 'http://localhost:5173/', 'Accept-Encoding': 'gzip, deflate, br, zstd', 'Accept-Language': 'en-US,en;q=0.9,en-IN;q=0.8'}
+2025-05-21 15:33:36,097 INFO: 127.0.0.1 - - [21/May/2025 15:33:36] "GET /project/abc HTTP/1.1" 200 -
+2025-05-21 15:33:44,977 INFO: Request from 127.0.0.1 GET /project/abc
+2025-05-21 15:33:44,977 INFO: Headers: {'Host': '127.0.0.1', 'Connection': 'keep-alive', 'Sec-Ch-Ua-Platform': '"Windows"', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36 Edg/136.0.0.0', 'Accept': 'application/json, text/plain, */*', 'Sec-Ch-Ua': '"Chromium";v="136", "Microsoft Edge";v="136", "Not.A/Brand";v="99"', 'Sec-Ch-Ua-Mobile': '?0', 'Origin': 'http://localhost:5173', 'Sec-Fetch-Site': 'cross-site', 'Sec-Fetch-Mode': 'cors', 'Sec-Fetch-Dest': 'empty', 'Referer': 'http://localhost:5173/', 'Accept-Encoding': 'gzip, deflate, br, zstd', 'Accept-Language': 'en-US,en;q=0.9,en-IN;q=0.8'}
+2025-05-21 15:33:44,979 INFO: 127.0.0.1 - - [21/May/2025 15:33:44] "GET /project/abc HTTP/1.1" 200 -
+2025-05-21 15:33:50,860 INFO: Request from 127.0.0.1 GET /project/abc
+2025-05-21 15:33:50,860 INFO: Headers: {'Host': '127.0.0.1', 'Connection': 'keep-alive', 'Sec-Ch-Ua-Platform': '"Windows"', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36 Edg/136.0.0.0', 'Accept': 'application/json, text/plain, */*', 'Sec-Ch-Ua': '"Chromium";v="136", "Microsoft Edge";v="136", "Not.A/Brand";v="99"', 'Sec-Ch-Ua-Mobile': '?0', 'Origin': 'http://localhost:5173', 'Sec-Fetch-Site': 'cross-site', 'Sec-Fetch-Mode': 'cors', 'Sec-Fetch-Dest': 'empty', 'Referer': 'http://localhost:5173/', 'Accept-Encoding': 'gzip, deflate, br, zstd', 'Accept-Language': 'en-US,en;q=0.9,en-IN;q=0.8'}
+2025-05-21 15:33:50,861 INFO: 127.0.0.1 - - [21/May/2025 15:33:50] "GET /project/abc HTTP/1.1" 200 -
+2025-05-21 15:34:13,121 INFO: Request from 127.0.0.1 GET /project/abc
+2025-05-21 15:34:13,122 INFO: Headers: {'Host': '127.0.0.1', 'Connection': 'keep-alive', 'Sec-Ch-Ua-Platform': '"Windows"', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36 Edg/136.0.0.0', 'Accept': 'application/json, text/plain, */*', 'Sec-Ch-Ua': '"Chromium";v="136", "Microsoft Edge";v="136", "Not.A/Brand";v="99"', 'Sec-Ch-Ua-Mobile': '?0', 'Origin': 'http://localhost:5173', 'Sec-Fetch-Site': 'cross-site', 'Sec-Fetch-Mode': 'cors', 'Sec-Fetch-Dest': 'empty', 'Referer': 'http://localhost:5173/', 'Accept-Encoding': 'gzip, deflate, br, zstd', 'Accept-Language': 'en-US,en;q=0.9,en-IN;q=0.8'}
+2025-05-21 15:34:13,123 INFO: 127.0.0.1 - - [21/May/2025 15:34:13] "GET /project/abc HTTP/1.1" 200 -
+2025-05-21 15:36:03,812 INFO: Request from 127.0.0.1 GET /project/abc
+2025-05-21 15:36:03,812 INFO: Headers: {'Host': '127.0.0.1', 'Connection': 'keep-alive', 'Sec-Ch-Ua-Platform': '"Windows"', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36 Edg/136.0.0.0', 'Accept': 'application/json, text/plain, */*', 'Sec-Ch-Ua': '"Chromium";v="136", "Microsoft Edge";v="136", "Not.A/Brand";v="99"', 'Sec-Ch-Ua-Mobile': '?0', 'Origin': 'http://localhost:5173', 'Sec-Fetch-Site': 'cross-site', 'Sec-Fetch-Mode': 'cors', 'Sec-Fetch-Dest': 'empty', 'Referer': 'http://localhost:5173/', 'Accept-Encoding': 'gzip, deflate, br, zstd', 'Accept-Language': 'en-US,en;q=0.9,en-IN;q=0.8'}
+2025-05-21 15:36:03,814 INFO: 127.0.0.1 - - [21/May/2025 15:36:03] "GET /project/abc HTTP/1.1" 200 -
+2025-05-21 15:43:01,808 INFO: Starting Flask server...
+2025-05-21 15:43:01,830 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:80
+ * Running on http://10.90.123.32:80
+2025-05-21 15:43:01,830 INFO: [33mPress CTRL+C to quit[0m
+2025-05-21 15:45:22,023 INFO: Request from 127.0.0.1 GET /api/project/abc/asset/PC1WIN10
+2025-05-21 15:45:22,024 INFO: Headers: {'Host': 'localhost', 'Connection': 'keep-alive', 'Sec-Ch-Ua-Platform': '"Windows"', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36 Edg/136.0.0.0', 'Accept': 'application/json, text/plain, */*', 'Sec-Ch-Ua': '"Chromium";v="136", "Microsoft Edge";v="136", "Not.A/Brand";v="99"', 'Sec-Ch-Ua-Mobile': '?0', 'Origin': 'http://localhost:5173', 'Sec-Fetch-Site': 'same-site', 'Sec-Fetch-Mode': 'cors', 'Sec-Fetch-Dest': 'empty', 'Referer': 'http://localhost:5173/', 'Accept-Encoding': 'gzip, deflate, br, zstd', 'Accept-Language': 'en-US,en;q=0.9,en-IN;q=0.8'}
+2025-05-21 15:45:22,025 INFO: 127.0.0.1 - - [21/May/2025 15:45:22] "GET /api/project/abc/asset/PC1WIN10 HTTP/1.1" 200 -
+2025-05-21 15:45:24,651 INFO: Request from 127.0.0.1 GET /api/project/abc/asset/PC1WIN10
+2025-05-21 15:45:24,653 INFO: Headers: {'Host': 'localhost', 'Connection': 'keep-alive', 'Sec-Ch-Ua-Platform': '"Windows"', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36 Edg/136.0.0.0', 'Accept': 'application/json, text/plain, */*', 'Sec-Ch-Ua': '"Chromium";v="136", "Microsoft Edge";v="136", "Not.A/Brand";v="99"', 'Sec-Ch-Ua-Mobile': '?0', 'Origin': 'http://localhost:5173', 'Sec-Fetch-Site': 'same-site', 'Sec-Fetch-Mode': 'cors', 'Sec-Fetch-Dest': 'empty', 'Referer': 'http://localhost:5173/', 'Accept-Encoding': 'gzip, deflate, br, zstd', 'Accept-Language': 'en-US,en;q=0.9,en-IN;q=0.8'}
+2025-05-21 15:45:24,657 INFO: 127.0.0.1 - - [21/May/2025 15:45:24] "GET /api/project/abc/asset/PC1WIN10 HTTP/1.1" 200 -
+2025-05-21 15:45:51,052 INFO: Request from 127.0.0.1 GET /api/project/abc/asset/PC1WIN10
+2025-05-21 15:45:51,052 INFO: Headers: {'Host': 'localhost', 'Connection': 'keep-alive', 'Sec-Ch-Ua-Platform': '"Windows"', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36 Edg/136.0.0.0', 'Accept': 'application/json, text/plain, */*', 'Sec-Ch-Ua': '"Chromium";v="136", "Microsoft Edge";v="136", "Not.A/Brand";v="99"', 'Sec-Ch-Ua-Mobile': '?0', 'Origin': 'http://localhost:5173', 'Sec-Fetch-Site': 'same-site', 'Sec-Fetch-Mode': 'cors', 'Sec-Fetch-Dest': 'empty', 'Referer': 'http://localhost:5173/', 'Accept-Encoding': 'gzip, deflate, br, zstd', 'Accept-Language': 'en-US,en;q=0.9,en-IN;q=0.8'}
+2025-05-21 15:45:51,054 INFO: 127.0.0.1 - - [21/May/2025 15:45:51] "GET /api/project/abc/asset/PC1WIN10 HTTP/1.1" 200 -
+2025-05-21 15:58:20,027 INFO: Request from 127.0.0.1 GET /api/project/abc/asset/PC1WIN10
+2025-05-21 15:58:20,028 INFO: Headers: {'Host': 'localhost', 'Connection': 'keep-alive', 'Sec-Ch-Ua-Platform': '"Windows"', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36 Edg/136.0.0.0', 'Accept': 'application/json, text/plain, */*', 'Sec-Ch-Ua': '"Chromium";v="136", "Microsoft Edge";v="136", "Not.A/Brand";v="99"', 'Sec-Ch-Ua-Mobile': '?0', 'Origin': 'http://localhost:5173', 'Sec-Fetch-Site': 'same-site', 'Sec-Fetch-Mode': 'cors', 'Sec-Fetch-Dest': 'empty', 'Referer': 'http://localhost:5173/', 'Accept-Encoding': 'gzip, deflate, br, zstd', 'Accept-Language': 'en-US,en;q=0.9,en-IN;q=0.8'}
+2025-05-21 15:58:20,029 INFO: 127.0.0.1 - - [21/May/2025 15:58:20] "GET /api/project/abc/asset/PC1WIN10 HTTP/1.1" 200 -
+2025-05-21 15:58:29,178 INFO: Request from 127.0.0.1 GET /api/project/abc/asset/PC1WIN10
+2025-05-21 15:58:29,179 INFO: Headers: {'Host': 'localhost', 'Connection': 'keep-alive', 'Sec-Ch-Ua-Platform': '"Windows"', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36 Edg/136.0.0.0', 'Accept': 'application/json, text/plain, */*', 'Sec-Ch-Ua': '"Chromium";v="136", "Microsoft Edge";v="136", "Not.A/Brand";v="99"', 'Sec-Ch-Ua-Mobile': '?0', 'Origin': 'http://localhost:5173', 'Sec-Fetch-Site': 'same-site', 'Sec-Fetch-Mode': 'cors', 'Sec-Fetch-Dest': 'empty', 'Referer': 'http://localhost:5173/', 'Accept-Encoding': 'gzip, deflate, br, zstd', 'Accept-Language': 'en-US,en;q=0.9,en-IN;q=0.8'}
+2025-05-21 15:58:29,180 INFO: 127.0.0.1 - - [21/May/2025 15:58:29] "GET /api/project/abc/asset/PC1WIN10 HTTP/1.1" 200 -
+2025-05-21 16:10:07,870 INFO: Request from 127.0.0.1 GET /api/project/abc/asset/PC1WIN10
+2025-05-21 16:10:07,870 INFO: Headers: {'Host': 'localhost', 'Connection': 'keep-alive', 'Sec-Ch-Ua-Platform': '"Windows"', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36 Edg/136.0.0.0', 'Accept': 'application/json, text/plain, */*', 'Sec-Ch-Ua': '"Chromium";v="136", "Microsoft Edge";v="136", "Not.A/Brand";v="99"', 'Sec-Ch-Ua-Mobile': '?0', 'Origin': 'http://localhost:5173', 'Sec-Fetch-Site': 'same-site', 'Sec-Fetch-Mode': 'cors', 'Sec-Fetch-Dest': 'empty', 'Referer': 'http://localhost:5173/', 'Accept-Encoding': 'gzip, deflate, br, zstd', 'Accept-Language': 'en-US,en;q=0.9,en-IN;q=0.8'}
+2025-05-21 16:10:07,872 INFO: 127.0.0.1 - - [21/May/2025 16:10:07] "GET /api/project/abc/asset/PC1WIN10 HTTP/1.1" 200 -
+2025-05-21 16:18:11,028 INFO: Request from 127.0.0.1 GET /api/project/abc/asset/PC1WIN10
+2025-05-21 16:18:11,028 INFO: Headers: {'Host': 'localhost', 'Connection': 'keep-alive', 'Sec-Ch-Ua-Platform': '"Windows"', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36 Edg/136.0.0.0', 'Accept': 'application/json, text/plain, */*', 'Sec-Ch-Ua': '"Chromium";v="136", "Microsoft Edge";v="136", "Not.A/Brand";v="99"', 'Sec-Ch-Ua-Mobile': '?0', 'Origin': 'http://localhost:5173', 'Sec-Fetch-Site': 'same-site', 'Sec-Fetch-Mode': 'cors', 'Sec-Fetch-Dest': 'empty', 'Referer': 'http://localhost:5173/', 'Accept-Encoding': 'gzip, deflate, br, zstd', 'Accept-Language': 'en-US,en;q=0.9,en-IN;q=0.8'}
+2025-05-21 16:18:11,030 INFO: 127.0.0.1 - - [21/May/2025 16:18:11] "GET /api/project/abc/asset/PC1WIN10 HTTP/1.1" 200 -
+2025-05-21 16:20:06,393 INFO: Request from 127.0.0.1 GET /api/project/abc/asset/PC1WIN10
+2025-05-21 16:20:06,393 INFO: Headers: {'Host': 'localhost', 'Connection': 'keep-alive', 'Sec-Ch-Ua-Platform': '"Windows"', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36 Edg/136.0.0.0', 'Accept': 'application/json, text/plain, */*', 'Sec-Ch-Ua': '"Chromium";v="136", "Microsoft Edge";v="136", "Not.A/Brand";v="99"', 'Sec-Ch-Ua-Mobile': '?0', 'Origin': 'http://localhost:5173', 'Sec-Fetch-Site': 'same-site', 'Sec-Fetch-Mode': 'cors', 'Sec-Fetch-Dest': 'empty', 'Referer': 'http://localhost:5173/', 'Accept-Encoding': 'gzip, deflate, br, zstd', 'Accept-Language': 'en-US,en;q=0.9,en-IN;q=0.8'}
+2025-05-21 16:20:06,394 INFO: 127.0.0.1 - - [21/May/2025 16:20:06] "GET /api/project/abc/asset/PC1WIN10 HTTP/1.1" 200 -
+2025-05-21 16:20:09,043 INFO: Request from 127.0.0.1 GET /api/project/abc/asset/PC1WIN10/pdf/
+2025-05-21 16:20:09,044 INFO: Headers: {'Host': 'localhost', 'Connection': 'keep-alive', 'Sec-Ch-Ua-Platform': '"Windows"', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36 Edg/136.0.0.0', 'Accept': 'application/json, text/plain, */*', 'Sec-Ch-Ua': '"Chromium";v="136", "Microsoft Edge";v="136", "Not.A/Brand";v="99"', 'Sec-Ch-Ua-Mobile': '?0', 'Origin': 'http://localhost:5173', 'Sec-Fetch-Site': 'same-site', 'Sec-Fetch-Mode': 'cors', 'Sec-Fetch-Dest': 'empty', 'Referer': 'http://localhost:5173/', 'Accept-Encoding': 'gzip, deflate, br, zstd', 'Accept-Language': 'en-US,en;q=0.9,en-IN;q=0.8'}
+2025-05-21 16:20:09,045 INFO: 127.0.0.1 - - [21/May/2025 16:20:09] "[33mGET /api/project/abc/asset/PC1WIN10/pdf/ HTTP/1.1[0m" 404 -
+2025-05-21 16:20:11,279 INFO: Request from 127.0.0.1 GET /api/project/abc/asset/PC1WIN10/pdf/
+2025-05-21 16:20:11,279 INFO: Headers: {'Host': 'localhost', 'Connection': 'keep-alive', 'Sec-Ch-Ua-Platform': '"Windows"', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36 Edg/136.0.0.0', 'Accept': 'application/json, text/plain, */*', 'Sec-Ch-Ua': '"Chromium";v="136", "Microsoft Edge";v="136", "Not.A/Brand";v="99"', 'Sec-Ch-Ua-Mobile': '?0', 'Origin': 'http://localhost:5173', 'Sec-Fetch-Site': 'same-site', 'Sec-Fetch-Mode': 'cors', 'Sec-Fetch-Dest': 'empty', 'Referer': 'http://localhost:5173/', 'Accept-Encoding': 'gzip, deflate, br, zstd', 'Accept-Language': 'en-US,en;q=0.9,en-IN;q=0.8'}
+2025-05-21 16:20:11,280 INFO: 127.0.0.1 - - [21/May/2025 16:20:11] "[33mGET /api/project/abc/asset/PC1WIN10/pdf/ HTTP/1.1[0m" 404 -
+2025-05-21 16:28:18,968 INFO: Request from 127.0.0.1 GET /api/project/abc/asset/PC1WIN10
+2025-05-21 16:28:18,968 INFO: Headers: {'Host': 'localhost', 'Connection': 'keep-alive', 'Sec-Ch-Ua-Platform': '"Windows"', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36 Edg/136.0.0.0', 'Accept': 'application/json, text/plain, */*', 'Sec-Ch-Ua': '"Chromium";v="136", "Microsoft Edge";v="136", "Not.A/Brand";v="99"', 'Sec-Ch-Ua-Mobile': '?0', 'Origin': 'http://localhost:5173', 'Sec-Fetch-Site': 'same-site', 'Sec-Fetch-Mode': 'cors', 'Sec-Fetch-Dest': 'empty', 'Referer': 'http://localhost:5173/', 'Accept-Encoding': 'gzip, deflate, br, zstd', 'Accept-Language': 'en-US,en;q=0.9,en-IN;q=0.8'}
+2025-05-21 16:28:18,970 INFO: 127.0.0.1 - - [21/May/2025 16:28:18] "GET /api/project/abc/asset/PC1WIN10 HTTP/1.1" 200 -
+2025-05-21 16:28:20,323 INFO: Request from 127.0.0.1 GET /api/project/abc/asset/PC1WIN10/pdf/
+2025-05-21 16:28:20,324 INFO: Headers: {'Host': 'localhost', 'Connection': 'keep-alive', 'Sec-Ch-Ua-Platform': '"Windows"', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36 Edg/136.0.0.0', 'Accept': 'application/json, text/plain, */*', 'Sec-Ch-Ua': '"Chromium";v="136", "Microsoft Edge";v="136", "Not.A/Brand";v="99"', 'Sec-Ch-Ua-Mobile': '?0', 'Origin': 'http://localhost:5173', 'Sec-Fetch-Site': 'same-site', 'Sec-Fetch-Mode': 'cors', 'Sec-Fetch-Dest': 'empty', 'Referer': 'http://localhost:5173/', 'Accept-Encoding': 'gzip, deflate, br, zstd', 'Accept-Language': 'en-US,en;q=0.9,en-IN;q=0.8'}
+2025-05-21 16:28:20,325 INFO: 127.0.0.1 - - [21/May/2025 16:28:20] "[33mGET /api/project/abc/asset/PC1WIN10/pdf/ HTTP/1.1[0m" 404 -
+2025-05-21 16:28:33,654 INFO: Starting Flask server...
+2025-05-21 16:28:33,669 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:80
+ * Running on http://10.90.123.32:80
+2025-05-21 16:28:33,670 INFO: [33mPress CTRL+C to quit[0m
+2025-05-21 16:28:36,873 INFO: Request from 127.0.0.1 GET /api/project/abc/asset/PC1WIN10/pdf/
+2025-05-21 16:28:36,873 INFO: Headers: {'Host': 'localhost', 'Connection': 'keep-alive', 'Sec-Ch-Ua-Platform': '"Windows"', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36 Edg/136.0.0.0', 'Accept': 'application/json, text/plain, */*', 'Sec-Ch-Ua': '"Chromium";v="136", "Microsoft Edge";v="136", "Not.A/Brand";v="99"', 'Sec-Ch-Ua-Mobile': '?0', 'Origin': 'http://localhost:5173', 'Sec-Fetch-Site': 'same-site', 'Sec-Fetch-Mode': 'cors', 'Sec-Fetch-Dest': 'empty', 'Referer': 'http://localhost:5173/', 'Accept-Encoding': 'gzip, deflate, br, zstd', 'Accept-Language': 'en-US,en;q=0.9,en-IN;q=0.8'}
+2025-05-21 16:28:36,875 ERROR: Exception on /api/project/abc/asset/PC1WIN10/pdf/ [GET]
+Traceback (most recent call last):
+  File "D:\defsecone project\assetdiscovery\Asset_Discovery_Full_Pack\Asset_Discovery\env\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\defsecone project\assetdiscovery\Asset_Discovery_Full_Pack\Asset_Discovery\env\Lib\site-packages\flask\app.py", line 920, in full_dispatch_request
+    return self.finalize_request(rv)
+           ~~~~~~~~~~~~~~~~~~~~~^^^^
+  File "D:\defsecone project\assetdiscovery\Asset_Discovery_Full_Pack\Asset_Discovery\env\Lib\site-packages\flask\app.py", line 939, in finalize_request
+    response = self.make_response(rv)
+  File "D:\defsecone project\assetdiscovery\Asset_Discovery_Full_Pack\Asset_Discovery\env\Lib\site-packages\flask\app.py", line 1212, in make_response
+    raise TypeError(
+    ...<3 lines>...
+    )
+TypeError: The view function for 'download_asset_pdf' did not return a valid response. The function either returned None or ended without a return statement.
+2025-05-21 16:28:36,908 INFO: 127.0.0.1 - - [21/May/2025 16:28:36] "[35m[1mGET /api/project/abc/asset/PC1WIN10/pdf/ HTTP/1.1[0m" 500 -
+2025-05-21 16:31:31,572 INFO: Request from 127.0.0.1 GET /project/abc
+2025-05-21 16:31:31,573 INFO: Headers: {'Host': '127.0.0.1', 'Connection': 'keep-alive', 'Sec-Ch-Ua-Platform': '"Windows"', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36 Edg/136.0.0.0', 'Accept': 'application/json, text/plain, */*', 'Sec-Ch-Ua': '"Chromium";v="136", "Microsoft Edge";v="136", "Not.A/Brand";v="99"', 'Sec-Ch-Ua-Mobile': '?0', 'Origin': 'http://localhost:5173', 'Sec-Fetch-Site': 'cross-site', 'Sec-Fetch-Mode': 'cors', 'Sec-Fetch-Dest': 'empty', 'Referer': 'http://localhost:5173/', 'Accept-Encoding': 'gzip, deflate, br, zstd', 'Accept-Language': 'en-US,en;q=0.9,en-IN;q=0.8'}
+2025-05-21 16:31:31,574 INFO: 127.0.0.1 - - [21/May/2025 16:31:31] "GET /project/abc HTTP/1.1" 200 -
+2025-05-21 16:31:32,669 INFO: Request from 127.0.0.1 GET /projects
+2025-05-21 16:31:32,669 INFO: Headers: {'Host': '127.0.0.1', 'Connection': 'keep-alive', 'Sec-Ch-Ua-Platform': '"Windows"', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36 Edg/136.0.0.0', 'Accept': 'application/json, text/plain, */*', 'Sec-Ch-Ua': '"Chromium";v="136", "Microsoft Edge";v="136", "Not.A/Brand";v="99"', 'Sec-Ch-Ua-Mobile': '?0', 'Origin': 'http://localhost:5173', 'Sec-Fetch-Site': 'cross-site', 'Sec-Fetch-Mode': 'cors', 'Sec-Fetch-Dest': 'empty', 'Referer': 'http://localhost:5173/', 'Accept-Encoding': 'gzip, deflate, br, zstd', 'Accept-Language': 'en-US,en;q=0.9,en-IN;q=0.8'}
+2025-05-21 16:31:32,670 INFO: 127.0.0.1 - - [21/May/2025 16:31:32] "GET /projects HTTP/1.1" 200 -
+2025-05-21 16:31:34,144 INFO: Request from 127.0.0.1 GET /project/abcd
+2025-05-21 16:31:34,145 INFO: Headers: {'Host': '127.0.0.1', 'Connection': 'keep-alive', 'Sec-Ch-Ua-Platform': '"Windows"', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36 Edg/136.0.0.0', 'Accept': 'application/json, text/plain, */*', 'Sec-Ch-Ua': '"Chromium";v="136", "Microsoft Edge";v="136", "Not.A/Brand";v="99"', 'Sec-Ch-Ua-Mobile': '?0', 'Origin': 'http://localhost:5173', 'Sec-Fetch-Site': 'cross-site', 'Sec-Fetch-Mode': 'cors', 'Sec-Fetch-Dest': 'empty', 'Referer': 'http://localhost:5173/', 'Accept-Encoding': 'gzip, deflate, br, zstd', 'Accept-Language': 'en-US,en;q=0.9,en-IN;q=0.8'}
+2025-05-21 16:31:34,151 INFO: 127.0.0.1 - - [21/May/2025 16:31:34] "GET /project/abcd HTTP/1.1" 200 -
+2025-05-21 16:31:36,449 INFO: Request from 127.0.0.1 GET /api/project/abcd/asset/DC1
+2025-05-21 16:31:36,449 INFO: Headers: {'Host': 'localhost', 'Connection': 'keep-alive', 'Sec-Ch-Ua-Platform': '"Windows"', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36 Edg/136.0.0.0', 'Accept': 'application/json, text/plain, */*', 'Sec-Ch-Ua': '"Chromium";v="136", "Microsoft Edge";v="136", "Not.A/Brand";v="99"', 'Sec-Ch-Ua-Mobile': '?0', 'Origin': 'http://localhost:5173', 'Sec-Fetch-Site': 'same-site', 'Sec-Fetch-Mode': 'cors', 'Sec-Fetch-Dest': 'empty', 'Referer': 'http://localhost:5173/', 'Accept-Encoding': 'gzip, deflate, br, zstd', 'Accept-Language': 'en-US,en;q=0.9,en-IN;q=0.8'}
+2025-05-21 16:31:36,450 INFO: 127.0.0.1 - - [21/May/2025 16:31:36] "GET /api/project/abcd/asset/DC1 HTTP/1.1" 200 -
+2025-05-21 16:31:38,212 INFO: Request from 127.0.0.1 GET /project/abcd
+2025-05-21 16:31:38,212 INFO: Headers: {'Host': '127.0.0.1', 'Connection': 'keep-alive', 'Sec-Ch-Ua-Platform': '"Windows"', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36 Edg/136.0.0.0', 'Accept': 'application/json, text/plain, */*', 'Sec-Ch-Ua': '"Chromium";v="136", "Microsoft Edge";v="136", "Not.A/Brand";v="99"', 'Sec-Ch-Ua-Mobile': '?0', 'Origin': 'http://localhost:5173', 'Sec-Fetch-Site': 'cross-site', 'Sec-Fetch-Mode': 'cors', 'Sec-Fetch-Dest': 'empty', 'Referer': 'http://localhost:5173/', 'Accept-Encoding': 'gzip, deflate, br, zstd', 'Accept-Language': 'en-US,en;q=0.9,en-IN;q=0.8'}
+2025-05-21 16:31:38,214 INFO: 127.0.0.1 - - [21/May/2025 16:31:38] "GET /project/abcd HTTP/1.1" 200 -
+2025-05-21 16:31:38,871 INFO: Request from 127.0.0.1 GET /projects
+2025-05-21 16:31:38,872 INFO: Headers: {'Host': '127.0.0.1', 'Connection': 'keep-alive', 'Sec-Ch-Ua-Platform': '"Windows"', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36 Edg/136.0.0.0', 'Accept': 'application/json, text/plain, */*', 'Sec-Ch-Ua': '"Chromium";v="136", "Microsoft Edge";v="136", "Not.A/Brand";v="99"', 'Sec-Ch-Ua-Mobile': '?0', 'Origin': 'http://localhost:5173', 'Sec-Fetch-Site': 'cross-site', 'Sec-Fetch-Mode': 'cors', 'Sec-Fetch-Dest': 'empty', 'Referer': 'http://localhost:5173/', 'Accept-Encoding': 'gzip, deflate, br, zstd', 'Accept-Language': 'en-US,en;q=0.9,en-IN;q=0.8'}
+2025-05-21 16:31:38,873 INFO: 127.0.0.1 - - [21/May/2025 16:31:38] "GET /projects HTTP/1.1" 200 -
+2025-05-21 16:31:45,106 INFO: Request from 127.0.0.1 GET /projects
+2025-05-21 16:31:45,107 INFO: Headers: {'Host': '127.0.0.1', 'Connection': 'keep-alive', 'Sec-Ch-Ua-Platform': '"Windows"', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36 Edg/136.0.0.0', 'Accept': 'application/json, text/plain, */*', 'Sec-Ch-Ua': '"Chromium";v="136", "Microsoft Edge";v="136", "Not.A/Brand";v="99"', 'Sec-Ch-Ua-Mobile': '?0', 'Origin': 'http://localhost:5173', 'Sec-Fetch-Site': 'cross-site', 'Sec-Fetch-Mode': 'cors', 'Sec-Fetch-Dest': 'empty', 'Referer': 'http://localhost:5173/', 'Accept-Encoding': 'gzip, deflate, br, zstd', 'Accept-Language': 'en-US,en;q=0.9,en-IN;q=0.8'}
+2025-05-21 16:31:45,107 INFO: 127.0.0.1 - - [21/May/2025 16:31:45] "GET /projects HTTP/1.1" 200 -
+2025-05-21 16:35:18,402 INFO: Request from 127.0.0.1 GET /project/abcd
+2025-05-21 16:35:18,402 INFO: Headers: {'Host': '127.0.0.1', 'Connection': 'keep-alive', 'Sec-Ch-Ua-Platform': '"Windows"', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36 Edg/136.0.0.0', 'Accept': 'application/json, text/plain, */*', 'Sec-Ch-Ua': '"Chromium";v="136", "Microsoft Edge";v="136", "Not.A/Brand";v="99"', 'Sec-Ch-Ua-Mobile': '?0', 'Origin': 'http://localhost:5173', 'Sec-Fetch-Site': 'cross-site', 'Sec-Fetch-Mode': 'cors', 'Sec-Fetch-Dest': 'empty', 'Referer': 'http://localhost:5173/', 'Accept-Encoding': 'gzip, deflate, br, zstd', 'Accept-Language': 'en-US,en;q=0.9,en-IN;q=0.8'}
+2025-05-21 16:35:18,404 INFO: 127.0.0.1 - - [21/May/2025 16:35:18] "GET /project/abcd HTTP/1.1" 200 -
+2025-05-21 16:35:20,911 INFO: Request from 127.0.0.1 GET /api/project/abcd/asset/PC1WIN10
+2025-05-21 16:35:20,912 INFO: Headers: {'Host': 'localhost', 'Connection': 'keep-alive', 'Sec-Ch-Ua-Platform': '"Windows"', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36 Edg/136.0.0.0', 'Accept': 'application/json, text/plain, */*', 'Sec-Ch-Ua': '"Chromium";v="136", "Microsoft Edge";v="136", "Not.A/Brand";v="99"', 'Sec-Ch-Ua-Mobile': '?0', 'Origin': 'http://localhost:5173', 'Sec-Fetch-Site': 'same-site', 'Sec-Fetch-Mode': 'cors', 'Sec-Fetch-Dest': 'empty', 'Referer': 'http://localhost:5173/', 'Accept-Encoding': 'gzip, deflate, br, zstd', 'Accept-Language': 'en-US,en;q=0.9,en-IN;q=0.8'}
+2025-05-21 16:35:20,913 INFO: 127.0.0.1 - - [21/May/2025 16:35:20] "GET /api/project/abcd/asset/PC1WIN10 HTTP/1.1" 200 -
+2025-05-21 17:03:16,431 INFO: Starting Flask server...
+2025-05-21 17:03:19,681 INFO: Starting Flask server...
+2025-05-21 17:03:19,684 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:80
+ * Running on http://192.168.40.129:80
+2025-05-21 17:03:19,685 INFO: [33mPress CTRL+C to quit[0m
+2025-05-21 17:03:25,114 INFO: Request from 127.0.0.1 GET /project/undefined
+2025-05-21 17:03:25,114 INFO: Headers: {'Host': '127.0.0.1', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; rv:128.0) Gecko/20100101 Firefox/128.0', 'Accept': 'application/json, text/plain, */*', 'Accept-Language': 'en-US,en;q=0.5', 'Accept-Encoding': 'gzip, deflate, br, zstd', 'Referer': 'http://localhost:5173/', 'Origin': 'http://localhost:5173', 'Dnt': '1', 'Connection': 'keep-alive', 'Sec-Fetch-Dest': 'empty', 'Sec-Fetch-Mode': 'cors', 'Sec-Fetch-Site': 'cross-site'}
+2025-05-21 17:03:25,115 ERROR: Database not found at: /home/geo/Desktop/Asset_Discovery/Frontend/untitled folder/Asset_Discovery_Full_Pack/Asset_Discovery/db/undefined.db
+2025-05-21 17:03:25,117 INFO: 127.0.0.1 - - [21/May/2025 17:03:25] "[33mGET /project/undefined HTTP/1.1[0m" 404 -
+2025-05-21 17:03:31,344 INFO: Request from 127.0.0.1 GET /projects
+2025-05-21 17:03:31,345 INFO: Headers: {'Host': '127.0.0.1', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; rv:128.0) Gecko/20100101 Firefox/128.0', 'Accept': 'application/json, text/plain, */*', 'Accept-Language': 'en-US,en;q=0.5', 'Accept-Encoding': 'gzip, deflate, br, zstd', 'Referer': 'http://localhost:5173/', 'Origin': 'http://localhost:5173', 'Dnt': '1', 'Connection': 'keep-alive', 'Sec-Fetch-Dest': 'empty', 'Sec-Fetch-Mode': 'cors', 'Sec-Fetch-Site': 'cross-site'}
+2025-05-21 17:03:31,345 INFO: 127.0.0.1 - - [21/May/2025 17:03:31] "GET /projects HTTP/1.1" 200 -
+2025-05-21 17:03:55,684 INFO: Request from 127.0.0.1 POST /start_scan
+2025-05-21 17:03:55,685 INFO: Headers: {'Host': '127.0.0.1', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; rv:128.0) Gecko/20100101 Firefox/128.0', 'Accept': 'application/json, text/plain, */*', 'Accept-Language': 'en-US,en;q=0.5', 'Accept-Encoding': 'gzip, deflate, br, zstd', 'Referer': 'http://localhost:5173/', 'Content-Type': 'application/x-www-form-urlencoded', 'Content-Length': '110', 'Origin': 'http://localhost:5173', 'Dnt': '1', 'Connection': 'keep-alive', 'Sec-Fetch-Dest': 'empty', 'Sec-Fetch-Mode': 'cors', 'Sec-Fetch-Site': 'cross-site', 'Priority': 'u=0'}
+2025-05-21 17:03:55,686 INFO: Starting asset discovery
+2025-05-21 17:03:55,687 INFO: Checking services on 10.1.1.3...
+2025-05-21 17:03:55,690 INFO: WMI port 135 open on 10.1.1.3. Attempting WMI connection.
+2025-05-21 17:03:56,799 INFO: Request from 10.1.1.3 GET /download
+2025-05-21 17:03:56,799 INFO: Headers: {'User-Agent': 'Mozilla/5.0 (Windows NT; Windows NT 10.0; en-US) WindowsPowerShell/5.1.19041.2673', 'Host': '10.1.1.5', 'Connection': 'Keep-Alive'}
+2025-05-21 17:03:56,799 INFO: Script downloaded by 10.1.1.3
+2025-05-21 17:03:56,802 INFO: 10.1.1.3 - - [21/May/2025 17:03:56] "GET /download HTTP/1.1" 200 -
+2025-05-21 17:04:08,929 INFO: Request from 10.1.1.3 POST /upload
+2025-05-21 17:04:08,929 INFO: Headers: {'User-Agent': 'Mozilla/5.0 (Windows NT; Windows NT 10.0; en-US) WindowsPowerShell/5.1.19041.2673', 'Content-Type': 'application/json', 'Host': '10.1.1.5', 'Content-Length': '19691', 'Expect': '100-continue', 'Connection': 'Keep-Alive'}
+2025-05-21 17:04:08,931 INFO: Data received from 10.1.1.3, saved as 10.1.1.3_PC1WIN10_20250521_170408.json
+2025-05-21 17:04:08,953 INFO: 10.1.1.3 - - [21/May/2025 17:04:08] "POST /upload HTTP/1.1" 200 -
+2025-05-21 17:04:09,821 INFO: [+] Output from 10.1.1.3:
+Impacket v0.13.0.dev0+20250508.104819.fde4265 - Copyright Fortra, LLC and its affiliated companies 
+
+[*] SMBv3.0 dialect used
+#< CLIXML
+
+status  
+------  
+received
+
+
+<Objs Version="1.1.0.1" xmlns="http://schemas.microsoft.com/powershell/2004/04"><Obj S="progress" RefId="0"><TN RefId="0"><T>System.Management.Automation.PSCustomObject</T><T>System.Object</T></TN><MS><I64 N="SourceId">1</I64><PR N="Record"><AV>Preparing modules for first use.</AV><AI>0</AI><Nil /><PI>-1</PI><PC>-1</PC><T>Completed</T><SR>-1</SR><SD> </SD></PR></MS></Obj><Obj S="progress" RefId="1"><TNRef RefId="0" /><MS><I64 N="SourceId">2</I64><PR N="Record"><AV>Writing web request</AV><AI>174593042</AI><Nil /><PI>-1</PI><PC>-1</PC><T>Processing</T><SR>-1</SR><SD>Writing request stream... (Number of bytes written: 0)</SD></PR></MS></Obj><Obj S="progress" RefId="2"><TNRef RefId="0" /><MS><I64 N="SourceId">2</I64><PR N="Record"><AV>Writing web request</AV><AI>174593042</AI><Nil /><PI>-1</PI><PC>-1</PC><T>Processing</T><SR>-1</SR><SD>Writing request stream... (Number of bytes written: 10000)</SD></PR></MS></Obj><Obj S="progress" RefId="3"><TNRef RefId="0" /><MS><I64 N="SourceId">2</I64><PR N="Record"><AV>Writing web request</AV><AI>174593042</AI><Nil /><PI>-1</PI><PC>-1</PC><T>Processing</T><SR>-1</SR><SD>Writing request stream... (Number of bytes written: 20000)</SD></PR></MS></Obj><Obj S="progress" RefId="4"><TNRef RefId="0" /><MS><I64 N="SourceId">2</I64><PR N="Record"><AV>Writing web request</AV><AI>174593042</AI><Nil /><PI>-1</PI><PC>-1</PC><T>Processing</T><SR>-1</SR><SD>Writing request stream... (Number of bytes written: 23037)</SD></PR></MS></Obj><Obj S="progress" RefId="5"><TNRef RefId="0" /><MS><I64 N="SourceId">2</I64><PR N="Record"><AV>Writing web request</AV><AI>174593042</AI><Nil /><PI>-1</PI><PC>-1</PC><T>Completed</T><SR>-1</SR><SD>Writing web request completed. (Number of bytes remaining: 23037)</SD></PR></MS></Obj></Objs>
+
+2025-05-21 17:04:09,822 INFO: WMI scan successful for 10.1.1.3
+2025-05-21 17:04:09,823 INFO: 127.0.0.1 - - [21/May/2025 17:04:09] "POST /start_scan HTTP/1.1" 200 -
+2025-05-21 17:04:21,386 INFO: Request from 127.0.0.1 GET /projects
+2025-05-21 17:04:21,387 INFO: Headers: {'Host': '127.0.0.1', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; rv:128.0) Gecko/20100101 Firefox/128.0', 'Accept': 'application/json, text/plain, */*', 'Accept-Language': 'en-US,en;q=0.5', 'Accept-Encoding': 'gzip, deflate, br, zstd', 'Referer': 'http://localhost:5173/', 'Origin': 'http://localhost:5173', 'Dnt': '1', 'Connection': 'keep-alive', 'Sec-Fetch-Dest': 'empty', 'Sec-Fetch-Mode': 'cors', 'Sec-Fetch-Site': 'cross-site'}
+2025-05-21 17:04:21,387 INFO: 127.0.0.1 - - [21/May/2025 17:04:21] "GET /projects HTTP/1.1" 200 -
+2025-05-21 17:04:24,251 INFO: Request from 127.0.0.1 GET /project/test
+2025-05-21 17:04:24,251 INFO: Headers: {'Host': '127.0.0.1', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; rv:128.0) Gecko/20100101 Firefox/128.0', 'Accept': 'application/json, text/plain, */*', 'Accept-Language': 'en-US,en;q=0.5', 'Accept-Encoding': 'gzip, deflate, br, zstd', 'Referer': 'http://localhost:5173/', 'Origin': 'http://localhost:5173', 'Dnt': '1', 'Connection': 'keep-alive', 'Sec-Fetch-Dest': 'empty', 'Sec-Fetch-Mode': 'cors', 'Sec-Fetch-Site': 'cross-site'}
+2025-05-21 17:04:24,252 INFO: 127.0.0.1 - - [21/May/2025 17:04:24] "GET /project/test HTTP/1.1" 200 -
+2025-05-21 17:04:26,170 INFO: Request from 127.0.0.1 GET /api/project/test/asset/PC1WIN10
+2025-05-21 17:04:26,170 INFO: Headers: {'Host': 'localhost', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; rv:128.0) Gecko/20100101 Firefox/128.0', 'Accept': 'application/json, text/plain, */*', 'Accept-Language': 'en-US,en;q=0.5', 'Accept-Encoding': 'gzip, deflate, br, zstd', 'Referer': 'http://localhost:5173/', 'Origin': 'http://localhost:5173', 'Dnt': '1', 'Connection': 'keep-alive', 'Sec-Fetch-Dest': 'empty', 'Sec-Fetch-Mode': 'cors', 'Sec-Fetch-Site': 'same-site'}
+2025-05-21 17:04:26,173 INFO: 127.0.0.1 - - [21/May/2025 17:04:26] "GET /api/project/test/asset/PC1WIN10 HTTP/1.1" 200 -
+2025-05-21 17:06:03,255 INFO: Request from 127.0.0.1 GET /api/project/test/asset/PC1WIN10/pdf/
+2025-05-21 17:06:03,256 INFO: Headers: {'Host': 'localhost', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; rv:128.0) Gecko/20100101 Firefox/128.0', 'Accept': 'application/json, text/plain, */*', 'Accept-Language': 'en-US,en;q=0.5', 'Accept-Encoding': 'gzip, deflate, br, zstd', 'Referer': 'http://localhost:5173/', 'Origin': 'http://localhost:5173', 'Dnt': '1', 'Connection': 'keep-alive', 'Sec-Fetch-Dest': 'empty', 'Sec-Fetch-Mode': 'cors', 'Sec-Fetch-Site': 'same-site', 'Priority': 'u=0'}
+2025-05-21 17:06:03,257 ERROR: Exception on /api/project/test/asset/PC1WIN10/pdf/ [GET]
+Traceback (most recent call last):
+  File "/home/geo/Desktop/Asset_Discovery/Frontend/untitled folder/Asset_Discovery_Full_Pack/Asset_Discovery/venv/lib/python3.11/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/geo/Desktop/Asset_Discovery/Frontend/untitled folder/Asset_Discovery_Full_Pack/Asset_Discovery/venv/lib/python3.11/site-packages/flask/app.py", line 920, in full_dispatch_request
+    return self.finalize_request(rv)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/geo/Desktop/Asset_Discovery/Frontend/untitled folder/Asset_Discovery_Full_Pack/Asset_Discovery/venv/lib/python3.11/site-packages/flask/app.py", line 939, in finalize_request
+    response = self.make_response(rv)
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/geo/Desktop/Asset_Discovery/Frontend/untitled folder/Asset_Discovery_Full_Pack/Asset_Discovery/venv/lib/python3.11/site-packages/flask/app.py", line 1212, in make_response
+    raise TypeError(
+TypeError: The view function for 'download_asset_pdf' did not return a valid response. The function either returned None or ended without a return statement.
+2025-05-21 17:06:03,259 INFO: 127.0.0.1 - - [21/May/2025 17:06:03] "[35m[1mGET /api/project/test/asset/PC1WIN10/pdf/ HTTP/1.1[0m" 500 -
+2025-05-21 17:06:03,654 INFO: Request from 127.0.0.1 GET /api/project/test/asset/PC1WIN10/pdf/
+2025-05-21 17:06:03,661 INFO: Headers: {'Host': 'localhost', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; rv:128.0) Gecko/20100101 Firefox/128.0', 'Accept': 'application/json, text/plain, */*', 'Accept-Language': 'en-US,en;q=0.5', 'Accept-Encoding': 'gzip, deflate, br, zstd', 'Referer': 'http://localhost:5173/', 'Origin': 'http://localhost:5173', 'Dnt': '1', 'Connection': 'keep-alive', 'Sec-Fetch-Dest': 'empty', 'Sec-Fetch-Mode': 'cors', 'Sec-Fetch-Site': 'same-site', 'Priority': 'u=0'}
+2025-05-21 17:06:03,663 ERROR: Exception on /api/project/test/asset/PC1WIN10/pdf/ [GET]
+Traceback (most recent call last):
+  File "/home/geo/Desktop/Asset_Discovery/Frontend/untitled folder/Asset_Discovery_Full_Pack/Asset_Discovery/venv/lib/python3.11/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/geo/Desktop/Asset_Discovery/Frontend/untitled folder/Asset_Discovery_Full_Pack/Asset_Discovery/venv/lib/python3.11/site-packages/flask/app.py", line 920, in full_dispatch_request
+    return self.finalize_request(rv)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/geo/Desktop/Asset_Discovery/Frontend/untitled folder/Asset_Discovery_Full_Pack/Asset_Discovery/venv/lib/python3.11/site-packages/flask/app.py", line 939, in finalize_request
+    response = self.make_response(rv)
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/geo/Desktop/Asset_Discovery/Frontend/untitled folder/Asset_Discovery_Full_Pack/Asset_Discovery/venv/lib/python3.11/site-packages/flask/app.py", line 1212, in make_response
+    raise TypeError(
+TypeError: The view function for 'download_asset_pdf' did not return a valid response. The function either returned None or ended without a return statement.
+2025-05-21 17:06:03,664 INFO: 127.0.0.1 - - [21/May/2025 17:06:03] "[35m[1mGET /api/project/test/asset/PC1WIN10/pdf/ HTTP/1.1[0m" 500 -
+2025-05-21 17:06:04,025 INFO: Request from 127.0.0.1 GET /api/project/test/asset/PC1WIN10/pdf/
+2025-05-21 17:06:04,026 INFO: Headers: {'Host': 'localhost', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; rv:128.0) Gecko/20100101 Firefox/128.0', 'Accept': 'application/json, text/plain, */*', 'Accept-Language': 'en-US,en;q=0.5', 'Accept-Encoding': 'gzip, deflate, br, zstd', 'Referer': 'http://localhost:5173/', 'Origin': 'http://localhost:5173', 'Dnt': '1', 'Connection': 'keep-alive', 'Sec-Fetch-Dest': 'empty', 'Sec-Fetch-Mode': 'cors', 'Sec-Fetch-Site': 'same-site', 'Priority': 'u=0'}
+2025-05-21 17:06:04,028 ERROR: Exception on /api/project/test/asset/PC1WIN10/pdf/ [GET]
+Traceback (most recent call last):
+  File "/home/geo/Desktop/Asset_Discovery/Frontend/untitled folder/Asset_Discovery_Full_Pack/Asset_Discovery/venv/lib/python3.11/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/geo/Desktop/Asset_Discovery/Frontend/untitled folder/Asset_Discovery_Full_Pack/Asset_Discovery/venv/lib/python3.11/site-packages/flask/app.py", line 920, in full_dispatch_request
+    return self.finalize_request(rv)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/geo/Desktop/Asset_Discovery/Frontend/untitled folder/Asset_Discovery_Full_Pack/Asset_Discovery/venv/lib/python3.11/site-packages/flask/app.py", line 939, in finalize_request
+    response = self.make_response(rv)
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/geo/Desktop/Asset_Discovery/Frontend/untitled folder/Asset_Discovery_Full_Pack/Asset_Discovery/venv/lib/python3.11/site-packages/flask/app.py", line 1212, in make_response
+    raise TypeError(
+TypeError: The view function for 'download_asset_pdf' did not return a valid response. The function either returned None or ended without a return statement.
+2025-05-21 17:06:04,029 INFO: 127.0.0.1 - - [21/May/2025 17:06:04] "[35m[1mGET /api/project/test/asset/PC1WIN10/pdf/ HTTP/1.1[0m" 500 -
+2025-05-21 17:06:04,207 INFO: Request from 127.0.0.1 GET /api/project/test/asset/PC1WIN10/pdf/
+2025-05-21 17:06:04,207 INFO: Headers: {'Host': 'localhost', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; rv:128.0) Gecko/20100101 Firefox/128.0', 'Accept': 'application/json, text/plain, */*', 'Accept-Language': 'en-US,en;q=0.5', 'Accept-Encoding': 'gzip, deflate, br, zstd', 'Referer': 'http://localhost:5173/', 'Origin': 'http://localhost:5173', 'Dnt': '1', 'Connection': 'keep-alive', 'Sec-Fetch-Dest': 'empty', 'Sec-Fetch-Mode': 'cors', 'Sec-Fetch-Site': 'same-site', 'Priority': 'u=0'}
+2025-05-21 17:06:04,211 ERROR: Exception on /api/project/test/asset/PC1WIN10/pdf/ [GET]
+Traceback (most recent call last):
+  File "/home/geo/Desktop/Asset_Discovery/Frontend/untitled folder/Asset_Discovery_Full_Pack/Asset_Discovery/venv/lib/python3.11/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/geo/Desktop/Asset_Discovery/Frontend/untitled folder/Asset_Discovery_Full_Pack/Asset_Discovery/venv/lib/python3.11/site-packages/flask/app.py", line 920, in full_dispatch_request
+    return self.finalize_request(rv)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/geo/Desktop/Asset_Discovery/Frontend/untitled folder/Asset_Discovery_Full_Pack/Asset_Discovery/venv/lib/python3.11/site-packages/flask/app.py", line 939, in finalize_request
+    response = self.make_response(rv)
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/geo/Desktop/Asset_Discovery/Frontend/untitled folder/Asset_Discovery_Full_Pack/Asset_Discovery/venv/lib/python3.11/site-packages/flask/app.py", line 1212, in make_response
+    raise TypeError(
+TypeError: The view function for 'download_asset_pdf' did not return a valid response. The function either returned None or ended without a return statement.
+2025-05-21 17:06:04,213 INFO: 127.0.0.1 - - [21/May/2025 17:06:04] "[35m[1mGET /api/project/test/asset/PC1WIN10/pdf/ HTTP/1.1[0m" 500 -
+2025-05-21 17:06:55,720 INFO: Request from 127.0.0.1 GET /project/test
+2025-05-21 17:06:55,720 INFO: Headers: {'Host': '127.0.0.1', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; rv:128.0) Gecko/20100101 Firefox/128.0', 'Accept': 'application/json, text/plain, */*', 'Accept-Language': 'en-US,en;q=0.5', 'Accept-Encoding': 'gzip, deflate, br, zstd', 'Referer': 'http://localhost:5173/', 'Origin': 'http://localhost:5173', 'Dnt': '1', 'Connection': 'keep-alive', 'Sec-Fetch-Dest': 'empty', 'Sec-Fetch-Mode': 'cors', 'Sec-Fetch-Site': 'cross-site'}
+2025-05-21 17:06:55,722 INFO: 127.0.0.1 - - [21/May/2025 17:06:55] "GET /project/test HTTP/1.1" 200 -
+2025-05-21 17:06:56,927 INFO: Request from 127.0.0.1 GET /projects
+2025-05-21 17:06:56,945 INFO: Headers: {'Host': '127.0.0.1', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; rv:128.0) Gecko/20100101 Firefox/128.0', 'Accept': 'application/json, text/plain, */*', 'Accept-Language': 'en-US,en;q=0.5', 'Accept-Encoding': 'gzip, deflate, br, zstd', 'Referer': 'http://localhost:5173/', 'Origin': 'http://localhost:5173', 'Dnt': '1', 'Connection': 'keep-alive', 'Sec-Fetch-Dest': 'empty', 'Sec-Fetch-Mode': 'cors', 'Sec-Fetch-Site': 'cross-site'}
+2025-05-21 17:06:56,951 INFO: 127.0.0.1 - - [21/May/2025 17:06:56] "GET /projects HTTP/1.1" 200 -
+2025-05-21 17:07:00,990 INFO: Request from 127.0.0.1 GET /project/test
+2025-05-21 17:07:00,990 INFO: Headers: {'Host': '127.0.0.1', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; rv:128.0) Gecko/20100101 Firefox/128.0', 'Accept': 'application/json, text/plain, */*', 'Accept-Language': 'en-US,en;q=0.5', 'Accept-Encoding': 'gzip, deflate, br, zstd', 'Referer': 'http://localhost:5173/', 'Origin': 'http://localhost:5173', 'Dnt': '1', 'Connection': 'keep-alive', 'Sec-Fetch-Dest': 'empty', 'Sec-Fetch-Mode': 'cors', 'Sec-Fetch-Site': 'cross-site'}
+2025-05-21 17:07:00,992 INFO: 127.0.0.1 - - [21/May/2025 17:07:00] "GET /project/test HTTP/1.1" 200 -
+2025-05-21 17:07:04,924 INFO: Request from 127.0.0.1 GET /api/project/test/asset/PC1WIN10
+2025-05-21 17:07:04,925 INFO: Headers: {'Host': 'localhost', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; rv:128.0) Gecko/20100101 Firefox/128.0', 'Accept': 'application/json, text/plain, */*', 'Accept-Language': 'en-US,en;q=0.5', 'Accept-Encoding': 'gzip, deflate, br, zstd', 'Referer': 'http://localhost:5173/', 'Origin': 'http://localhost:5173', 'Dnt': '1', 'Connection': 'keep-alive', 'Sec-Fetch-Dest': 'empty', 'Sec-Fetch-Mode': 'cors', 'Sec-Fetch-Site': 'same-site'}
+2025-05-21 17:07:04,926 INFO: 127.0.0.1 - - [21/May/2025 17:07:04] "GET /api/project/test/asset/PC1WIN10 HTTP/1.1" 200 -
+2025-05-22 08:59:19,391 INFO: Request from 127.0.0.1 GET /api/project/test/asset/PC1WIN10/pdf/
+2025-05-22 08:59:19,392 INFO: Headers: {'Host': 'localhost', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; rv:128.0) Gecko/20100101 Firefox/128.0', 'Accept': 'application/json, text/plain, */*', 'Accept-Language': 'en-US,en;q=0.5', 'Accept-Encoding': 'gzip, deflate, br, zstd', 'Referer': 'http://localhost:5173/', 'Origin': 'http://localhost:5173', 'Dnt': '1', 'Connection': 'keep-alive', 'Sec-Fetch-Dest': 'empty', 'Sec-Fetch-Mode': 'cors', 'Sec-Fetch-Site': 'same-site', 'Priority': 'u=0'}
+2025-05-22 08:59:19,395 ERROR: Exception on /api/project/test/asset/PC1WIN10/pdf/ [GET]
+Traceback (most recent call last):
+  File "/home/geo/Desktop/Asset_Discovery/Frontend/untitled folder/Asset_Discovery_Full_Pack/Asset_Discovery/venv/lib/python3.11/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/geo/Desktop/Asset_Discovery/Frontend/untitled folder/Asset_Discovery_Full_Pack/Asset_Discovery/venv/lib/python3.11/site-packages/flask/app.py", line 920, in full_dispatch_request
+    return self.finalize_request(rv)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/geo/Desktop/Asset_Discovery/Frontend/untitled folder/Asset_Discovery_Full_Pack/Asset_Discovery/venv/lib/python3.11/site-packages/flask/app.py", line 939, in finalize_request
+    response = self.make_response(rv)
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/geo/Desktop/Asset_Discovery/Frontend/untitled folder/Asset_Discovery_Full_Pack/Asset_Discovery/venv/lib/python3.11/site-packages/flask/app.py", line 1212, in make_response
+    raise TypeError(
+TypeError: The view function for 'download_asset_pdf' did not return a valid response. The function either returned None or ended without a return statement.
+2025-05-22 08:59:19,402 INFO: 127.0.0.1 - - [22/May/2025 08:59:19] "[35m[1mGET /api/project/test/asset/PC1WIN10/pdf/ HTTP/1.1[0m" 500 -
+2025-05-22 08:59:20,472 INFO: Request from 127.0.0.1 GET /api/project/test/asset/PC1WIN10/pdf/
+2025-05-22 08:59:20,472 INFO: Headers: {'Host': 'localhost', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; rv:128.0) Gecko/20100101 Firefox/128.0', 'Accept': 'application/json, text/plain, */*', 'Accept-Language': 'en-US,en;q=0.5', 'Accept-Encoding': 'gzip, deflate, br, zstd', 'Referer': 'http://localhost:5173/', 'Origin': 'http://localhost:5173', 'Dnt': '1', 'Connection': 'keep-alive', 'Sec-Fetch-Dest': 'empty', 'Sec-Fetch-Mode': 'cors', 'Sec-Fetch-Site': 'same-site', 'Priority': 'u=0'}
+2025-05-22 08:59:20,473 ERROR: Exception on /api/project/test/asset/PC1WIN10/pdf/ [GET]
+Traceback (most recent call last):
+  File "/home/geo/Desktop/Asset_Discovery/Frontend/untitled folder/Asset_Discovery_Full_Pack/Asset_Discovery/venv/lib/python3.11/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/geo/Desktop/Asset_Discovery/Frontend/untitled folder/Asset_Discovery_Full_Pack/Asset_Discovery/venv/lib/python3.11/site-packages/flask/app.py", line 920, in full_dispatch_request
+    return self.finalize_request(rv)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/geo/Desktop/Asset_Discovery/Frontend/untitled folder/Asset_Discovery_Full_Pack/Asset_Discovery/venv/lib/python3.11/site-packages/flask/app.py", line 939, in finalize_request
+    response = self.make_response(rv)
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/geo/Desktop/Asset_Discovery/Frontend/untitled folder/Asset_Discovery_Full_Pack/Asset_Discovery/venv/lib/python3.11/site-packages/flask/app.py", line 1212, in make_response
+    raise TypeError(
+TypeError: The view function for 'download_asset_pdf' did not return a valid response. The function either returned None or ended without a return statement.
+2025-05-22 08:59:20,474 INFO: 127.0.0.1 - - [22/May/2025 08:59:20] "[35m[1mGET /api/project/test/asset/PC1WIN10/pdf/ HTTP/1.1[0m" 500 -
+2025-05-22 08:59:21,065 INFO: Request from 127.0.0.1 GET /api/project/test/asset/PC1WIN10/pdf/
+2025-05-22 08:59:21,066 INFO: Headers: {'Host': 'localhost', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; rv:128.0) Gecko/20100101 Firefox/128.0', 'Accept': 'application/json, text/plain, */*', 'Accept-Language': 'en-US,en;q=0.5', 'Accept-Encoding': 'gzip, deflate, br, zstd', 'Referer': 'http://localhost:5173/', 'Origin': 'http://localhost:5173', 'Dnt': '1', 'Connection': 'keep-alive', 'Sec-Fetch-Dest': 'empty', 'Sec-Fetch-Mode': 'cors', 'Sec-Fetch-Site': 'same-site', 'Priority': 'u=0'}
+2025-05-22 08:59:21,066 ERROR: Exception on /api/project/test/asset/PC1WIN10/pdf/ [GET]
+Traceback (most recent call last):
+  File "/home/geo/Desktop/Asset_Discovery/Frontend/untitled folder/Asset_Discovery_Full_Pack/Asset_Discovery/venv/lib/python3.11/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/geo/Desktop/Asset_Discovery/Frontend/untitled folder/Asset_Discovery_Full_Pack/Asset_Discovery/venv/lib/python3.11/site-packages/flask/app.py", line 920, in full_dispatch_request
+    return self.finalize_request(rv)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/geo/Desktop/Asset_Discovery/Frontend/untitled folder/Asset_Discovery_Full_Pack/Asset_Discovery/venv/lib/python3.11/site-packages/flask/app.py", line 939, in finalize_request
+    response = self.make_response(rv)
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/geo/Desktop/Asset_Discovery/Frontend/untitled folder/Asset_Discovery_Full_Pack/Asset_Discovery/venv/lib/python3.11/site-packages/flask/app.py", line 1212, in make_response
+    raise TypeError(
+TypeError: The view function for 'download_asset_pdf' did not return a valid response. The function either returned None or ended without a return statement.
+2025-05-22 08:59:21,067 INFO: 127.0.0.1 - - [22/May/2025 08:59:21] "[35m[1mGET /api/project/test/asset/PC1WIN10/pdf/ HTTP/1.1[0m" 500 -
+2025-05-22 08:59:21,755 INFO: Request from 127.0.0.1 GET /api/project/test/asset/PC1WIN10/pdf/
+2025-05-22 08:59:21,757 INFO: Headers: {'Host': 'localhost', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; rv:128.0) Gecko/20100101 Firefox/128.0', 'Accept': 'application/json, text/plain, */*', 'Accept-Language': 'en-US,en;q=0.5', 'Accept-Encoding': 'gzip, deflate, br, zstd', 'Referer': 'http://localhost:5173/', 'Origin': 'http://localhost:5173', 'Dnt': '1', 'Connection': 'keep-alive', 'Sec-Fetch-Dest': 'empty', 'Sec-Fetch-Mode': 'cors', 'Sec-Fetch-Site': 'same-site', 'Priority': 'u=0'}
+2025-05-22 08:59:21,758 ERROR: Exception on /api/project/test/asset/PC1WIN10/pdf/ [GET]
+Traceback (most recent call last):
+  File "/home/geo/Desktop/Asset_Discovery/Frontend/untitled folder/Asset_Discovery_Full_Pack/Asset_Discovery/venv/lib/python3.11/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/geo/Desktop/Asset_Discovery/Frontend/untitled folder/Asset_Discovery_Full_Pack/Asset_Discovery/venv/lib/python3.11/site-packages/flask/app.py", line 920, in full_dispatch_request
+    return self.finalize_request(rv)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/geo/Desktop/Asset_Discovery/Frontend/untitled folder/Asset_Discovery_Full_Pack/Asset_Discovery/venv/lib/python3.11/site-packages/flask/app.py", line 939, in finalize_request
+    response = self.make_response(rv)
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/geo/Desktop/Asset_Discovery/Frontend/untitled folder/Asset_Discovery_Full_Pack/Asset_Discovery/venv/lib/python3.11/site-packages/flask/app.py", line 1212, in make_response
+    raise TypeError(
+TypeError: The view function for 'download_asset_pdf' did not return a valid response. The function either returned None or ended without a return statement.
+2025-05-22 08:59:21,760 INFO: 127.0.0.1 - - [22/May/2025 08:59:21] "[35m[1mGET /api/project/test/asset/PC1WIN10/pdf/ HTTP/1.1[0m" 500 -
+2025-05-22 08:59:22,375 INFO: Request from 127.0.0.1 GET /api/project/test/asset/PC1WIN10/pdf/
+2025-05-22 08:59:22,375 INFO: Headers: {'Host': 'localhost', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; rv:128.0) Gecko/20100101 Firefox/128.0', 'Accept': 'application/json, text/plain, */*', 'Accept-Language': 'en-US,en;q=0.5', 'Accept-Encoding': 'gzip, deflate, br, zstd', 'Referer': 'http://localhost:5173/', 'Origin': 'http://localhost:5173', 'Dnt': '1', 'Connection': 'keep-alive', 'Sec-Fetch-Dest': 'empty', 'Sec-Fetch-Mode': 'cors', 'Sec-Fetch-Site': 'same-site', 'Priority': 'u=0'}
+2025-05-22 08:59:22,378 ERROR: Exception on /api/project/test/asset/PC1WIN10/pdf/ [GET]
+Traceback (most recent call last):
+  File "/home/geo/Desktop/Asset_Discovery/Frontend/untitled folder/Asset_Discovery_Full_Pack/Asset_Discovery/venv/lib/python3.11/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/geo/Desktop/Asset_Discovery/Frontend/untitled folder/Asset_Discovery_Full_Pack/Asset_Discovery/venv/lib/python3.11/site-packages/flask/app.py", line 920, in full_dispatch_request
+    return self.finalize_request(rv)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/geo/Desktop/Asset_Discovery/Frontend/untitled folder/Asset_Discovery_Full_Pack/Asset_Discovery/venv/lib/python3.11/site-packages/flask/app.py", line 939, in finalize_request
+    response = self.make_response(rv)
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/geo/Desktop/Asset_Discovery/Frontend/untitled folder/Asset_Discovery_Full_Pack/Asset_Discovery/venv/lib/python3.11/site-packages/flask/app.py", line 1212, in make_response
+    raise TypeError(
+TypeError: The view function for 'download_asset_pdf' did not return a valid response. The function either returned None or ended without a return statement.
+2025-05-22 08:59:22,378 INFO: 127.0.0.1 - - [22/May/2025 08:59:22] "[35m[1mGET /api/project/test/asset/PC1WIN10/pdf/ HTTP/1.1[0m" 500 -
+2025-05-22 08:59:22,926 INFO: Request from 127.0.0.1 GET /api/project/test/asset/PC1WIN10/pdf/
+2025-05-22 08:59:22,926 INFO: Headers: {'Host': 'localhost', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; rv:128.0) Gecko/20100101 Firefox/128.0', 'Accept': 'application/json, text/plain, */*', 'Accept-Language': 'en-US,en;q=0.5', 'Accept-Encoding': 'gzip, deflate, br, zstd', 'Referer': 'http://localhost:5173/', 'Origin': 'http://localhost:5173', 'Dnt': '1', 'Connection': 'keep-alive', 'Sec-Fetch-Dest': 'empty', 'Sec-Fetch-Mode': 'cors', 'Sec-Fetch-Site': 'same-site', 'Priority': 'u=0'}
+2025-05-22 08:59:22,928 ERROR: Exception on /api/project/test/asset/PC1WIN10/pdf/ [GET]
+Traceback (most recent call last):
+  File "/home/geo/Desktop/Asset_Discovery/Frontend/untitled folder/Asset_Discovery_Full_Pack/Asset_Discovery/venv/lib/python3.11/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/geo/Desktop/Asset_Discovery/Frontend/untitled folder/Asset_Discovery_Full_Pack/Asset_Discovery/venv/lib/python3.11/site-packages/flask/app.py", line 920, in full_dispatch_request
+    return self.finalize_request(rv)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/geo/Desktop/Asset_Discovery/Frontend/untitled folder/Asset_Discovery_Full_Pack/Asset_Discovery/venv/lib/python3.11/site-packages/flask/app.py", line 939, in finalize_request
+    response = self.make_response(rv)
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/geo/Desktop/Asset_Discovery/Frontend/untitled folder/Asset_Discovery_Full_Pack/Asset_Discovery/venv/lib/python3.11/site-packages/flask/app.py", line 1212, in make_response
+    raise TypeError(
+TypeError: The view function for 'download_asset_pdf' did not return a valid response. The function either returned None or ended without a return statement.
+2025-05-22 08:59:22,930 INFO: 127.0.0.1 - - [22/May/2025 08:59:22] "[35m[1mGET /api/project/test/asset/PC1WIN10/pdf/ HTTP/1.1[0m" 500 -
+2025-05-22 08:59:23,147 INFO: Request from 127.0.0.1 GET /api/project/test/asset/PC1WIN10/pdf/
+2025-05-22 08:59:23,149 INFO: Headers: {'Host': 'localhost', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; rv:128.0) Gecko/20100101 Firefox/128.0', 'Accept': 'application/json, text/plain, */*', 'Accept-Language': 'en-US,en;q=0.5', 'Accept-Encoding': 'gzip, deflate, br, zstd', 'Referer': 'http://localhost:5173/', 'Origin': 'http://localhost:5173', 'Dnt': '1', 'Connection': 'keep-alive', 'Sec-Fetch-Dest': 'empty', 'Sec-Fetch-Mode': 'cors', 'Sec-Fetch-Site': 'same-site', 'Priority': 'u=0'}
+2025-05-22 08:59:23,150 ERROR: Exception on /api/project/test/asset/PC1WIN10/pdf/ [GET]
+Traceback (most recent call last):
+  File "/home/geo/Desktop/Asset_Discovery/Frontend/untitled folder/Asset_Discovery_Full_Pack/Asset_Discovery/venv/lib/python3.11/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/geo/Desktop/Asset_Discovery/Frontend/untitled folder/Asset_Discovery_Full_Pack/Asset_Discovery/venv/lib/python3.11/site-packages/flask/app.py", line 920, in full_dispatch_request
+    return self.finalize_request(rv)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/geo/Desktop/Asset_Discovery/Frontend/untitled folder/Asset_Discovery_Full_Pack/Asset_Discovery/venv/lib/python3.11/site-packages/flask/app.py", line 939, in finalize_request
+    response = self.make_response(rv)
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/geo/Desktop/Asset_Discovery/Frontend/untitled folder/Asset_Discovery_Full_Pack/Asset_Discovery/venv/lib/python3.11/site-packages/flask/app.py", line 1212, in make_response
+    raise TypeError(
+TypeError: The view function for 'download_asset_pdf' did not return a valid response. The function either returned None or ended without a return statement.
+2025-05-22 08:59:23,155 INFO: 127.0.0.1 - - [22/May/2025 08:59:23] "[35m[1mGET /api/project/test/asset/PC1WIN10/pdf/ HTTP/1.1[0m" 500 -
+2025-05-22 08:59:27,562 INFO: Request from 127.0.0.1 GET /project/undefined
+2025-05-22 08:59:27,562 INFO: Headers: {'Host': '127.0.0.1', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; rv:128.0) Gecko/20100101 Firefox/128.0', 'Accept': 'application/json, text/plain, */*', 'Accept-Language': 'en-US,en;q=0.5', 'Accept-Encoding': 'gzip, deflate, br, zstd', 'Referer': 'http://localhost:5173/', 'Origin': 'http://localhost:5173', 'Dnt': '1', 'Connection': 'keep-alive', 'Sec-Fetch-Dest': 'empty', 'Sec-Fetch-Mode': 'cors', 'Sec-Fetch-Site': 'cross-site'}
+2025-05-22 08:59:27,565 ERROR: Database not found at: /home/geo/Desktop/Asset_Discovery/Frontend/untitled folder/Asset_Discovery_Full_Pack/Asset_Discovery/db/undefined.db
+2025-05-22 08:59:27,566 INFO: 127.0.0.1 - - [22/May/2025 08:59:27] "[33mGET /project/undefined HTTP/1.1[0m" 404 -
+2025-05-22 08:59:34,147 INFO: Request from 127.0.0.1 GET /projects
+2025-05-22 08:59:34,151 INFO: Headers: {'Host': '127.0.0.1', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; rv:128.0) Gecko/20100101 Firefox/128.0', 'Accept': 'application/json, text/plain, */*', 'Accept-Language': 'en-US,en;q=0.5', 'Accept-Encoding': 'gzip, deflate, br, zstd', 'Referer': 'http://localhost:5173/', 'Origin': 'http://localhost:5173', 'Dnt': '1', 'Connection': 'keep-alive', 'Sec-Fetch-Dest': 'empty', 'Sec-Fetch-Mode': 'cors', 'Sec-Fetch-Site': 'cross-site'}
+2025-05-22 08:59:34,152 INFO: 127.0.0.1 - - [22/May/2025 08:59:34] "GET /projects HTTP/1.1" 200 -
+2025-05-22 09:01:03,028 INFO: Request from 127.0.0.1 GET /project/undefined
+2025-05-22 09:01:03,029 INFO: Headers: {'Host': '127.0.0.1', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; rv:128.0) Gecko/20100101 Firefox/128.0', 'Accept': 'application/json, text/plain, */*', 'Accept-Language': 'en-US,en;q=0.5', 'Accept-Encoding': 'gzip, deflate, br, zstd', 'Referer': 'http://localhost:5173/', 'Origin': 'http://localhost:5173', 'Dnt': '1', 'Connection': 'keep-alive', 'Sec-Fetch-Dest': 'empty', 'Sec-Fetch-Mode': 'cors', 'Sec-Fetch-Site': 'cross-site'}
+2025-05-22 09:01:03,029 ERROR: Database not found at: /home/geo/Desktop/Asset_Discovery/Frontend/untitled folder/Asset_Discovery_Full_Pack/Asset_Discovery/db/undefined.db
+2025-05-22 09:01:03,030 INFO: 127.0.0.1 - - [22/May/2025 09:01:03] "[33mGET /project/undefined HTTP/1.1[0m" 404 -
+2025-05-22 09:01:15,969 INFO: Request from 127.0.0.1 GET /projects
+2025-05-22 09:01:15,970 INFO: Headers: {'Host': '127.0.0.1', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; rv:128.0) Gecko/20100101 Firefox/128.0', 'Accept': 'application/json, text/plain, */*', 'Accept-Language': 'en-US,en;q=0.5', 'Accept-Encoding': 'gzip, deflate, br, zstd', 'Referer': 'http://localhost:5173/', 'Origin': 'http://localhost:5173', 'Dnt': '1', 'Connection': 'keep-alive', 'Sec-Fetch-Dest': 'empty', 'Sec-Fetch-Mode': 'cors', 'Sec-Fetch-Site': 'cross-site'}
+2025-05-22 09:01:15,971 INFO: 127.0.0.1 - - [22/May/2025 09:01:15] "GET /projects HTTP/1.1" 200 -
+2025-05-22 09:01:43,335 INFO: Request from 127.0.0.1 GET /projects
+2025-05-22 09:01:43,335 INFO: Headers: {'Host': '127.0.0.1', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; rv:128.0) Gecko/20100101 Firefox/128.0', 'Accept': 'application/json, text/plain, */*', 'Accept-Language': 'en-US,en;q=0.5', 'Accept-Encoding': 'gzip, deflate, br, zstd', 'Referer': 'http://localhost:5173/', 'Origin': 'http://localhost:5173', 'Dnt': '1', 'Connection': 'keep-alive', 'Sec-Fetch-Dest': 'empty', 'Sec-Fetch-Mode': 'cors', 'Sec-Fetch-Site': 'cross-site'}
+2025-05-22 09:01:43,335 INFO: 127.0.0.1 - - [22/May/2025 09:01:43] "GET /projects HTTP/1.1" 200 -
+2025-05-22 09:02:00,537 INFO: Request from 127.0.0.1 GET /project/abc
+2025-05-22 09:02:00,537 INFO: Headers: {'Host': '127.0.0.1', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; rv:128.0) Gecko/20100101 Firefox/128.0', 'Accept': 'application/json, text/plain, */*', 'Accept-Language': 'en-US,en;q=0.5', 'Accept-Encoding': 'gzip, deflate, br, zstd', 'Referer': 'http://localhost:5173/', 'Origin': 'http://localhost:5173', 'Dnt': '1', 'Connection': 'keep-alive', 'Sec-Fetch-Dest': 'empty', 'Sec-Fetch-Mode': 'cors', 'Sec-Fetch-Site': 'cross-site'}
+2025-05-22 09:02:00,541 INFO: 127.0.0.1 - - [22/May/2025 09:02:00] "GET /project/abc HTTP/1.1" 200 -
+2025-05-22 09:02:05,935 INFO: Request from 127.0.0.1 GET /api/project/abc/asset/PC1WIN10
+2025-05-22 09:02:05,936 INFO: Headers: {'Host': 'localhost', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; rv:128.0) Gecko/20100101 Firefox/128.0', 'Accept': 'application/json, text/plain, */*', 'Accept-Language': 'en-US,en;q=0.5', 'Accept-Encoding': 'gzip, deflate, br, zstd', 'Referer': 'http://localhost:5173/', 'Origin': 'http://localhost:5173', 'Dnt': '1', 'Connection': 'keep-alive', 'Sec-Fetch-Dest': 'empty', 'Sec-Fetch-Mode': 'cors', 'Sec-Fetch-Site': 'same-site'}
+2025-05-22 09:02:05,937 INFO: 127.0.0.1 - - [22/May/2025 09:02:05] "GET /api/project/abc/asset/PC1WIN10 HTTP/1.1" 200 -
+2025-05-22 09:02:44,050 INFO: Request from 127.0.0.1 GET /project/abc
+2025-05-22 09:02:44,051 INFO: Headers: {'Host': '127.0.0.1', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; rv:128.0) Gecko/20100101 Firefox/128.0', 'Accept': 'application/json, text/plain, */*', 'Accept-Language': 'en-US,en;q=0.5', 'Accept-Encoding': 'gzip, deflate, br, zstd', 'Referer': 'http://localhost:5173/', 'Origin': 'http://localhost:5173', 'Dnt': '1', 'Connection': 'keep-alive', 'Sec-Fetch-Dest': 'empty', 'Sec-Fetch-Mode': 'cors', 'Sec-Fetch-Site': 'cross-site'}
+2025-05-22 09:02:44,056 INFO: 127.0.0.1 - - [22/May/2025 09:02:44] "GET /project/abc HTTP/1.1" 200 -
+2025-05-22 09:02:45,885 INFO: Request from 127.0.0.1 GET /projects
+2025-05-22 09:02:45,889 INFO: Headers: {'Host': '127.0.0.1', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; rv:128.0) Gecko/20100101 Firefox/128.0', 'Accept': 'application/json, text/plain, */*', 'Accept-Language': 'en-US,en;q=0.5', 'Accept-Encoding': 'gzip, deflate, br, zstd', 'Referer': 'http://localhost:5173/', 'Origin': 'http://localhost:5173', 'Dnt': '1', 'Connection': 'keep-alive', 'Sec-Fetch-Dest': 'empty', 'Sec-Fetch-Mode': 'cors', 'Sec-Fetch-Site': 'cross-site'}
+2025-05-22 09:02:45,891 INFO: 127.0.0.1 - - [22/May/2025 09:02:45] "GET /projects HTTP/1.1" 200 -
+2025-05-22 09:02:52,748 INFO: Request from 127.0.0.1 GET /project/abc
+2025-05-22 09:02:52,750 INFO: Headers: {'Host': '127.0.0.1', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; rv:128.0) Gecko/20100101 Firefox/128.0', 'Accept': 'application/json, text/plain, */*', 'Accept-Language': 'en-US,en;q=0.5', 'Accept-Encoding': 'gzip, deflate, br, zstd', 'Referer': 'http://localhost:5173/', 'Origin': 'http://localhost:5173', 'Dnt': '1', 'Connection': 'keep-alive', 'Sec-Fetch-Dest': 'empty', 'Sec-Fetch-Mode': 'cors', 'Sec-Fetch-Site': 'cross-site'}
+2025-05-22 09:02:52,754 INFO: 127.0.0.1 - - [22/May/2025 09:02:52] "GET /project/abc HTTP/1.1" 200 -
+2025-05-22 09:03:10,114 INFO: Request from 127.0.0.1 GET /api/project/abc/asset/PC1WIN10
+2025-05-22 09:03:10,115 INFO: Headers: {'Host': 'localhost', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; rv:128.0) Gecko/20100101 Firefox/128.0', 'Accept': 'application/json, text/plain, */*', 'Accept-Language': 'en-US,en;q=0.5', 'Accept-Encoding': 'gzip, deflate, br, zstd', 'Referer': 'http://localhost:5173/', 'Origin': 'http://localhost:5173', 'Dnt': '1', 'Connection': 'keep-alive', 'Sec-Fetch-Dest': 'empty', 'Sec-Fetch-Mode': 'cors', 'Sec-Fetch-Site': 'same-site'}
+2025-05-22 09:03:10,119 INFO: 127.0.0.1 - - [22/May/2025 09:03:10] "GET /api/project/abc/asset/PC1WIN10 HTTP/1.1" 200 -
+2025-05-22 09:03:11,607 INFO: Request from 127.0.0.1 GET /api/project/abc/asset/PC1WIN10/pdf/
+2025-05-22 09:03:11,607 INFO: Headers: {'Host': 'localhost', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; rv:128.0) Gecko/20100101 Firefox/128.0', 'Accept': 'application/json, text/plain, */*', 'Accept-Language': 'en-US,en;q=0.5', 'Accept-Encoding': 'gzip, deflate, br, zstd', 'Referer': 'http://localhost:5173/', 'Origin': 'http://localhost:5173', 'Dnt': '1', 'Connection': 'keep-alive', 'Sec-Fetch-Dest': 'empty', 'Sec-Fetch-Mode': 'cors', 'Sec-Fetch-Site': 'same-site', 'Priority': 'u=0'}
+2025-05-22 09:03:11,609 ERROR: Exception on /api/project/abc/asset/PC1WIN10/pdf/ [GET]
+Traceback (most recent call last):
+  File "/home/geo/Desktop/Asset_Discovery/Frontend/untitled folder/Asset_Discovery_Full_Pack/Asset_Discovery/venv/lib/python3.11/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/geo/Desktop/Asset_Discovery/Frontend/untitled folder/Asset_Discovery_Full_Pack/Asset_Discovery/venv/lib/python3.11/site-packages/flask/app.py", line 920, in full_dispatch_request
+    return self.finalize_request(rv)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/geo/Desktop/Asset_Discovery/Frontend/untitled folder/Asset_Discovery_Full_Pack/Asset_Discovery/venv/lib/python3.11/site-packages/flask/app.py", line 939, in finalize_request
+    response = self.make_response(rv)
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/geo/Desktop/Asset_Discovery/Frontend/untitled folder/Asset_Discovery_Full_Pack/Asset_Discovery/venv/lib/python3.11/site-packages/flask/app.py", line 1212, in make_response
+    raise TypeError(
+TypeError: The view function for 'download_asset_pdf' did not return a valid response. The function either returned None or ended without a return statement.
+2025-05-22 09:03:11,611 INFO: 127.0.0.1 - - [22/May/2025 09:03:11] "[35m[1mGET /api/project/abc/asset/PC1WIN10/pdf/ HTTP/1.1[0m" 500 -
+2025-05-22 09:03:16,209 INFO: Request from 127.0.0.1 GET /project/abc
+2025-05-22 09:03:16,210 INFO: Headers: {'Host': '127.0.0.1', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; rv:128.0) Gecko/20100101 Firefox/128.0', 'Accept': 'application/json, text/plain, */*', 'Accept-Language': 'en-US,en;q=0.5', 'Accept-Encoding': 'gzip, deflate, br, zstd', 'Referer': 'http://localhost:5173/', 'Origin': 'http://localhost:5173', 'Dnt': '1', 'Connection': 'keep-alive', 'Sec-Fetch-Dest': 'empty', 'Sec-Fetch-Mode': 'cors', 'Sec-Fetch-Site': 'cross-site'}
+2025-05-22 09:03:16,211 INFO: 127.0.0.1 - - [22/May/2025 09:03:16] "GET /project/abc HTTP/1.1" 200 -
+2025-05-22 09:03:17,055 INFO: Request from 127.0.0.1 GET /projects
+2025-05-22 09:03:17,055 INFO: Headers: {'Host': '127.0.0.1', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; rv:128.0) Gecko/20100101 Firefox/128.0', 'Accept': 'application/json, text/plain, */*', 'Accept-Language': 'en-US,en;q=0.5', 'Accept-Encoding': 'gzip, deflate, br, zstd', 'Referer': 'http://localhost:5173/', 'Origin': 'http://localhost:5173', 'Dnt': '1', 'Connection': 'keep-alive', 'Sec-Fetch-Dest': 'empty', 'Sec-Fetch-Mode': 'cors', 'Sec-Fetch-Site': 'cross-site'}
+2025-05-22 09:03:17,056 INFO: 127.0.0.1 - - [22/May/2025 09:03:17] "GET /projects HTTP/1.1" 200 -
+2025-05-22 09:52:21,844 INFO: Starting Flask server...
+2025-05-22 09:52:21,849 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:80
+ * Running on http://192.168.40.129:80
+2025-05-22 09:52:21,849 INFO: [33mPress CTRL+C to quit[0m
+2025-05-22 09:52:53,024 INFO: Request from 127.0.0.1 GET /
+2025-05-22 09:52:53,024 INFO: Headers: {'Host': '127.0.0.1', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; rv:128.0) Gecko/20100101 Firefox/128.0', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8', 'Accept-Language': 'en-US,en;q=0.5', 'Accept-Encoding': 'gzip, deflate, br, zstd', 'Dnt': '1', 'Connection': 'keep-alive', 'Cookie': 'csrftoken=Wy6vQeDsc89kCEAyAwNrI3wbhC8cqXC7', 'Upgrade-Insecure-Requests': '1', 'Sec-Fetch-Dest': 'document', 'Sec-Fetch-Mode': 'navigate', 'Sec-Fetch-Site': 'none', 'Sec-Fetch-User': '?1', 'Priority': 'u=0, i'}
+2025-05-22 09:52:53,032 INFO: 127.0.0.1 - - [22/May/2025 09:52:53] "GET / HTTP/1.1" 200 -
+2025-05-22 09:52:53,292 INFO: Request from 127.0.0.1 GET /favicon.ico
+2025-05-22 09:52:53,293 INFO: Headers: {'Host': '127.0.0.1', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; rv:128.0) Gecko/20100101 Firefox/128.0', 'Accept': 'image/avif,image/webp,image/png,image/svg+xml,image/*;q=0.8,*/*;q=0.5', 'Accept-Language': 'en-US,en;q=0.5', 'Accept-Encoding': 'gzip, deflate, br, zstd', 'Referer': 'http://127.0.0.1/', 'Dnt': '1', 'Connection': 'keep-alive', 'Cookie': 'csrftoken=Wy6vQeDsc89kCEAyAwNrI3wbhC8cqXC7', 'Sec-Fetch-Dest': 'image', 'Sec-Fetch-Mode': 'no-cors', 'Sec-Fetch-Site': 'same-origin', 'Priority': 'u=6'}
+2025-05-22 09:52:53,295 INFO: 127.0.0.1 - - [22/May/2025 09:52:53] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-05-22 09:53:03,971 INFO: Request from 127.0.0.1 GET /project/undefined
+2025-05-22 09:53:03,972 INFO: Headers: {'Host': '127.0.0.1', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; rv:128.0) Gecko/20100101 Firefox/128.0', 'Accept': 'application/json, text/plain, */*', 'Accept-Language': 'en-US,en;q=0.5', 'Accept-Encoding': 'gzip, deflate, br, zstd', 'Referer': 'http://localhost:5174/', 'Origin': 'http://localhost:5174', 'Dnt': '1', 'Connection': 'keep-alive', 'Sec-Fetch-Dest': 'empty', 'Sec-Fetch-Mode': 'cors', 'Sec-Fetch-Site': 'cross-site'}
+2025-05-22 09:53:03,973 ERROR: Database not found at: /home/geo/Desktop/Asset_Discovery/Frontend/untitled folder/Asset_Discovery_Full_Pack/Asset_Discovery/db/undefined.db
+2025-05-22 09:53:03,974 INFO: 127.0.0.1 - - [22/May/2025 09:53:03] "[33mGET /project/undefined HTTP/1.1[0m" 404 -
+2025-05-22 09:53:15,087 INFO: Request from 127.0.0.1 GET /projects
+2025-05-22 09:53:15,089 INFO: Headers: {'Host': '127.0.0.1', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; rv:128.0) Gecko/20100101 Firefox/128.0', 'Accept': 'application/json, text/plain, */*', 'Accept-Language': 'en-US,en;q=0.5', 'Accept-Encoding': 'gzip, deflate, br, zstd', 'Referer': 'http://localhost:5174/', 'Origin': 'http://localhost:5174', 'Dnt': '1', 'Connection': 'keep-alive', 'Sec-Fetch-Dest': 'empty', 'Sec-Fetch-Mode': 'cors', 'Sec-Fetch-Site': 'cross-site'}
+2025-05-22 09:53:15,090 INFO: 127.0.0.1 - - [22/May/2025 09:53:15] "GET /projects HTTP/1.1" 200 -
+2025-05-22 10:13:34,127 INFO: Request from 127.0.0.1 GET /project/undefined
+2025-05-22 10:13:34,127 INFO: Headers: {'Host': '127.0.0.1', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; rv:128.0) Gecko/20100101 Firefox/128.0', 'Accept': 'application/json, text/plain, */*', 'Accept-Language': 'en-US,en;q=0.5', 'Accept-Encoding': 'gzip, deflate, br, zstd', 'Referer': 'http://localhost:5174/', 'Origin': 'http://localhost:5174', 'Dnt': '1', 'Connection': 'keep-alive', 'Sec-Fetch-Dest': 'empty', 'Sec-Fetch-Mode': 'cors', 'Sec-Fetch-Site': 'cross-site'}
+2025-05-22 10:13:34,128 ERROR: Database not found at: /home/geo/Desktop/Asset_Discovery/Frontend/untitled folder/Asset_Discovery_Full_Pack/Asset_Discovery/db/undefined.db
+2025-05-22 10:13:34,129 INFO: 127.0.0.1 - - [22/May/2025 10:13:34] "[33mGET /project/undefined HTTP/1.1[0m" 404 -
+2025-05-22 10:13:37,603 INFO: Request from 127.0.0.1 GET /projects
+2025-05-22 10:13:37,605 INFO: Headers: {'Host': '127.0.0.1', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; rv:128.0) Gecko/20100101 Firefox/128.0', 'Accept': 'application/json, text/plain, */*', 'Accept-Language': 'en-US,en;q=0.5', 'Accept-Encoding': 'gzip, deflate, br, zstd', 'Referer': 'http://localhost:5174/', 'Origin': 'http://localhost:5174', 'Dnt': '1', 'Connection': 'keep-alive', 'Sec-Fetch-Dest': 'empty', 'Sec-Fetch-Mode': 'cors', 'Sec-Fetch-Site': 'cross-site'}
+2025-05-22 10:13:37,608 INFO: 127.0.0.1 - - [22/May/2025 10:13:37] "GET /projects HTTP/1.1" 200 -
+2025-05-22 10:13:40,106 INFO: Request from 127.0.0.1 GET /project/abc
+2025-05-22 10:13:40,107 INFO: Headers: {'Host': '127.0.0.1', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; rv:128.0) Gecko/20100101 Firefox/128.0', 'Accept': 'application/json, text/plain, */*', 'Accept-Language': 'en-US,en;q=0.5', 'Accept-Encoding': 'gzip, deflate, br, zstd', 'Referer': 'http://localhost:5174/', 'Origin': 'http://localhost:5174', 'Dnt': '1', 'Connection': 'keep-alive', 'Sec-Fetch-Dest': 'empty', 'Sec-Fetch-Mode': 'cors', 'Sec-Fetch-Site': 'cross-site'}
+2025-05-22 10:13:40,108 INFO: 127.0.0.1 - - [22/May/2025 10:13:40] "GET /project/abc HTTP/1.1" 200 -
+2025-05-22 10:32:26,494 INFO: Starting Flask server...
+2025-05-22 10:32:31,458 INFO: Starting Flask server...
+2025-05-22 10:32:31,461 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:80
+ * Running on http://192.168.40.129:80
+2025-05-22 10:32:31,461 INFO: [33mPress CTRL+C to quit[0m
+2025-05-22 10:32:54,081 INFO: Request from 127.0.0.1 GET /project/undefined
+2025-05-22 10:32:54,083 INFO: Headers: {'Host': '127.0.0.1', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; rv:128.0) Gecko/20100101 Firefox/128.0', 'Accept': 'application/json, text/plain, */*', 'Accept-Language': 'en-US,en;q=0.5', 'Accept-Encoding': 'gzip, deflate, br, zstd', 'Referer': 'http://localhost:5173/', 'Origin': 'http://localhost:5173', 'Dnt': '1', 'Connection': 'keep-alive', 'Sec-Fetch-Dest': 'empty', 'Sec-Fetch-Mode': 'cors', 'Sec-Fetch-Site': 'cross-site'}
+2025-05-22 10:32:54,083 ERROR: Database not found at: /home/geo/Desktop/Asset_Discovery/Backend/db/undefined.db
+2025-05-22 10:32:54,084 INFO: 127.0.0.1 - - [22/May/2025 10:32:54] "[33mGET /project/undefined HTTP/1.1[0m" 404 -
+2025-05-22 10:32:59,403 INFO: Request from 127.0.0.1 GET /projects
+2025-05-22 10:32:59,405 INFO: Headers: {'Host': '127.0.0.1', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; rv:128.0) Gecko/20100101 Firefox/128.0', 'Accept': 'application/json, text/plain, */*', 'Accept-Language': 'en-US,en;q=0.5', 'Accept-Encoding': 'gzip, deflate, br, zstd', 'Referer': 'http://localhost:5173/', 'Origin': 'http://localhost:5173', 'Dnt': '1', 'Connection': 'keep-alive', 'Sec-Fetch-Dest': 'empty', 'Sec-Fetch-Mode': 'cors', 'Sec-Fetch-Site': 'cross-site'}
+2025-05-22 10:32:59,406 INFO: 127.0.0.1 - - [22/May/2025 10:32:59] "GET /projects HTTP/1.1" 200 -

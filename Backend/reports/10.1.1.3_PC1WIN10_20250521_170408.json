@@ -1,0 +1,343 @@
+{
+  "AssetProjectDetails": {
+    "ProjectName": "test",
+    "ClientIp": "10.1.1.3",
+    "MachineName": "PC1WIN10"
+  },
+  "AssetDetails": {
+    "SystemName": "PC1WIN10",
+    "SystemManufacturer": "VMware, Inc.",
+    "SystemModel": "VMware20,1",
+    "SystemType": "x64-based PC",
+    "SystemSKU": null,
+    "DiskSpaceGB": 60,
+    "Ram Size": 2,
+    "GPU": "0.25",
+    "OperatingSystem": "Microsoft Windows 10 Education",
+    "IPAddress": "10.1.1.3",
+    "MacAddress": "00-0C-29-6C-84-46",
+    "Domain": "hackad.com",
+    "Domain Role": "Member Workstation",
+    "WorkGroup": null,
+    "LicenseStatus": null,
+    "LoggedInUser": "geo"
+  },
+  "Users": [
+    {
+      "Name": "Administrator",
+      "SID": "S-1-5-21-294822864-1443621486-381266154-500",
+      "Domain": "",
+      "IsActive": false,
+      "IsLockout": false,
+      "IsPasswordRequired": true,
+      "IsLocalAccount": true
+    },
+    {
+      "Name": "DefaultAccount",
+      "SID": "S-1-5-21-294822864-1443621486-381266154-503",
+      "Domain": "",
+      "IsActive": false,
+      "IsLockout": false,
+      "IsPasswordRequired": false,
+      "IsLocalAccount": true
+    },
+    {
+      "Name": "Geo",
+      "SID": "S-1-5-21-294822864-1443621486-381266154-1000",
+      "Domain": "",
+      "IsActive": true,
+      "IsLockout": false,
+      "IsPasswordRequired": true,
+      "IsLocalAccount": true
+    },
+    {
+      "Name": "Guest",
+      "SID": "S-1-5-21-294822864-1443621486-381266154-501",
+      "Domain": "",
+      "IsActive": false,
+      "IsLockout": false,
+      "IsPasswordRequired": false,
+      "IsLocalAccount": true
+    },
+    {
+      "Name": "test",
+      "SID": "S-1-5-21-294822864-1443621486-381266154-1003",
+      "Domain": "",
+      "IsActive": true,
+      "IsLockout": false,
+      "IsPasswordRequired": true,
+      "IsLocalAccount": true
+    },
+    {
+      "Name": "WDAGUtilityAccount",
+      "SID": "S-1-5-21-294822864-1443621486-381266154-504",
+      "Domain": "",
+      "IsActive": false,
+      "IsLockout": false,
+      "IsPasswordRequired": true,
+      "IsLocalAccount": true
+    }
+  ],
+  "Hardware": [
+    {
+      "ComputerSystem": {
+        "SystemName": "PC1WIN10",
+        "SystemManufacturer": "VMware, Inc.",
+        "SystemModel": "VMware20,1",
+        "SystemType": "x64-based PC",
+        "SystemSKU": null,
+        "BIOS Name": "VMW201.00V.24006586.B64.2406042154",
+        "Bios Manufacturer": "VMware, Inc.",
+        "SMBIOSBIOSVersion": "VMW201.00V.24006586.B64.2406042154",
+        "SMBiosVersion": 2,
+        "BIOS Serial Number": "VMware-56 4d 1d f9 03 cd 93 2b-57 98 73 e2 b6 6c 84 46",
+        "BIOS Release Date": "6/4/2024 5:30:00 AM"
+      }
+    },
+    {
+      "OperatingSystem": {
+        "Operating System": "Microsoft Windows 10 Education",
+        "OS Architecture": "64-bit",
+        "OSVersion": "10.0.19045",
+        "BuildNumber": "19045",
+        "ProductID": "00328-00000-00000-AA292",
+        "OS Product Type": 1,
+        "Os System Directory": "C:\\Windows\\system32",
+        "Os System Drive": "C:",
+        "Os Windows Directory": "C:\\Windows"
+      }
+    },
+    {
+      "License": {
+        "Name": "Windows(R), Education edition",
+        "Description": "Windows(R) Operating System, RETAIL channel",
+        "LicenseType": "Windows(R) Operating System, RETAIL channel",
+        "LicenseStatus": "Notification",
+        "ActivationStatus": "Unknown",
+        "ActivationMessage": "No activation status information available.",
+        "OEMProductKey": "Not Found"
+      }
+    },
+    {
+      "Processor": [
+        {
+          "DeviceID": "CPU0",
+          "ProcessorName": "Intel(R) Core(TM) Ultra 9 185H",
+          "ProcessorManufacturer": "GenuineIntel",
+          "ProcessorSpeedInGHz": "3.07",
+          "NumberOfCores": 1,
+          "NumberOfThreads": 1
+        },
+        {
+          "DeviceID": "CPU1",
+          "ProcessorName": "Intel(R) Core(TM) Ultra 9 185H",
+          "ProcessorManufacturer": "GenuineIntel",
+          "ProcessorSpeedInGHz": "3.07",
+          "NumberOfCores": 1,
+          "NumberOfThreads": 1
+        }
+      ]
+    },
+    {
+      "Ram": {
+        "Installed RAM": 2,
+        "Available RAM": 2,
+        "Used": 0.8200000000000001,
+        "Free": 1.18
+      }
+    },
+    {
+      "VRam": {
+        "TotalVirtualMemoryGB": "2.69",
+        "FreeVirtualMemoryGB": "0.49",
+        "InUseVirtualMemoryGB": "2.20"
+      }
+    },
+    {
+      "GPU": {
+        "Name": "VMware SVGA 3D",
+        "VideoProcessor": "VMware Virtual SVGA 3D Graphics Adapter",
+        "DriverVersion": "9.17.8.9",
+        "AdapterRAMGB": "0.25"
+      }
+    },
+    {
+      "NetworkAdapters": {
+        "NICName": "Intel(R) 82574L Gigabit Network Connection",
+        "IPv4Addresses": "10.1.1.3",
+        "MACAddress": "00:0C:29:6C:84:46",
+        "DHCP": true,
+        "DHCPServer": "10.1.1.254",
+        "Network": "localdomain"
+      }
+    },
+    {
+      "PhysicalDrives": {
+        "DriveID": "PHYSICALDRIVE0",
+        "DriveType": "Fixed hard disk media",
+        "Model": "VMware Virtual NVMe Disk",
+        "SizeGB": "60.00"
+      }
+    },
+    {
+      "logicalDiskVolume": [
+        {
+          "DeviceID": "C:",
+          "VolumeName": "",
+          "FileSystem": "NTFS",
+          "DriveType": "Local Disk",
+          "SerialNumber": "E8A9507F",
+          "HardDiskCapacityGB": 59.68,
+          "FreeSpaceGB": 41.32
+        },
+        {
+          "DeviceID": "D:",
+          "VolumeName": null,
+          "FileSystem": null,
+          "DriveType": "Compact Disc",
+          "SerialNumber": null,
+          "HardDiskCapacityGB": "N/A",
+          "FreeSpaceGB": "N/A"
+        }
+      ]
+    },
+    {
+      "keyboard": {
+        "Name": "Enhanced (101- or 102-key)",
+        "Description": "Standard PS/2 Keyboard",
+        "DeviceID": "ACPI\\PNP0303\\4&1BD7F811&0"
+      }
+    },
+    {
+      "Mouse": [
+        {
+          "Name": "USB Input Device",
+          "Description": "USB Input Device",
+          "DeviceID": "USB\\VID_0E0F&PID_0003&MI_00\\7&BCBFCC2&0&0000",
+          "PNPDeviceID": "USB\\VID_0E0F&PID_0003&MI_00\\7&BCBFCC2&0&0000",
+          "Manufacturer": "(Standard system devices)"
+        },
+        {
+          "Name": "USB Input Device",
+          "Description": "USB Input Device",
+          "DeviceID": "USB\\VID_0E0F&PID_0003&MI_01\\7&BCBFCC2&0&0001",
+          "PNPDeviceID": "USB\\VID_0E0F&PID_0003&MI_01\\7&BCBFCC2&0&0001",
+          "Manufacturer": "(Standard system devices)"
+        },
+        {
+          "Name": "VMware Pointing Device",
+          "Description": "VMware Pointing Device",
+          "DeviceID": "ACPI\\VMW0003\\4&1BD7F811&0",
+          "PNPDeviceID": "ACPI\\VMW0003\\4&1BD7F811&0",
+          "Manufacturer": "Broadcom Inc."
+        }
+      ]
+    }
+  ],
+  "Software": [
+    {
+      "Name": "Microsoft Edge Update",
+      "Version": "1.3.147.37"
+    },
+    {
+      "Name": "Microsoft Edge",
+      "Version": "92.0.902.67"
+    },
+    {
+      "Name": "Microsoft Visual C++ 2022 X64 Minimum Runtime - 14.40.33810",
+      "Version": "14.40.33810"
+    },
+    {
+      "Name": "VMware Tools",
+      "Version": "12.5.0.24276846"
+    },
+    {
+      "Name": "Microsoft Visual C++ 2022 X86 Minimum Runtime - 14.40.33810",
+      "Version": "14.40.33810"
+    },
+    {
+      "Name": "Microsoft Visual C++ 2015-2022 Redistributable (x86) - 14.40.33810",
+      "Version": "14.40.33810.0"
+    },
+    {
+      "Name": "Microsoft Visual C++ 2022 X64 Additional Runtime - 14.40.33810",
+      "Version": "14.40.33810"
+    },
+    {
+      "Name": "Microsoft Visual C++ 2022 X86 Additional Runtime - 14.40.33810",
+      "Version": "14.40.33810"
+    },
+    {
+      "Name": "Microsoft Visual C++ 2015-2022 Redistributable (x64) - 14.40.33810",
+      "Version": "14.40.33810.0"
+    }
+  ],
+  "Security": [
+    {
+      "Antivirus": {
+        "Name": "Windows Defender",
+        "AntivirusEnabled": "Enabled",
+        "AV Signature Last Update": "9/24/2019 10:42:58 AM",
+        "AntivirusSignatureVersion": "1.303.25.0",
+        "RealTime": "On",
+        "SignatureStatus": "Outdated",
+        "IsTamperProtected": true,
+        "BehaviorMonitorEnabled": true,
+        "AMServiceEnabled": true,
+        "AMServiceVersion": "4.18.1909.6",
+        "AntispywareEnabled": true
+      }
+    },
+    {
+      "Firewall": [
+        {
+          "Profile": "Domain",
+          "Enabled": "Disabled",
+          "DefaultInboundAction": "Allow",
+          "DefaultOutboundAction": "Allow"
+        },
+        {
+          "Profile": "Private",
+          "Enabled": "Disabled",
+          "DefaultInboundAction": "Allow",
+          "DefaultOutboundAction": "Allow"
+        },
+        {
+          "Profile": "Public",
+          "Enabled": "Disabled",
+          "DefaultInboundAction": "Allow",
+          "DefaultOutboundAction": "Allow"
+        }
+      ]
+    },
+    {
+      "AntiPatchUpdatesvirus": [
+        {
+          "Description": "Update",
+          "InstalledOn": "2023-05-05",
+          "HotFixID": "KB5022502"
+        },
+        {
+          "Description": "Update",
+          "InstalledOn": "2023-05-05",
+          "HotFixID": "KB5015684"
+        },
+        {
+          "Description": "Security Update",
+          "InstalledOn": "2023-05-05",
+          "HotFixID": "KB5026361"
+        },
+        {
+          "Description": "Security Update",
+          "InstalledOn": "2023-05-05",
+          "HotFixID": "KB5014032"
+        },
+        {
+          "Description": "Update",
+          "InstalledOn": "2023-05-05",
+          "HotFixID": "KB5025315"
+        }
+      ]
+    }
+  ]
+}
