@@ -48,7 +48,7 @@ export default function MainPage() {
         <Header />
 
         <main className="p-6 mt-16 min-h-screen bg-gray-100">
-          <Card className="w-full mx-auto">
+          <Card className="w-full mx-auto max-w-4xl ml-18 mt-5">
             <CardContent>
               <h1 className="text-2xl font-bold text-center mb-6">
                 Devices in {projectName}

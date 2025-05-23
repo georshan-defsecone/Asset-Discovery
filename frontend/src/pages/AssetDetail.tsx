@@ -112,7 +112,7 @@ const AssetDetail = () => {
         <Header />
 
         <main className="p-6 mt-16 min-h-screen bg-gray-100">
-          <Card className="w-full">
+          <Card className="w-full ml-18 mt-5">
             <div className="flex justify-between items-center p-4">
               <h2 className="text-xl font-bold">Asset: {asset_name}</h2>
               <Button onClick={() => handleDownloadPDF(asset_name)} disabled={downloading}>

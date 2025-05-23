@@ -57,7 +57,7 @@ const Projects: React.FC = () => {
       <div className="ml-64">
         <Header />
         <main className="p-6 mt-16 min-h-screen bg-gray-100">
-          <div className="max-w-4xl mx-auto bg-white shadow-lg rounded-md p-6">
+          <div className="max-w-4xl mx-auto bg-white shadow-lg rounded-md p-6 ml-18 mt-5">
             <div className="mb-6 text-center">
               <h1 className="text-2xl font-bold text-gray-800">Available Projects</h1>
             </div>

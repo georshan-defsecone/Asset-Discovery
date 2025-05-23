@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom';
+import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
@@ -7,7 +7,7 @@ const Header = () => {
       <h1 className="text-3xl font-extrabold text-white">Asset Discovery</h1>
       <Link
         to="/scan"
-        className="px-4 py-2 bg-neutral-800 text-white rounded-md hover:bg-blue-700 transition-colors"
+        className="px-4 py-2 bg-white text-black font-semibold text-sm font-sans border border-gray-300 rounded-md hover:bg-gray-100 transition-colors"
       >
         New
       </Link>
