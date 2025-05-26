@@ -47,7 +47,7 @@ const Projects: React.FC = () => {
       link.click();
       link.remove();
     } catch (error) {
-      alert("Failed to download PDF.");
+      alert("Failed to download report.");
     }
   };
 
@@ -57,7 +57,7 @@ const Projects: React.FC = () => {
       <div className="ml-64">
         <Header />
         <main className="p-6 mt-16 min-h-screen bg-gray-100">
-          <div className="max-w-4xl mx-auto bg-white shadow-lg rounded-md p-6 ml-18 mt-5">
+          <div className="max-w-4xl mx-auto bg-white shadow-lg ml-25 mt-15 rounded-md p-6 mt-5">
             <div className="mb-6 text-center">
               <h1 className="text-2xl font-bold text-gray-800">Available Projects</h1>
             </div>
@@ -76,25 +76,32 @@ const Projects: React.FC = () => {
                   {projects.map((project, index) => {
                     const projectName = project.replace(".db", "");
                     return (
-                      <TableRow key={index}>
-                        <TableCell className="w-3/4 text-left">
-                          <Link
-                            to={`/projects/${projectName}`}
-                            className="text-black hover:underline"
-                          >
+                      <Link
+                        key={index}
+                        to={`/projects/${projectName}`}
+                        className="contents"
+                      >
+                        <TableRow className="hover:bg-gray-100 cursor-pointer transition">
+                          <TableCell className="w-3/4 text-left font-medium text-black">
                             {projectName}
-                          </Link>
-                        </TableCell>
-                        <TableCell className="w-1/4 text-right">
-                          <button
-                            className="text-gray-600 hover:text-black transition"
-                            title="Download project"
-                            onClick={() => handleDownload(projectName)}
+                          </TableCell>
+                          <TableCell
+                            className="w-1/4 text-right"
+                            onClick={(e) => e.stopPropagation()}
                           >
-                            <Download className="w-5 h-5" />
-                          </button>
-                        </TableCell>
-                      </TableRow>
+                            <button
+                              className="text-gray-600 hover:text-black transition"
+                              title="Download project"
+                              onClick={(e) => {
+                                e.preventDefault(); // Prevent <Link> navigation
+                                handleDownload(projectName);
+                              }}
+                            >
+                              <Download className="w-5 h-5" />
+                            </button>
+                          </TableCell>
+                        </TableRow>
+                      </Link>
                     );
                   })}
                 </TableBody>

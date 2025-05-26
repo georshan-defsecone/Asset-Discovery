@@ -9,7 +9,7 @@ const Header = () => {
         to="/scan"
         className="px-4 py-2 bg-white text-black font-semibold text-sm font-sans border border-gray-300 rounded-md hover:bg-gray-100 transition-colors"
       >
-        New
+        New Scan
       </Link>
     </header>
   );

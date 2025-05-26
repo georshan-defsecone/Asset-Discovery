@@ -189,94 +189,136 @@ def get_asset_json(project_name, asset_name):
 @app.route('/api/project/<project_name>/asset/<asset_name>/pdf/', methods=['GET'])
 def download_asset_pdf(project_name, asset_name):
     db_path = os.path.join(DB_DIR, f"{project_name}.db")
-    print(f"[DEBUG] Project: {project_name}, Asset: {asset_name}")
-    print(f"[DEBUG] DB Path: {db_path}")
-    
     if not os.path.exists(db_path):
-        print("[ERROR] Database file does not exist.")
-        return jsonify({'error': f'Database for project \"{project_name}\" not found'}), 404
+        return jsonify({'error': f'Database for project "{project_name}" not found'}), 404
 
     try:
+        # Retrieve JSON from DB
         conn = sqlite3.connect(db_path)
         cursor = conn.cursor()
-        
-        # See which assets are present
-        cursor.execute("SELECT system_name FROM scan_results")
-        all_assets = cursor.fetchall()
-        print("[DEBUG] Available assets in DB:", all_assets)
-        
         cursor.execute("SELECT json_data FROM scan_results WHERE system_name = ?", (asset_name,))
         row = cursor.fetchone()
         conn.close()
 
         if not row:
-            print(f"[ERROR] Asset {asset_name} not found in database.")
-            return jsonify({'error': f'Asset \"{asset_name}\" not found'}), 404
+            return jsonify({'error': f'Asset "{asset_name}" not found in project "{project_name}"'}), 404
 
-        print("[DEBUG] Asset found. Proceeding to generate PDF.")
-
-        # Load JSON data
         json_data = json.loads(row[0])
         buffer = BytesIO()
         p = canvas.Canvas(buffer, pagesize=letter)
         width, height = letter
 
-        y = height - 40
-        p.setFont("Helvetica-Bold", 14)
-        p.drawString(40, y, f"Asset Report: {asset_name}")
-        y -= 30
+        y = height - 50
+        left_margin = 40
+        line_height = 15
+        max_width = width - 2 * left_margin
 
-        p.setFont("Helvetica", 10)
-
-        def draw_section(title, data, y):
-            p.setFont("Helvetica-Bold", 12)
-            p.drawString(40, y, title)
-            y -= 20
-            p.setFont("Helvetica", 10)
-            if isinstance(data, dict):
-                for key, value in data.items():
-                    line = f"{key}: {value}"
-                    p.drawString(50, y, line[:100])  # limit line length
-                    y -= 15
-                    if y < 40:
-                        p.showPage()
-                        y = height - 40
-            elif isinstance(data, list):
-                for item in data:
-                    if isinstance(item, dict):
-                        for key, value in item.items():
-                            line = f"{key}: {value}"
-                            p.drawString(50, y, line[:100])
-                            y -= 15
-                            if y < 40:
-                                p.showPage()
-                                y = height - 40
-                    else:
-                        p.drawString(50, y, str(item)[:100])
-                        y -= 15
-                        if y < 40:
-                            p.showPage()
-                            y = height - 40
-            else:
-                p.drawString(50, y, str(data)[:100])
-                y -= 15
+        def check_page_space(y, lines_needed=1):
+            if y < 60 + line_height * lines_needed:
+                p.showPage()
+                p.setFont("Helvetica", 10)
+                return height - 50
             return y
 
-        for section_name in ['AssetDetails', 'Hardware', 'Software', 'Users', 'Security']:
-            if section_name in json_data:
-                y = draw_section(section_name, json_data[section_name], y)
-                y -= 15
-                if y < 40:
-                    p.showPage()
-                    y = height - 40
+        def draw_wrapped_text(key, value, y, indent=0):
+            x = left_margin + indent
+            p.setFont("Helvetica-Bold", 10)
+            p.drawString(x, y, f"{key}:")
+            y -= line_height
+
+            p.setFont("Helvetica", 10)
+            text = str(value)
+            words = text.split()
+            line = ""
+            for word in words:
+                if p.stringWidth(line + word + " ", "Helvetica", 10) <= max_width - indent:
+                    line += word + " "
+                else:
+                    p.drawString(x + 20, y, line.strip())
+                    y = check_page_space(y)
+                    y -= line_height
+                    line = word + " "
+            if line:
+                y = check_page_space(y)
+                p.drawString(x + 20, y, line.strip())
+                y -= line_height
+            return y
+
+        def draw_dict(data, y, indent=0):
+            for key, value in data.items():
+                y = check_page_space(y)
+                if isinstance(value, dict):
+                    p.setFont("Helvetica-Bold", 10)
+                    p.drawString(left_margin + indent, y, f"{key}:")
+                    y -= line_height
+                    y = draw_dict(value, y, indent + 20)
+                elif isinstance(value, list):
+                    p.setFont("Helvetica-Bold", 10)
+                    p.drawString(left_margin + indent, y, f"{key}:")
+                    y -= line_height
+                    for idx, item in enumerate(value):
+                        if isinstance(item, dict):
+                            y = draw_dict(item, y, indent + 20)
+                        else:
+                            y = draw_wrapped_text(f"- Item {idx + 1}", item, y, indent + 20)
+                else:
+                    y = draw_wrapped_text(key, value, y, indent)
+            return y
+
+        def draw_section(title, section_data, y):
+            y = check_page_space(y, 2)
+            p.setFont("Helvetica-Bold", 12)
+            p.drawString(left_margin, y, title)
+            y -= line_height
+
+            if isinstance(section_data, list):
+                for item in section_data:
+                    if isinstance(item, dict) and len(item) == 1:
+                        for key, val in item.items():
+                            y = check_page_space(y)
+                            p.setFont("Helvetica-Bold", 10)
+                            p.drawString(left_margin + 10, y, f"{key}:")
+                            y -= line_height
+                            if isinstance(val, dict):
+                                y = draw_dict(val, y, indent=20)
+                            elif isinstance(val, list):
+                                for idx, subval in enumerate(val):
+                                    if isinstance(subval, dict):
+                                        y = check_page_space(y)
+                                        p.setFont("Helvetica-Oblique", 10)
+                                        p.drawString(left_margin + 20, y, f"- Item {idx + 1}")
+                                        y -= line_height
+                                        y = draw_dict(subval, y, indent=30)
+                                    else:
+                                        y = draw_wrapped_text(f"- Item {idx + 1}", subval, y, indent=30)
+                            else:
+                                y = draw_wrapped_text(key, val, y, indent=20)
+                    elif isinstance(item, dict):
+                        y = draw_dict(item, y, indent=10)
+                    else:
+                        y = draw_wrapped_text("Item", item, y, indent=10)
+            elif isinstance(section_data, dict):
+                y = draw_dict(section_data, y, indent=10)
+            else:
+                y = draw_wrapped_text(title, section_data, y, indent=10)
+
+            y -= 10
+            return y
+
+        # Header
+        p.setFont("Helvetica-Bold", 16)
+        p.drawString(left_margin, y, f"Asset Report: {asset_name}")
+        y -= 30
+
+        for section in ["AssetDetails", "Hardware", "Software", "Users", "Security"]:
+            if section in json_data:
+                y = draw_section(section, json_data[section], y)
 
         p.save()
         buffer.seek(0)
-
         return send_file(buffer, as_attachment=True, download_name=f"{asset_name}_details.pdf", mimetype='application/pdf')
 
     except Exception as e:
-        print("[ERROR] Exception during PDF generation:", str(e))
         return jsonify({'error': str(e)}), 500
 
 

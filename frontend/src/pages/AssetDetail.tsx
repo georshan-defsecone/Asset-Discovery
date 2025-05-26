@@ -2,12 +2,7 @@ import { useEffect, useState, useRef } from "react";
 import { useParams } from "react-router-dom";
 import axios from "axios";
 import { Card, CardContent } from "@/components/ui/card";
-import {
-  Tabs,
-  TabsContent,
-  TabsList,
-  TabsTrigger,
-} from "@/components/ui/tabs";
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import {
   Table,
   TableBody,
@@ -24,8 +19,8 @@ const LabelValue = ({ label, value }: { label: string; value: any }) => {
   if (typeof value === "object" && value !== null && !Array.isArray(value)) {
     return (
       <div className="mb-4">
-        <div className="font-bold text-left">{label}:</div>
-        <div className="ml-4 mt-1 space-y-2">
+        <div className="text-left ">{label}</div>
+        <div className="ml-0 mt-1 space-y-2">
           {Object.entries(value).map(([k, v]) => (
             <LabelValue key={k} label={k} value={v} />
           ))}
@@ -36,13 +31,9 @@ const LabelValue = ({ label, value }: { label: string; value: any }) => {
 
   return (
     <div className="mb-2 flex">
-      <span className="w-64 font-semibold text-left">{label}:</span>
+      <span className="w-64 text-left">{label}</span>
       <span className="text-left">
-        {typeof value === "boolean"
-          ? value
-            ? "Yes"
-            : "No"
-          : value || "—"}
+        {typeof value === "boolean" ? (value ? "Yes" : "No") : value || "—"}
       </span>
     </div>
   );
@@ -64,7 +55,9 @@ const AssetDetail = () => {
 
   useEffect(() => {
     axios
-      .get(`http://localhost:80/api/project/${project_name}/asset/${asset_name}`)
+      .get(
+        `http://localhost:80/api/project/${project_name}/asset/${asset_name}`
+      )
       .then((response) => {
         setAssetDetails(response.data.AssetDetails || {});
         setHardware(response.data.Hardware || []);
@@ -85,9 +78,12 @@ const AssetDetail = () => {
 
     setDownloading(true);
     axios
-      .get(`http://localhost/api/project/${project_name}/asset/${assetName}/pdf/`, {
-        responseType: "blob",
-      })
+      .get(
+        `http://localhost/api/project/${project_name}/asset/${assetName}/pdf/`,
+        {
+          responseType: "blob",
+        }
+      )
       .then((response) => {
         const file = new Blob([response.data], { type: "application/pdf" });
         const link = document.createElement("a");
@@ -112,25 +108,37 @@ const AssetDetail = () => {
         <Header />
 
         <main className="p-6 mt-16 min-h-screen bg-gray-100">
-          <Card className="w-full ml-18 mt-5">
+          <Card className="w-full ml-18 mt-5 shadow-lg">
             <div className="flex justify-between items-center p-4">
               <h2 className="text-xl font-bold">Asset: {asset_name}</h2>
-              <Button onClick={() => handleDownloadPDF(asset_name)} disabled={downloading}>
+              <Button
+                onClick={() => handleDownloadPDF(asset_name)}
+                disabled={downloading}
+              >
                 {downloading ? "Generating PDF..." : "Download PDF"}
               </Button>
             </div>
 
             <CardContent className="p-6" ref={contentRef}>
               <Tabs defaultValue="assetdetails" className="w-full">
-                <TabsList className="flex justify-evenly gap-4 bg-white mb-4">
-                  <TabsTrigger value="assetdetails">Asset Details</TabsTrigger>
-                  <TabsTrigger value="hardware">Hardware</TabsTrigger>
-                  <TabsTrigger value="software">Software</TabsTrigger>
-                  <TabsTrigger value="users">Users</TabsTrigger>
-                  <TabsTrigger value="security">Security</TabsTrigger>
+                <TabsList className="flex gap-2 flex-wrap bg-transparent mb-4">
+                  {[
+                    { label: "Asset Details", value: "assetdetails" },
+                    { label: "Hardware", value: "hardware" },
+                    { label: "Software", value: "software" },
+                    { label: "Users", value: "users" },
+                    { label: "Security", value: "security" },
+                  ].map((tab) => (
+                    <TabsTrigger
+                      key={tab.value}
+                      value={tab.value}
+                      className="px-4 py-2 text-sm font-medium border border-gray-300 rounded-md shadow-sm bg-white text-black hover:bg-gray-100 data-[state=active]:bg-black data-[state=active]:text-white"
+                    >
+                      {tab.label}
+                    </TabsTrigger>
+                  ))}
                 </TabsList>
 
-                {/* Asset Details Tab */}
                 <TabsContent value="assetdetails" className="space-y-4">
                   {assetDetails &&
                     typeof assetDetails === "object" &&
@@ -143,14 +151,14 @@ const AssetDetail = () => {
                     ))}
                 </TabsContent>
 
-                {/* ✅ Fixed Hardware Tab */}
                 <TabsContent value="hardware" className="space-y-6">
                   {hardware.map((item, idx) => {
                     const entries = Object.entries(item);
-
                     return entries.map(([section, content]) => (
                       <div key={`${idx}-${section}`}>
-                        <h3 className="text-lg font-bold mb-2 text-left">{section}</h3>
+                        <h3 className="text-lg font-bold mb-2 text-left">
+                          {section}
+                        </h3>
                         {Array.isArray(content) ? (
                           <Table>
                             <TableHeader>
@@ -181,7 +189,7 @@ const AssetDetail = () => {
                             </TableBody>
                           </Table>
                         ) : (
-                          <div className="ml-4 space-y-2">
+                          <div className=" space-y-2">
                             {Object.entries(content).map(([k, v]) => (
                               <LabelValue key={k} label={k} value={v} />
                             ))}
@@ -192,13 +200,14 @@ const AssetDetail = () => {
                   })}
                 </TabsContent>
 
-                {/* Software Tab */}
                 <TabsContent value="software" className="space-y-6">
                   {software.length === 0 ? (
                     <div>No software found.</div>
                   ) : (
                     (() => {
-                      const allKeys = Array.from(new Set(software.flatMap((item) => Object.keys(item))));
+                      const allKeys = Array.from(
+                        new Set(software.flatMap((item) => Object.keys(item)))
+                      );
                       return (
                         <Table>
                           <TableHeader>
@@ -227,13 +236,14 @@ const AssetDetail = () => {
                   )}
                 </TabsContent>
 
-                {/* ✅ Fixed Users Tab */}
                 <TabsContent value="users" className="space-y-6">
                   {users.length === 0 ? (
                     <div>No users found.</div>
                   ) : (
                     (() => {
-                      const allKeys = Array.from(new Set(users.flatMap((user) => Object.keys(user))));
+                      const allKeys = Array.from(
+                        new Set(users.flatMap((user) => Object.keys(user)))
+                      );
                       return (
                         <Table>
                           <TableHeader>
@@ -266,7 +276,6 @@ const AssetDetail = () => {
                   )}
                 </TabsContent>
 
-                {/* Security Tab */}
                 <TabsContent value="security" className="space-y-6">
                   {security.length === 0 ? (
                     <div>No security data found.</div>
@@ -275,7 +284,9 @@ const AssetDetail = () => {
                       <div key={index} className="space-y-4 mt-8">
                         {Object.entries(section).map(([securityType, data]) => (
                           <div key={securityType}>
-                            <h3 className="text-lg font-bold mb-2 text-left">{securityType}</h3>
+                            <h3 className="text-lg font-bold mb-2 text-left">
+                              {securityType}
+                            </h3>
                             {Array.isArray(data) ? (
                               <Table>
                                 <TableHeader>
@@ -304,7 +315,7 @@ const AssetDetail = () => {
                                 </TableBody>
                               </Table>
                             ) : typeof data === "object" ? (
-                              <div className="ml-4 space-y-2">
+                              <div className=" space-y-2">
                                 {Object.entries(data).map(([k, v]) => (
                                   <LabelValue key={k} label={k} value={v} />
                                 ))}

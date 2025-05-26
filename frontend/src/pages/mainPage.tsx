@@ -48,7 +48,7 @@ export default function MainPage() {
         <Header />
 
         <main className="p-6 mt-16 min-h-screen bg-gray-100">
-          <Card className="w-full mx-auto max-w-4xl ml-18 mt-5">
+          <Card className="w-full mx-auto max-w-4xl shadow-lg ml-25 mt-15">
             <CardContent>
               <h1 className="text-2xl font-bold text-center mb-6">
                 Devices in {projectName}
@@ -64,19 +64,20 @@ export default function MainPage() {
                   </TableHeader>
                   <TableBody>
                     {assets.map((asset, index) => (
-                      <TableRow key={`${asset.name}-${index}`}>
-                        <TableCell className="text-left">
-                          <Link
-                            to={`/projects/${projectName}/assets/${asset.name}`}
-                            className="text-black-600 hover:underline"
-                          >
+                      <Link
+                        key={`${asset.name}-${index}`}
+                        to={`/projects/${projectName}/assets/${asset.name}`}
+                        className="contents"
+                      >
+                        <TableRow className="hover:bg-gray-100 cursor-pointer transition">
+                          <TableCell className="text-left font-medium text-black">
                             {asset.name}
-                          </Link>
-                        </TableCell>
-                        <TableCell className="text-right">
-                          {asset.ip_address}
-                        </TableCell>
-                      </TableRow>
+                          </TableCell>
+                          <TableCell className="text-right text-gray-600">
+                            {asset.ip_address}
+                          </TableCell>
+                        </TableRow>
+                      </Link>
                     ))}
                   </TableBody>
                 </Table>
